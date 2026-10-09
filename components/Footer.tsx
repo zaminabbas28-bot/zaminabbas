@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChatIcon, FacebookIcon, InstagramIcon, LinkedInIcon, LocationIcon, MailIcon, MapPinIcon, PhoneIcon } from "./icons";
+import { ChatIcon, FacebookIcon, InstagramIcon, LinkedInIcon, LocationIcon, MailIcon, MapPinIcon, PhoneIcon, XIcon } from "./icons";
 import { NAV_LINKS, SERVICES, SITE } from "@/lib/site";
 
 export default function Footer() {
@@ -99,6 +99,14 @@ export default function Footer() {
               className="inline-flex items-center gap-2 transition-colors hover:text-white"
             >
               <FacebookIcon className="h-4 w-4" /> Facebook
+            </a>
+            <a
+              href={SITE.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 transition-colors hover:text-white"
+            >
+              <XIcon className="h-4 w-4" /> Twitter
             </a>
             <span className="inline-flex items-center gap-2">
               <LocationIcon className="h-4 w-4" /> {SITE.locality}, {SITE.country}

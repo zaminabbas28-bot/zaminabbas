@@ -26,7 +26,7 @@ const personSchema = {
     addressLocality: SITE.locality,
     addressCountry: "PK",
   },
-  sameAs: [SITE.whatsapp, SITE.fiverr, SITE.instagram, SITE.facebook, SITE.linkedin, SITE.gmb],
+  sameAs: [SITE.whatsapp, SITE.fiverr, SITE.instagram, SITE.facebook, SITE.twitter, SITE.linkedin, SITE.gmb],
   knowsAbout: [
     "Local SEO",
     "Google Business Profile Optimization",
