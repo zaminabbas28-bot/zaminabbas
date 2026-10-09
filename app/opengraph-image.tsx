@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Zamin Abbas — Top Ranked SEO Specialist Pakistan";
+export const alt = "Zamin Abbas — Local SEO Expert in Multan, Pakistan";
 export const size = {
   width: 1200,
   height: 630,

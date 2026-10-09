@@ -34,7 +34,7 @@ export default function CtaSection() {
             className="mt-6 font-display text-2xl font-bold text-gold-gradient italic"
             aria-label="Signed, Zamin Abbas"
           >
-            zamin abbas
+            Zamin Abbas
           </p>
         </Reveal>
         <Reveal delay={280}>
