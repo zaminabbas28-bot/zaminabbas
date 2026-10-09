@@ -60,7 +60,7 @@ export default function About() {
               <div className="card-surface relative overflow-hidden p-3">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
                   <Image
-                    src="/images/rana-3.png"
+                    src="/images/rana-3.jpg"
                     alt="Rana — Local SEO Expert in Multan"
                     fill
                     sizes="(max-width: 768px) 90vw, 420px"

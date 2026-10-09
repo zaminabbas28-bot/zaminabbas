@@ -49,7 +49,7 @@ export default function Bento() {
               <div className="relative mx-auto mt-6 w-40 overflow-hidden rounded-2xl border border-white/15">
                 <div className="relative aspect-square">
                   <Image
-                    src="/images/rana-1.png"
+                    src="/images/rana-1.jpg"
                     alt="Rana"
                     fill
                     sizes="160px"

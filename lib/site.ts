@@ -24,10 +24,10 @@ export const NAV_LINKS = [
 ] as const;
 
 export const HERO_PHOTOS = [
-  { src: "/images/rana-1.png", alt: "Rana at his desk", rotate: "-6deg" },
-  { src: "/images/rana-2.png", alt: "Rana, local SEO expert", rotate: "3deg" },
-  { src: "/images/rana-3.png", alt: "Rana in the office", rotate: "-2deg" },
-  { src: "/images/rana-4.png", alt: "Rana, digital marketer", rotate: "5deg" },
+  { src: "/images/rana-1.jpg", alt: "Rana at his desk", rotate: "-6deg" },
+  { src: "/images/rana-2.jpg", alt: "Rana, local SEO expert", rotate: "3deg" },
+  { src: "/images/rana-3.jpg", alt: "Rana in the office", rotate: "-2deg" },
+  { src: "/images/rana-4.jpg", alt: "Rana, digital marketer", rotate: "5deg" },
 ] as const;
 
 export interface ServiceCard {

@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# decoded binary photos (stored as .b64 text, restored at build time)
+public/images/*.jpg
+!public/images/*.jpg.b64
