@@ -30,7 +30,7 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Local SEO Expert in Multan, Pakistan | Zamin Abbas",
+    default: "Zamin Abbas | Local SEO Expert in Multan, Pakistan",
     template: "%s | Zamin Abbas",
   },
   description: DESCRIPTION,
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE.url,
     siteName: SITE.name,
-    title: "Local SEO Expert in Multan, Pakistan | Zamin Abbas",
+    title: "Zamin Abbas | Local SEO Expert in Multan, Pakistan",
     description: DESCRIPTION,
     images: [
       {
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local SEO Expert in Multan, Pakistan | Zamin Abbas",
+    title: "Zamin Abbas | Local SEO Expert in Multan, Pakistan",
     description: DESCRIPTION,
     images: ["/opengraph-image"],
   },
