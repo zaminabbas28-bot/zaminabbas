@@ -48,7 +48,7 @@ export default function Testimonials() {
                 <StarIcon key={i} className="h-4 w-4" />
               ))}
             </span>
-            5.0 average across Google reviews
+            Client testimonials
           </p>
         </Reveal>
       </div>

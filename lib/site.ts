@@ -25,10 +25,10 @@ export const NAV_LINKS = [
 ] as const;
 
 export const HERO_PHOTOS = [
-  { src: "/images/rana-1.jpg", alt: "Rana at his desk", rotate: "-6deg" },
-  { src: "/images/rana-2.jpg", alt: "Rana, local SEO expert", rotate: "3deg" },
-  { src: "/images/rana-3.jpg", alt: "Rana in the office", rotate: "-2deg" },
-  { src: "/images/rana-4.jpg", alt: "Rana, digital marketer", rotate: "5deg" },
+  { src: "/images/zamin-abbas-local-seo-expert.jpg", alt: "Zamin Abbas at his desk", rotate: "-6deg" },
+  { src: "/images/rana-2.jpg", alt: "Zamin Abbas, local SEO expert", rotate: "3deg" },
+  { src: "/images/rana-3.jpg", alt: "Zamin Abbas in the office", rotate: "-2deg" },
+  { src: "/images/rana-4.jpg", alt: "Zamin Abbas, digital marketer", rotate: "5deg" },
 ] as const;
 
 export interface ServiceCard {
@@ -50,7 +50,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
       "Google Maps 3-pack ranking strategy",
       "Local citations & NAP consistency cleanup",
       "Review generation & reputation management",
-      "Geo-tagged photos, posts & Q&A management",
+      "Business photos, Google Posts & Q&A management",
     ],
     tags: ["GMB OPTIMIZATION", "GOOGLE MAPS", "CITATIONS", "REVIEWS", "LOCAL 3-PACK"],
   },
@@ -154,7 +154,7 @@ export const PROJECTS: Project[] = [
     badge: "WEB + SEO",
     date: "October 2024",
     description:
-      "Custom design, speed optimization, local SEO, and 80% more calls in 60 days.",
+      "Custom design, speed optimization, and local SEO for a conversion-focused business website.",
     url: "https://maps.app.goo.gl/wtqznxrT44FBifxQ6",
   },
   {
@@ -190,6 +190,7 @@ export interface Service {
   icon: "pin" | "share" | "gear";
   benefits: string[];
   paragraphs: string[];
+  h1?: string;
 }
 
 export const SERVICES: Service[] = [
@@ -197,6 +198,7 @@ export const SERVICES: Service[] = [
     slug: "local-seo",
     number: "01",
     title: "Local SEO",
+    h1: "Local SEO Services in Multan, Pakistan",
     short:
       "Dominate local search results and attract nearby customers with targeted local SEO strategies.",
     icon: "pin",
@@ -209,8 +211,8 @@ export const SERVICES: Service[] = [
       "Location pages optimized for nearby areas",
     ],
     paragraphs: [
-      "Local SEO is the fastest way for a neighborhood business to turn nearby searches into paying customers. When someone in your city searches for what you offer, your business should be the first name they see — in the map pack, in organic results, and on your Google Business Profile. My local SEO service is built around exactly that outcome.",
-      "I start with a full local audit: your Google Business Profile, existing citations, NAP consistency, reviews, and how competitors are ranking around you. From there I build a clear action plan — optimizing your profile categories, services, photos and posts, cleaning up inconsistent directory listings, and creating location-focused content that matches how real customers search.",
+      "Local SEO is the fastest way for a neighborhood business to turn nearby searches into paying customers. When someone in Multan searches for what you offer, your business should be the first name they see — on Google Maps, in the map pack, in organic results, and on your Google Business Profile. My local SEO services in Multan are built around exactly that outcome: stronger Google Maps visibility through complete local search optimization.",
+      "I start with a full local audit: your Google Business Profile, existing citations, NAP consistency, reviews, and how competitors are ranking around you. From there I build a clear action plan — Google Business Profile optimization across categories, services, photos and posts, cleaning up inconsistent directory listings, and creating location-focused content that matches how real customers search.",
       "Reviews are a ranking factor and a trust factor, so I also set up a simple, repeatable system for earning genuine customer reviews without awkward asks. Combined with locally relevant on-page optimization and authoritative local citations, this compounds into durable map-pack visibility.",
       "Every month you get a plain-language report: keyword positions, map-pack rankings, profile views, calls, and direction requests. No jargon, no vanity metrics — just the numbers that show whether more local customers are finding you.",
     ],
@@ -389,8 +391,8 @@ export const REVIEWS: Review[] = [
 ];
 
 export const STATS = [
-  { value: "500+", label: "Websites Ranked" },
-  { value: "10+", label: "Years Experience" },
-  { value: "100%", label: "Client Satisfaction" },
-  { value: "5★", label: "Average Rating" },
+  { value: "Local SEO", label: "Main Expertise" },
+  { value: "WordPress", label: "Development" },
+  { value: "Google Ads", label: "Paid Search" },
+  { value: "Social Media", label: "Marketing" },
 ] as const;

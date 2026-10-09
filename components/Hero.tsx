@@ -117,7 +117,7 @@ export default function Hero() {
             />
             <div className="relative overflow-hidden rounded-3xl border border-white/10">
               <Image
-                src="/images/rana-1.jpg"
+                src="/images/zamin-abbas-local-seo-expert.jpg"
                 alt="Zamin Abbas — Local SEO expert in Multan, Pakistan"
                 width={880}
                 height={1060}

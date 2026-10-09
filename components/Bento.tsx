@@ -61,14 +61,14 @@ export default function Bento() {
                 <p className="label-caps">Behind the rankings</p>
                 <p className="mt-2 text-lg font-medium text-white">Journey & experience</p>
                 <p className="mt-3 text-sm leading-relaxed text-mist-500">
-                  From Multan to the map pack — 500+ websites ranked, one honest
-                  report at a time.
+                  From Multan to the map pack — honest work, one clear report at a
+                  time.
                 </p>
               </div>
               <div className="relative mx-auto mt-6 w-40 overflow-hidden rounded-2xl border border-white/15">
                 <div className="relative aspect-square">
                   <Image
-                    src="/images/rana-1.jpg"
+                    src="/images/zamin-abbas-local-seo-expert.jpg"
                     alt="Zamin Abbas"
                     fill
                     sizes="160px"

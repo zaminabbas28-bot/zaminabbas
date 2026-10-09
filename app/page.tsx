@@ -43,7 +43,7 @@ const serviceSchema = {
   "@id": `${SITE.url}/#business`,
   name: `${SITE.name} — Local SEO & Digital Marketing`,
   url: SITE.url,
-  image: `${SITE.url}/images/rana-1.jpg`,
+  image: `${SITE.url}/images/zamin-abbas-local-seo-expert.jpg`,
   description:
     "Local SEO expert in Multan, Pakistan: Google Business Profile optimization, WordPress development, social media marketing and Google Ads.",
   provider: { "@type": "Person", name: SITE.fullName, url: SITE.url },

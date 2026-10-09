@@ -3,7 +3,7 @@ const ITEMS = [
   "Local SEO Expert",
   "Web Developer",
   "Technical SEO",
-  "500+ Sites Ranked",
+  "Google Business Profile",
 ] as const;
 
 /** Infinite marquee strip — CSS animation only. */

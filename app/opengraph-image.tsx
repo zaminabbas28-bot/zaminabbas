@@ -80,7 +80,7 @@ export default function OgImage() {
             marginTop: 24,
           }}
         >
-          500+ Websites Ranked · 10+ Years Experience · zaminabbas.me
+          Local SEO Expert in Multan, Pakistan
         </div>
       </div>
     ),

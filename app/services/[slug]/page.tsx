@@ -19,7 +19,14 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   const service = SERVICES.find((s) => s.slug === (slug as ServiceSlug));
   if (!service) return {};
 
-  const title = `${service.title} Services | ${SITE.name}`;
+  const META_TITLES: Record<ServiceSlug, string> = {
+    "local-seo": "Local SEO Services in Multan, Pakistan | Zamin Abbas",
+    "technical-seo": "Technical SEO Services | Zamin Abbas",
+    "wordpress-development": "WordPress Development Services | Zamin Abbas",
+    "social-media-marketing": "Social Media Marketing Services | Zamin Abbas",
+    "google-ads": "Google Ads Services | Zamin Abbas",
+  };
+  const title = META_TITLES[service.slug];
   const description = `${service.short} Work with ${SITE.name}, a local SEO expert in Multan, Pakistan offering ${service.title.toLowerCase()} that is built to rank and convert.`;
 
   return {
@@ -111,7 +118,11 @@ export default async function ServicePage({ params }: ServicePageProps) {
               Service {service.number}
             </p>
             <h1 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              {service.title} <span className="text-gold-gradient">Services</span>
+              {service.h1 ?? (
+                <>
+                  {service.title} <span className="text-gold-gradient">Services</span>
+                </>
+              )}
             </h1>
             <p className="mt-5 text-xl leading-relaxed text-mist-300">{service.short}</p>
           </Reveal>
