@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChatIcon, LinkedInIcon, LocationIcon, MailIcon, PhoneIcon } from "./icons";
+import { ChatIcon, FacebookIcon, InstagramIcon, LinkedInIcon, LocationIcon, MailIcon, MapPinIcon, PhoneIcon } from "./icons";
 import { NAV_LINKS, SERVICES, SITE } from "@/lib/site";
 
 export default function Footer() {
@@ -75,6 +75,30 @@ export default function Footer() {
               className="inline-flex items-center gap-2 transition-colors hover:text-white"
             >
               <LinkedInIcon className="h-4 w-4" /> LinkedIn
+            </a>
+            <a
+              href={SITE.gmb}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 transition-colors hover:text-white"
+            >
+              <MapPinIcon className="h-4 w-4" /> Google Maps
+            </a>
+            <a
+              href={SITE.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 transition-colors hover:text-white"
+            >
+              <InstagramIcon className="h-4 w-4" /> Instagram
+            </a>
+            <a
+              href={SITE.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 transition-colors hover:text-white"
+            >
+              <FacebookIcon className="h-4 w-4" /> Facebook
             </a>
             <span className="inline-flex items-center gap-2">
               <LocationIcon className="h-4 w-4" /> {SITE.locality}, {SITE.country}

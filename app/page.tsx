@@ -26,7 +26,7 @@ const personSchema = {
     addressLocality: SITE.locality,
     addressCountry: "PK",
   },
-  sameAs: [SITE.whatsapp, SITE.fiverr, SITE.instagram, SITE.linkedin],
+  sameAs: [SITE.whatsapp, SITE.fiverr, SITE.instagram, SITE.facebook, SITE.linkedin, SITE.gmb],
   knowsAbout: [
     "Local SEO",
     "Google Business Profile Optimization",
@@ -67,6 +67,7 @@ const serviceSchema = {
     latitude: 30.17295,
     longitude: 71.49142,
   },
+  hasMap: SITE.gmb,
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],

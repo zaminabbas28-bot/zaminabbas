@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SITE, TOOLKIT } from "@/lib/site";
-import { ArrowRightIcon, ArrowUpRightIcon, LinkedInIcon } from "./icons";
+import { ArrowRightIcon, ArrowUpRightIcon, LinkedInIcon, MapPinIcon } from "./icons";
 import Reveal from "./Reveal";
 
 export default function Bento() {
@@ -129,6 +129,15 @@ export default function Bento() {
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-mist-300 transition-colors hover:border-white/30 hover:text-white"
               >
                 <LinkedInIcon className="h-4 w-4" />
+              </a>
+              <a
+                href={SITE.gmb}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Zeeshi Local SEO Expert on Google Maps"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-mist-300 transition-colors hover:border-white/30 hover:text-white"
+              >
+                <MapPinIcon className="h-4 w-4" />
               </a>
             </div>
           </div>

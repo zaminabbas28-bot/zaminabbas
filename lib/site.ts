@@ -11,8 +11,10 @@ export const SITE = {
   locality: "Multan",
   country: "Pakistan",
   fiverr: "https://www.fiverr.com/zaminabbas28",
-  instagram: "https://www.instagram.com/zamindigitalmarketing",
+  instagram: "https://www.instagram.com/zaminabbas0000/",
+  facebook: "https://www.facebook.com/profile.php?id=61587334380259",
   linkedin: "https://www.linkedin.com/in/zamin-abbas-7479aa3a3",
+  gmb: "https://www.google.com/maps/place/Zeeshi+Local+SEO+Expert/@30.171584,71.4910716,17z/data=!3m1!4b1!4m6!3m5!1s0x393b3753ce437bed:0x61116d5f41035fa8!8m2!3d30.171584!4d71.4910716!16s%2Fg%2F11mkpmpdh9",
 } as const;
 
 export const NAV_LINKS = [
