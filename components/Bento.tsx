@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SITE, TOOLKIT } from "@/lib/site";
-import { ArrowRightIcon, ArrowUpRightIcon } from "./icons";
+import { ArrowRightIcon, ArrowUpRightIcon, LinkedInIcon } from "./icons";
 import Reveal from "./Reveal";
 
 export default function Bento() {
@@ -88,7 +88,7 @@ export default function Bento() {
         </div>
 
         <Reveal delay={150}>
-          <div className="mt-10 text-center">
+          <div className="mt-10 flex flex-col items-center gap-5 text-center">
             <Link
               href={SITE.fiverr}
               target="_blank"
@@ -100,6 +100,18 @@ export default function Bento() {
                 Order a gig <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>
             </Link>
+            <div className="flex items-center gap-3">
+              <span className="label-caps">Find me on</span>
+              <a
+                href={SITE.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Rana on LinkedIn"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-mist-300 transition-colors hover:border-white/30 hover:text-white"
+              >
+                <LinkedInIcon className="h-4 w-4" />
+              </a>
+            </div>
           </div>
         </Reveal>
       </div>

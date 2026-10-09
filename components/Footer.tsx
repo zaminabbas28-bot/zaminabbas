@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ChatIcon, LocationIcon, MailIcon, PhoneIcon } from "./icons";
+import { ChatIcon, LinkedInIcon, LocationIcon, MailIcon, PhoneIcon } from "./icons";
 import { NAV_LINKS, SITE } from "@/lib/site";
 
 export default function Footer() {
@@ -53,6 +53,14 @@ export default function Footer() {
               className="inline-flex items-center gap-2 transition-colors hover:text-white"
             >
               <ChatIcon className="h-4 w-4" /> WhatsApp
+            </a>
+            <a
+              href={SITE.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 transition-colors hover:text-white"
+            >
+              <LinkedInIcon className="h-4 w-4" /> LinkedIn
             </a>
             <span className="inline-flex items-center gap-2">
               <LocationIcon className="h-4 w-4" /> {SITE.locality}, {SITE.country}
