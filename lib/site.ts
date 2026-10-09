@@ -19,6 +19,7 @@ export const NAV_LINKS = [
   { label: "Home", href: "/#top" },
   { label: "About", href: "/#about" },
   { label: "Services", href: "/#services" },
+  { label: "Work", href: "/#work" },
   { label: "Insights", href: "/#insights" },
   { label: "Reviews", href: "/#reviews" },
 ] as const;
@@ -138,6 +139,41 @@ export const TOOLKIT = [
   "Google Ads",
   "Canva",
 ] as const;
+
+export interface Project {
+  title: string;
+  badge: string;
+  date: string;
+  description: string;
+  url: string;
+}
+
+export const PROJECTS: Project[] = [
+  {
+    title: "City Dental Care – Conversion-focused Website",
+    badge: "WEB + SEO",
+    date: "October 2024",
+    description:
+      "Custom design, speed optimization, local SEO, and 80% more calls in 60 days.",
+    url: "https://maps.app.goo.gl/wtqznxrT44FBifxQ6",
+  },
+  {
+    title: "Sparksails Pakistan – Digital Marketing Agency",
+    badge: "WEB PROJECT",
+    date: "July 2025",
+    description:
+      "Modern agency website showcasing services, portfolio, and client success stories with strong conversion focus.",
+    url: "https://sparksails.com/pk/",
+  },
+  {
+    title: "Kapri Kids Daycare – Child-friendly Conversion Experience",
+    badge: "WEB PROJECT",
+    date: "June 2025",
+    description:
+      "Colorful parent-focused site with service detail pages, trust-building testimonials, and playful visual patterns.",
+    url: "https://kaprikidsdaycare.pk/",
+  },
+];
 
 export type ServiceSlug = "local-seo" | "social-media-marketing" | "technical-seo";
 

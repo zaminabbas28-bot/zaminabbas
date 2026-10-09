@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Ticker from "@/components/Ticker";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Projects from "@/components/Projects";
 import Insights from "@/components/Insights";
 import Testimonials from "@/components/Testimonials";
 import Bento from "@/components/Bento";
@@ -87,6 +88,7 @@ export default function Home() {
         <Ticker />
         <About />
         <Services />
+        <Projects />
         <Insights />
         <Testimonials />
         <Bento />
