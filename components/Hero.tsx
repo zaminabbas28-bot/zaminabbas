@@ -31,7 +31,7 @@ export default function Hero() {
         <div>
           <Reveal>
             <p className="font-mono text-xs tracking-[0.3em] text-accent">
-              RANA &mdash; LOCAL SEO EXPERT
+              ZAMIN ABBAS &mdash; LOCAL SEO EXPERT
             </p>
             <h1 className="mt-5 font-sans text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
               Local SEO Expert
@@ -118,7 +118,7 @@ export default function Hero() {
             <div className="relative overflow-hidden rounded-3xl border border-white/10">
               <Image
                 src="/images/rana-1.jpg"
-                alt="Rana — Local SEO expert in Multan, Pakistan"
+                alt="Zamin Abbas — Local SEO expert in Multan, Pakistan"
                 width={880}
                 height={1060}
                 priority

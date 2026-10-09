@@ -69,7 +69,7 @@ export default function Bento() {
                 <div className="relative aspect-square">
                   <Image
                     src="/images/rana-1.jpg"
-                    alt="Rana"
+                    alt="Zamin Abbas"
                     fill
                     sizes="160px"
                     className="object-cover"
@@ -125,7 +125,7 @@ export default function Bento() {
                 href={SITE.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Rana on LinkedIn"
+                aria-label="Zamin Abbas on LinkedIn"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-mist-300 transition-colors hover:border-white/30 hover:text-white"
               >
                 <LinkedInIcon className="h-4 w-4" />

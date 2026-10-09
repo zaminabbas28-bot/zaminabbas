@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
             <p className="font-display text-2xl text-white">
-              Rana <em className="text-gradient-accent">.</em>
+              Zamin Abbas <em className="text-gradient-accent">.</em>
             </p>
             <p className="mt-2 max-w-sm text-sm leading-relaxed text-mist-500">
               Local SEO expert in Multan, Pakistan — helping businesses improve

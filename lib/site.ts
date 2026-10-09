@@ -1,6 +1,6 @@
 export const SITE = {
-  name: "Rana",
-  fullName: "Zeeshan Abbas",
+  name: "Zamin Abbas",
+  fullName: "Zamin Abbas",
   tagline: "Local SEO Expert in Multan, Pakistan",
   url: "https://zaminabbas28.vercel.app",
   email: "digitalmarketingskills46@gmail.com",

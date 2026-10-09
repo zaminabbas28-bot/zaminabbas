@@ -19,7 +19,7 @@ export default function About() {
             <Reveal delay={120}>
               <div className="mt-6 space-y-5 leading-relaxed text-mist-300">
                 <p>
-                  I&apos;m Rana (Zeeshan Abbas), a local SEO expert based in Multan,
+                  I&apos;m Zamin Abbas, a local SEO expert based in Multan,
                   Pakistan. I help small and medium businesses get found where it
                   matters most — on Google Maps and in local search results. My
                   agency, <strong className="text-white">Zeeshi Local SEO Expert</strong>,
@@ -61,7 +61,7 @@ export default function About() {
                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
                   <Image
                     src="/images/rana-3.jpg"
-                    alt="Rana — Local SEO Expert in Multan"
+                    alt="Zamin Abbas — Local SEO Expert in Multan"
                     fill
                     sizes="(max-width: 768px) 90vw, 420px"
                     className="object-cover"

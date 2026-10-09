@@ -25,18 +25,17 @@ const mono = JetBrains_Mono({
 });
 
 const DESCRIPTION =
-  "Rana is a Local SEO Expert in Multan, Pakistan helping businesses improve Google Maps visibility, Google Business Profile rankings, local search traffic and customer leads.";
+  "Zamin Abbas is a Local SEO Expert in Multan, Pakistan helping businesses improve Google Maps visibility, Google Business Profile rankings, local search traffic and customer leads.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Local SEO Expert in Multan, Pakistan | Rana",
-    template: "%s | Rana",
+    default: "Local SEO Expert in Multan, Pakistan | Zamin Abbas",
+    template: "%s | Zamin Abbas",
   },
   description: DESCRIPTION,
   keywords: [
-    "Rana",
-    "Zeeshan Abbas",
+    "Zamin Abbas",
     "local SEO expert Multan",
     "Google Business Profile optimization",
     "GMB ranking Pakistan",
@@ -55,20 +54,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE.url,
     siteName: SITE.name,
-    title: "Local SEO Expert in Multan, Pakistan | Rana",
+    title: "Local SEO Expert in Multan, Pakistan | Zamin Abbas",
     description: DESCRIPTION,
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Rana — Local SEO Expert in Multan, Pakistan",
+        alt: "Zamin Abbas — Local SEO Expert in Multan, Pakistan",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Local SEO Expert in Multan, Pakistan | Rana",
+    title: "Local SEO Expert in Multan, Pakistan | Zamin Abbas",
     description: DESCRIPTION,
     images: ["/opengraph-image"],
   },
