@@ -204,3 +204,38 @@ button:focus-visible {
   box-shadow: 0 20px 50px -12px rgba(14, 29, 51, 0.25);
   border: 1px solid var(--color-line);
 }
+
+/* ---------- Demo animations for hero photos ---------- */
+@keyframes demo-zoom {
+  0%, 100% { transform: scale(1) rotate(var(--float-rotate, 0deg)); }
+  50% { transform: scale(1.14) rotate(var(--float-rotate, 0deg)); }
+}
+.anim-zoom { animation: demo-zoom 8s ease-in-out infinite; }
+
+@keyframes demo-wave {
+  0%, 100% { transform: translateY(0) rotate(var(--float-rotate, 0deg)); }
+  50% { transform: translateY(-18px) rotate(var(--float-rotate, 0deg)); }
+}
+.anim-wave { animation: demo-wave 3s ease-in-out infinite; }
+
+@keyframes demo-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.anim-marquee { animation: demo-marquee 18s linear infinite; }
+
+@keyframes demo-sway {
+  0%, 100% { transform: rotate(-4deg) translateY(0); }
+  50% { transform: rotate(4deg) translateY(-8px); }
+}
+.anim-sway { animation: demo-sway 7s ease-in-out infinite; }
+
+@keyframes demo-pulse {
+  0%, 100% { transform: scale(1) rotate(var(--float-rotate, 0deg)); box-shadow: 0 20px 50px -12px rgba(14,29,51,.25); }
+  50% { transform: scale(1.06) rotate(var(--float-rotate, 0deg)); box-shadow: 0 28px 60px -12px rgba(249,106,27,.45); }
+}
+.anim-pulse { animation: demo-pulse 4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-zoom, .anim-wave, .anim-marquee, .anim-sway, .anim-pulse { animation: none; }
+}
