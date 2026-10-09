@@ -14,6 +14,8 @@ const CARD_GRADIENTS = [
 const CARD_DETAIL_LINKS: Record<string, string> = {
   "Local SEO": "/services/local-seo",
   "Social Media Marketing": "/services/social-media-marketing",
+  "WordPress Development": "/services/wordpress-development",
+  "Google Ads": "/services/google-ads",
 };
 
 export default function Services() {

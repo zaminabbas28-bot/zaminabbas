@@ -17,6 +17,25 @@ export default function Bento() {
           </h2>
         </Reveal>
 
+        <Reveal delay={80}>
+          <div className="mx-auto mt-8 flex max-w-2xl flex-col items-center gap-4 rounded-3xl border border-accent/30 bg-accent/10 p-6 text-center sm:flex-row sm:justify-between sm:p-7 sm:text-left">
+            <div>
+              <p className="text-lg font-bold text-white">Get a free Local SEO audit</p>
+              <p className="mt-1 text-sm text-mist-300">
+                I&apos;ll check your Google Business Profile, rankings & site health — no charge.
+              </p>
+            </div>
+            <Link
+              href={`${SITE.whatsapp}?text=${encodeURIComponent("Hi! I want a free SEO audit for my business.")}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 rounded-full bg-accent px-6 py-3 text-sm font-bold text-white transition hover:bg-accent-deep"
+            >
+              Claim free audit
+            </Link>
+          </div>
+        </Reveal>
+
         <div className="mt-14 grid gap-5 md:grid-cols-3">
           {/* toolkit */}
           <Reveal>

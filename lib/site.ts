@@ -107,16 +107,16 @@ export interface Insight {
 
 export const INSIGHTS: Insight[] = [
   {
-    title: "How to Rank #1 on Google Maps in 2026",
+    title: "How to Improve Your Google Maps Rankings in 2026",
     excerpt:
       "The map pack isn't luck — it's a system. Profile completeness, review velocity, citations and posting cadence: here's the exact order I optimize them in.",
     readTime: "8 min read",
     date: "Oct 2026",
   },
   {
-    title: "Geo-Tagged Photos: The Local SEO Signal Everyone Ignores",
+    title: "Should You Geo-Tag Business Photos for Local SEO?",
     excerpt:
-      "Google reads the GPS data in your business photos. Here's how I geo-tag images for my clients and why it moves the needle on local rankings.",
+      "Do GPS-tagged photos actually help local rankings? Here's what matters most for your Google Business Profile photos — and what to focus on instead of myths.",
     readTime: "6 min read",
     date: "Sep 2026",
   },
@@ -175,7 +175,12 @@ export const PROJECTS: Project[] = [
   },
 ];
 
-export type ServiceSlug = "local-seo" | "social-media-marketing" | "technical-seo";
+export type ServiceSlug =
+  | "local-seo"
+  | "social-media-marketing"
+  | "technical-seo"
+  | "wordpress-development"
+  | "google-ads";
 
 export interface Service {
   slug: ServiceSlug;
@@ -252,6 +257,50 @@ export const SERVICES: Service[] = [
       "My process starts with a deep technical audit covering site speed, Core Web Vitals, mobile usability, crawl errors, indexation, sitemaps, robots directives, canonicalization, and structured data. Every issue is scored by impact, so we fix what moves rankings first instead of chasing minor tweaks.",
       "Implementation is hands-on: compressing and modernizing assets, eliminating render-blocking resources, fixing redirect chains and broken links, resolving duplicate content, and adding schema markup that helps you win rich results. I work directly in your stack or alongside your developers with precise, ticket-ready instructions.",
       "After fixes go live, I monitor Search Console data to confirm indexing improvements and ranking movement. Technical SEO is not a one-time project — I offer ongoing monitoring so new issues are caught before they cost you traffic.",
+    ],
+  },
+  {
+    slug: "wordpress-development",
+    number: "04",
+    title: "WordPress Development",
+    short:
+      "Fast, SEO-friendly WordPress websites designed to convert visitors into customers.",
+    icon: "gear",
+    benefits: [
+      "Custom WordPress design & development",
+      "WooCommerce stores with payment integration",
+      "Speed optimization & Core Web Vitals",
+      "On-page SEO structure from day one",
+      "Mobile-first responsive design",
+      "Care, maintenance & training included",
+    ],
+    paragraphs: [
+      "Your website should sell while you sleep. I build WordPress websites that load fast, look professional, and are structured for search engines from the very first line of code — so you get a site that both visitors and Google love.",
+      "Every build starts with your goals: who you serve, what action visitors should take, and how they find you. From there I design a clean, conversion-focused layout and develop it on WordPress with lightweight themes and carefully chosen plugins — no bloated page builders slowing things down.",
+      "For stores, I set up WooCommerce with secure payment integration, product pages optimized for search, and a checkout flow designed to reduce abandoned carts. For business sites, I build service pages, contact flows, and local SEO foundations that help you rank in your market.",
+      "After launch, you are not left guessing: I provide training videos, documentation, and an optional care plan covering updates, backups, and security. Your site stays fast, safe, and working for your business long after go-live.",
+    ],
+  },
+  {
+    slug: "google-ads",
+    number: "05",
+    title: "Google Ads",
+    short:
+      "Tightly targeted Google Ads campaigns with conversion tracking and transparent reporting.",
+    icon: "share",
+    benefits: [
+      "Search & Maps campaign setup",
+      "Keyword research & negative keyword sculpting",
+      "Conversion tracking & call tracking",
+      "Landing page guidance for better Quality Scores",
+      "Weekly optimization & bid management",
+      "Transparent reporting with no hidden fees",
+    ],
+    paragraphs: [
+      "SEO builds long-term visibility; Google Ads brings customers today. I run tightly targeted search and Maps campaigns that put your business in front of people actively searching for what you offer — with every rupee of ad spend accounted for.",
+      "We start with research: the keywords your customers actually type, what competitors are bidding, and which searches deserve your budget versus your negative keyword list. Campaigns are structured around intent, so high-intent searches get priority and tire-kickers get filtered out.",
+      "Tracking is non-negotiable. I set up conversion tracking for calls, form fills, WhatsApp clicks, and direction requests — so you see exactly which keywords and ads produce customers, not just clicks. Landing pages get reviewed for Quality Score factors that lower your cost per click.",
+      "Management is hands-on and ongoing: weekly bid adjustments, search term reviews, ad copy testing, and budget reallocation toward what converts. Reports are in plain language — spend, conversions, cost per lead, and what changed this week.",
     ],
   },
 ];
