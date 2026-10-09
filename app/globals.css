@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paper: #ffffff;
-  --color-cream: #f7f8fa;
-  --color-card: #ffffff;
+  --color-ink-950: #08080a;
+  --color-ink-900: #0d0d10;
+  --color-ink-850: #121216;
+  --color-ink-800: #17171c;
+  --color-ink-700: #222228;
 
-  --color-ink: #0e1d33;
-  --color-body: #2b3c56;
-  --color-muted: #5d6f88;
+  --color-mist-100: #f4f4f5;
+  --color-mist-300: #d4d4d8;
+  --color-mist-500: #a1a1aa;
+  --color-mist-600: #71717a;
 
-  --color-line: #e6ebf1;
-  --color-line-dark: #d5dce5;
-
-  --color-accent: #f96a1b;
-  --color-accent-deep: #d9530a;
-  --color-accent-soft: #fff3e9;
+  --color-accent-pink: #f472b6;
+  --color-accent-violet: #a855f7;
+  --color-accent-orange: #fb923c;
 
   --font-display: "Instrument Serif", ui-serif, Georgia, serif;
   --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -26,8 +26,8 @@ html {
 }
 
 body {
-  background-color: var(--color-paper);
-  color: var(--color-body);
+  background-color: var(--color-ink-950);
+  color: var(--color-mist-100);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -35,7 +35,7 @@ body {
 }
 
 ::selection {
-  background: var(--color-accent);
+  background: var(--color-accent-violet);
   color: white;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .text-gradient-accent {
-  background: linear-gradient(100deg, #ff8a2a 0%, #f96a1b 50%, #d9530a 100%);
+  background: linear-gradient(100deg, #c084fc 0%, #f472b6 45%, #fb923c 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -57,15 +57,15 @@ body {
   font-size: 0.68rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--color-muted);
+  color: var(--color-mist-500);
 }
 
 /* ---------- Striped edge texture ---------- */
 .edge-stripes {
   background-image: repeating-linear-gradient(
     -45deg,
-    rgba(14, 29, 51, 0.05) 0px,
-    rgba(14, 29, 51, 0.05) 1px,
+    rgba(255, 255, 255, 0.05) 0px,
+    rgba(255, 255, 255, 0.05) 1px,
     transparent 1px,
     transparent 7px
   );
@@ -73,10 +73,9 @@ body {
 
 /* ---------- Cards ---------- */
 .card-surface {
-  background: var(--color-card);
-  border: 1px solid var(--color-line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015));
+  border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 1.25rem;
-  box-shadow: 0 1px 3px rgba(14, 29, 51, 0.06);
 }
 
 .card-hover {
@@ -87,8 +86,8 @@ body {
 }
 .card-hover:hover {
   transform: translateY(-5px);
-  border-color: var(--color-line-dark);
-  box-shadow: 0 24px 48px -20px rgba(249, 106, 27, 0.25);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 24px 60px -24px rgba(168, 85, 247, 0.35);
 }
 
 /* ---------- Tag pills ---------- */
@@ -96,14 +95,14 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  border: 1px solid var(--color-line);
-  background: var(--color-cream);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
   border-radius: 9999px;
   padding: 0.3rem 0.8rem;
   font-family: var(--font-mono);
   font-size: 0.66rem;
   letter-spacing: 0.08em;
-  color: var(--color-body);
+  color: var(--color-mist-300);
   white-space: nowrap;
 }
 
@@ -177,7 +176,7 @@ body {
 /* ---------- Focus visibility ---------- */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--color-accent);
+  outline: 2px solid var(--color-accent-violet);
   outline-offset: 3px;
   border-radius: 6px;
 }
@@ -188,7 +187,7 @@ button:focus-visible {
   left: 1rem;
   top: -4rem;
   z-index: 100;
-  background: var(--color-accent);
+  background: var(--color-accent-violet);
   color: white;
   font-weight: 700;
   padding: 0.75rem 1.25rem;
@@ -201,8 +200,8 @@ button:focus-visible {
 
 /* ---------- Photo stack tilt ---------- */
 .photo-tilt {
-  box-shadow: 0 20px 50px -12px rgba(14, 29, 51, 0.25);
-  border: 1px solid var(--color-line);
+  box-shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 /* ---------- Demo animations for hero photos ---------- */
@@ -231,7 +230,7 @@ button:focus-visible {
 .anim-sway { animation: demo-sway 7s ease-in-out infinite; }
 
 @keyframes demo-pulse {
-  0%, 100% { transform: scale(1) rotate(var(--float-rotate, 0deg)); box-shadow: 0 20px 50px -12px rgba(14,29,51,.25); }
+  0%, 100% { transform: scale(1) rotate(var(--float-rotate, 0deg)); box-shadow: 0 20px 50px -12px rgba(0,0,0,.7); }
   50% { transform: scale(1.06) rotate(var(--float-rotate, 0deg)); box-shadow: 0 28px 60px -12px rgba(249,106,27,.45); }
 }
 .anim-pulse { animation: demo-pulse 4s ease-in-out infinite; }

@@ -26,11 +26,11 @@ export default function Faq() {
         <Reveal className="text-center">
           <h2
             id="faq-heading"
-            className="font-display text-3xl font-extrabold tracking-tight text-ink sm:text-4xl"
+            className="font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
           >
-            Frequently Asked <span className="text-gradient-accent">Questions</span>
+            Frequently Asked <span className="text-gold-gradient">Questions</span>
           </h2>
-          <p className="mt-4 text-lg text-body">
+          <p className="mt-4 text-lg text-mist-300">
             Everything you need to know about working with {SITE.name}.
           </p>
         </Reveal>
@@ -41,8 +41,8 @@ export default function Faq() {
             return (
               <Reveal key={faq.question} delay={i * 80}>
                 <div
-                  className={`card-surface overflow-hidden transition-colors ${
-                    open ? "border-accent/40" : ""
+                  className={`overflow-hidden rounded-2xl border transition-colors ${
+                    open ? "border-gold-400/40 bg-ink-800" : "border-white/10 bg-ink-900/60"
                   }`}
                 >
                   <h3>
@@ -54,12 +54,12 @@ export default function Faq() {
                       id={`faq-button-${i}`}
                       className="flex w-full items-center justify-between gap-4 px-6 py-5 text-left"
                     >
-                      <span className="font-display text-base font-bold text-ink sm:text-lg">
+                      <span className="font-display text-base font-bold text-white sm:text-lg">
                         {faq.question}
                       </span>
                       <span
                         className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-all ${
-                          open ? "rotate-180 bg-accent text-white" : "bg-cream text-accent"
+                          open ? "rotate-180 bg-gold-400 text-ink-950" : "bg-white/10 text-gold-400"
                         }`}
                       >
                         <ChevronDownIcon className="h-4 w-4" />
@@ -74,7 +74,7 @@ export default function Faq() {
                     data-open={open}
                   >
                     <div className="faq-answer-inner">
-                      <p className="px-6 pb-6 leading-relaxed text-body">{faq.answer}</p>
+                      <p className="px-6 pb-6 leading-relaxed text-mist-300">{faq.answer}</p>
                     </div>
                   </div>
                 </div>

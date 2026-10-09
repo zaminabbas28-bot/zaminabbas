@@ -5,10 +5,10 @@ import Reveal from "./Reveal";
 
 const CARD_ICONS = [MapPinIcon, GearCodeIcon, ShareNodesIcon, TrendingUpIcon];
 const CARD_GRADIENTS = [
-  "from-accent-soft via-accent-soft/60 to-transparent",
-  "from-sky-100 via-sky-50 to-transparent",
-  "from-orange-100 via-amber-50 to-transparent",
-  "from-emerald-100 via-teal-50 to-transparent",
+  "from-violet-600/40 via-indigo-600/20 to-transparent",
+  "from-sky-600/40 via-blue-600/20 to-transparent",
+  "from-pink-600/40 via-rose-600/20 to-transparent",
+  "from-orange-600/40 via-amber-600/20 to-transparent",
 ];
 
 export default function Services() {
@@ -18,14 +18,14 @@ export default function Services() {
         <Reveal>
           <p className="label-caps">Services</p>
           <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
-            <h2 className="font-display text-4xl text-ink sm:text-5xl">
+            <h2 className="font-display text-4xl text-white sm:text-5xl">
               What I do <em className="text-gradient-accent">best</em>
             </h2>
             <Link
               href={SITE.fiverr}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 text-sm font-medium text-body transition-colors hover:text-ink"
+              className="group inline-flex items-center gap-2 text-sm font-medium text-mist-300 transition-colors hover:text-white"
             >
               See gigs on Fiverr
               <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -51,10 +51,10 @@ export default function Services() {
                     />
                     <div className="relative">
                       <p className="label-caps">{service.period}</p>
-                      <div className="mt-8 flex h-28 w-28 items-center justify-center rounded-3xl border border-line bg-white shadow-sm">
-                        <Icon className="h-12 w-12 text-accent" />
+                      <div className="mt-8 flex h-28 w-28 items-center justify-center rounded-3xl border border-white/15 bg-white/5 backdrop-blur-sm">
+                        <Icon className="h-12 w-12 text-white" />
                       </div>
-                      <p className="font-display mt-8 text-5xl text-ink sm:text-6xl">
+                      <p className="font-display mt-8 text-5xl text-white/95 sm:text-6xl">
                         {service.title}
                       </p>
                       <div className="mt-6 flex flex-wrap gap-2">
@@ -70,12 +70,12 @@ export default function Services() {
 
                 {/* content */}
                 <Reveal delay={120} className={flip ? "lg:order-1" : ""}>
-                  <p className="label-caps text-accent-deep">— {service.title}</p>
-                  <p className="mt-4 leading-relaxed text-body">{service.description}</p>
+                  <p className="label-caps text-accent-pink">— {service.title}</p>
+                  <p className="mt-4 leading-relaxed text-mist-300">{service.description}</p>
                   <ul className="mt-6 space-y-3">
                     {service.points.map((point) => (
-                      <li key={point} className="flex items-start gap-3 text-[0.95rem] text-ink">
-                        <SparkleIcon className="mt-1 h-3.5 w-3.5 shrink-0 text-accent" />
+                      <li key={point} className="flex items-start gap-3 text-[0.95rem] text-mist-100">
+                        <SparkleIcon className="mt-1 h-3.5 w-3.5 shrink-0 text-sky-400" />
                         {point}
                       </li>
                     ))}
