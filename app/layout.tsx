@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Sora } from "next/font/google";
+import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SITE } from "@/lib/site";
 import "./globals.css";
 
-const sora = Sora({
+const display = Instrument_Serif({
   variable: "--font-display",
   subsets: ["latin"],
+  weight: "400",
   display: "swap",
 });
 
@@ -17,25 +18,31 @@ const inter = Inter({
   display: "swap",
 });
 
+const mono = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
+
 const DESCRIPTION =
-  "Zamin Abbas is a top-ranked SEO specialist in Pakistan offering local SEO, technical SEO & web development. 500+ websites ranked. Hire for proven growth.";
+  "Rana (Zeeshan Abbas) — Local SEO expert in Multan, Pakistan. Google Business Profile optimization, WordPress development & social media marketing that ranks local businesses #1 on Google Maps.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Zamin Abbas | Top Ranked SEO Specialist Pakistan",
-    template: "%s | Zamin Abbas",
+    default: "Rana | Local SEO Expert in Multan, Pakistan",
+    template: "%s | Rana",
   },
   description: DESCRIPTION,
   keywords: [
-    "Zamin Abbas",
-    "SEO specialist Pakistan",
-    "local SEO expert",
-    "technical SEO services",
-    "SEO specialist Multan",
-    "web developer Pakistan",
-    "social media marketing",
-    "hire SEO expert",
+    "Rana",
+    "Zeeshan Abbas",
+    "local SEO expert Multan",
+    "Google Business Profile optimization",
+    "GMB ranking Pakistan",
+    "WordPress developer Multan",
+    "social media marketing Pakistan",
+    "SEO expert Pakistan",
   ],
   authors: [{ name: SITE.name, url: SITE.url }],
   creator: SITE.name,
@@ -48,20 +55,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE.url,
     siteName: SITE.name,
-    title: "Zamin Abbas | Top Ranked SEO Specialist Pakistan",
+    title: "Rana | Local SEO Expert in Multan, Pakistan",
     description: DESCRIPTION,
     images: [
       {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Zamin Abbas — Top Ranked SEO Specialist Pakistan",
+        alt: "Rana — Local SEO Expert in Multan, Pakistan",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zamin Abbas | Top Ranked SEO Specialist Pakistan",
+    title: "Rana | Local SEO Expert in Multan, Pakistan",
     description: DESCRIPTION,
     images: ["/opengraph-image"],
   },
@@ -81,7 +88,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${sora.variable} ${inter.variable} h-full antialiased`}>
+    <html
+      lang="en"
+      className={`${display.variable} ${inter.variable} ${mono.variable} h-full antialiased`}
+    >
       <body className="flex min-h-full flex-col bg-ink-950 text-mist-100">
         <a href="#main-content" className="skip-link">
           Skip to main content

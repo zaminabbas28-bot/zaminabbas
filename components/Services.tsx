@@ -1,66 +1,94 @@
 import Link from "next/link";
-import type { ReactElement } from "react";
+import { SERVICE_CARDS, SITE } from "@/lib/site";
+import { ArrowRightIcon, MapPinIcon, GearCodeIcon, ShareNodesIcon, TrendingUpIcon, SparkleIcon } from "./icons";
 import Reveal from "./Reveal";
-import { ArrowRightIcon, GearCodeIcon, MapPinIcon, ShareNodesIcon } from "./icons";
-import { SERVICES, type Service } from "@/lib/site";
 
-const ICONS: Record<Service["icon"], (props: { className?: string }) => ReactElement> = {
-  pin: (p) => <MapPinIcon {...p} />,
-  share: (p) => <ShareNodesIcon {...p} />,
-  gear: (p) => <GearCodeIcon {...p} />,
-};
+const CARD_ICONS = [MapPinIcon, GearCodeIcon, ShareNodesIcon, TrendingUpIcon];
+const CARD_GRADIENTS = [
+  "from-violet-600/40 via-indigo-600/20 to-transparent",
+  "from-sky-600/40 via-blue-600/20 to-transparent",
+  "from-pink-600/40 via-rose-600/20 to-transparent",
+  "from-orange-600/40 via-amber-600/20 to-transparent",
+];
 
 export default function Services() {
   return (
-    <section
-      id="services"
-      aria-labelledby="services-heading"
-      className="scroll-mt-20 bg-ink-900/40 py-20 sm:py-28"
-    >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="text-xs font-bold tracking-[0.3em] text-gold-400 uppercase">
-            What I Do
-          </p>
-          <h2
-            id="services-heading"
-            className="mt-4 font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
-          >
-            Services That <span className="text-gold-gradient">Drive Results</span>
-          </h2>
-          <p className="mt-4 text-lg text-mist-300">
-            Focused services, one goal: more visibility, more traffic, more customers.
-          </p>
+    <section id="services" className="relative py-24 sm:py-32">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+        <Reveal>
+          <p className="label-caps">Services</p>
+          <div className="mt-3 flex flex-wrap items-end justify-between gap-4">
+            <h2 className="font-display text-4xl text-white sm:text-5xl">
+              What I do <em className="text-gradient-accent">best</em>
+            </h2>
+            <Link
+              href={SITE.fiverr}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-2 text-sm font-medium text-mist-300 transition-colors hover:text-white"
+            >
+              See gigs on Fiverr
+              <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
         </Reveal>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {SERVICES.map((service, i) => {
-            const Icon = ICONS[service.icon];
+        <div className="mt-14 space-y-16 sm:space-y-20">
+          {SERVICE_CARDS.map((service, i) => {
+            const Icon = CARD_ICONS[i % CARD_ICONS.length];
+            const flip = i % 2 === 1;
             return (
-              <Reveal key={service.slug} delay={i * 120} as="article">
-                <div className="card-glow relative flex h-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-ink-800/80 p-8">
-                  <span
-                    aria-hidden
-                    className="pointer-events-none absolute -top-2 right-4 font-display text-7xl font-extrabold text-white/5 select-none"
-                  >
-                    {service.number}
-                  </span>
-                  <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gold-400/15 text-gold-400">
-                    <Icon className="h-7 w-7" />
-                  </span>
-                  <h3 className="mt-6 font-display text-xl font-bold text-white">
-                    {service.title}
-                  </h3>
-                  <p className="mt-3 flex-1 leading-relaxed text-mist-300">{service.short}</p>
-                  <Link
-                    href={`/services/${service.slug}`}
-                    className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-gold-400 transition-colors hover:text-gold-300"
-                    aria-label={`Learn more about ${service.title}`}
-                  >
-                    Learn More <ArrowRightIcon className="h-4 w-4" />
-                  </Link>
-                </div>
-              </Reveal>
+              <div
+                key={service.title}
+                className={`grid items-center gap-8 lg:grid-cols-2 lg:gap-12`}
+              >
+                {/* visual card */}
+                <Reveal className={flip ? "lg:order-2" : ""}>
+                  <div className="card-surface card-hover relative overflow-hidden p-8 sm:p-10">
+                    <div
+                      aria-hidden
+                      className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${CARD_GRADIENTS[i % CARD_GRADIENTS.length]}`}
+                    />
+                    <div className="relative">
+                      <p className="label-caps">{service.period}</p>
+                      <div className="mt-8 flex h-28 w-28 items-center justify-center rounded-3xl border border-white/15 bg-white/5 backdrop-blur-sm">
+                        <Icon className="h-12 w-12 text-white" />
+                      </div>
+                      <p className="font-display mt-8 text-5xl text-white/95 sm:text-6xl">
+                        {service.title}
+                      </p>
+                      <div className="mt-6 flex flex-wrap gap-2">
+                        {service.tags.slice(0, 3).map((tag) => (
+                          <span key={tag} className="tag-pill">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </Reveal>
+
+                {/* content */}
+                <Reveal delay={120} className={flip ? "lg:order-1" : ""}>
+                  <p className="label-caps text-accent-pink">— {service.title}</p>
+                  <p className="mt-4 leading-relaxed text-mist-300">{service.description}</p>
+                  <ul className="mt-6 space-y-3">
+                    {service.points.map((point) => (
+                      <li key={point} className="flex items-start gap-3 text-[0.95rem] text-mist-100">
+                        <SparkleIcon className="mt-1 h-3.5 w-3.5 shrink-0 text-sky-400" />
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-6 flex flex-wrap gap-2">
+                    {service.tags.map((tag) => (
+                      <span key={tag} className="tag-pill">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </Reveal>
+              </div>
             );
           })}
         </div>

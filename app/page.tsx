@@ -2,20 +2,21 @@ import Hero from "@/components/Hero";
 import Ticker from "@/components/Ticker";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import Insights from "@/components/Insights";
 import Testimonials from "@/components/Testimonials";
-import CtaSection from "@/components/CtaSection";
-import Faq from "@/components/Faq";
+import Bento from "@/components/Bento";
 import JsonLd from "@/components/JsonLd";
 import { SERVICES, SITE } from "@/lib/site";
 
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: SITE.name,
+  name: SITE.fullName,
+  alternateName: SITE.name,
   url: SITE.url,
-  jobTitle: "SEO Specialist & Web Developer",
+  jobTitle: "Local SEO Expert & WordPress Developer",
   description:
-    "Top-ranked SEO specialist in Pakistan with 10+ years of experience and 500+ websites ranked.",
+    "Local SEO expert in Multan, Pakistan. Google Business Profile optimization, WordPress development and social media marketing.",
   email: `mailto:${SITE.email}`,
   telephone: SITE.phoneHref,
   address: {
@@ -24,25 +25,25 @@ const personSchema = {
     addressLocality: SITE.locality,
     addressCountry: "PK",
   },
-  sameAs: [SITE.whatsapp],
+  sameAs: [SITE.whatsapp, SITE.fiverr, SITE.instagram, SITE.linkedin],
   knowsAbout: [
     "Local SEO",
-    "Technical SEO",
-    "On-Page SEO",
-    "Off-Page SEO",
-    "Web Development",
+    "Google Business Profile Optimization",
+    "Google Maps Ranking",
+    "WordPress Development",
     "Social Media Marketing",
+    "Google Ads",
   ],
 };
 
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  name: `${SITE.name} — SEO Services`,
+  name: `${SITE.name} — Local SEO & Digital Marketing`,
   url: SITE.url,
   description:
-    "Professional SEO services in Pakistan: local SEO, technical SEO, social media marketing and conversion-focused web development.",
-  provider: { "@type": "Person", name: SITE.name, url: SITE.url },
+    "Local SEO expert in Multan, Pakistan: Google Business Profile optimization, WordPress development, social media marketing and Google Ads.",
+  provider: { "@type": "Person", name: SITE.fullName, url: SITE.url },
   areaServed: { "@type": "Country", name: SITE.country },
   telephone: SITE.phoneHref,
   email: `mailto:${SITE.email}`,
@@ -68,22 +69,28 @@ const serviceSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5",
-    reviewCount: "55",
+    reviewCount: "7",
   },
 };
 
 export default function Home() {
   return (
-    <>
-      <JsonLd id="person-jsonld" data={personSchema} />
-      <JsonLd id="service-jsonld" data={serviceSchema} />
-      <Hero />
-      <Ticker />
-      <About />
-      <Services />
-      <Testimonials />
-      <CtaSection />
-      <Faq />
-    </>
+    <div className="relative">
+      {/* striped page edges */}
+      <div aria-hidden className="edge-stripes pointer-events-none fixed inset-y-0 left-0 z-0 hidden w-10 lg:block" />
+      <div aria-hidden className="edge-stripes pointer-events-none fixed inset-y-0 right-0 z-0 hidden w-10 lg:block" />
+
+      <div className="relative z-10">
+        <JsonLd id="person-jsonld" data={personSchema} />
+        <JsonLd id="service-jsonld" data={serviceSchema} />
+        <Hero />
+        <Ticker />
+        <About />
+        <Services />
+        <Insights />
+        <Testimonials />
+        <Bento />
+      </div>
+    </div>
   );
 }

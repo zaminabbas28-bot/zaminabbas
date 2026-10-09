@@ -1,6 +1,7 @@
 export const SITE = {
-  name: "Zamin Abbas",
-  tagline: "Top Ranked SEO Specialist Pakistan",
+  name: "Rana",
+  fullName: "Zeeshan Abbas",
+  tagline: "Local SEO Expert in Multan, Pakistan",
   url: "https://zaminabbas.me",
   email: "digitalmarketingskills46@gmail.com",
   phoneDisplay: "+92 304 282 8068",
@@ -9,15 +10,133 @@ export const SITE = {
   address: "Metro Station, Pracha Street, Multan, Pakistan",
   locality: "Multan",
   country: "Pakistan",
+  fiverr: "https://www.fiverr.com/zaminabbas28",
+  instagram: "https://www.instagram.com/zamindigitalmarketing",
+  linkedin: "https://www.linkedin.com/in/zamin-abbas-7479aa3a3",
 } as const;
 
 export const NAV_LINKS = [
   { label: "Home", href: "/#top" },
   { label: "About", href: "/#about" },
   { label: "Services", href: "/#services" },
+  { label: "Insights", href: "/#insights" },
   { label: "Reviews", href: "/#reviews" },
-  { label: "FAQ", href: "/#faq" },
-  { label: "Contact", href: "/#contact" },
+] as const;
+
+export const HERO_PHOTOS = [
+  { src: "/images/rana-1.png", alt: "Rana at his desk", rotate: "-6deg" },
+  { src: "/images/rana-2.png", alt: "Rana, local SEO expert", rotate: "3deg" },
+  { src: "/images/rana-3.png", alt: "Rana in the office", rotate: "-2deg" },
+  { src: "/images/rana-4.png", alt: "Rana, digital marketer", rotate: "5deg" },
+] as const;
+
+export interface ServiceCard {
+  title: string;
+  period: string;
+  description: string;
+  points: string[];
+  tags: string[];
+}
+
+export const SERVICE_CARDS: ServiceCard[] = [
+  {
+    title: "Local SEO",
+    period: "Main expertise",
+    description:
+      "I put local businesses on the Google Map — literally. Complete Google Business Profile optimization, local citations, review strategy and map-pack ranking that turns nearby searches into phone calls.",
+    points: [
+      "Google Business Profile setup & full optimization",
+      "Google Maps 3-pack ranking strategy",
+      "Local citations & NAP consistency cleanup",
+      "Review generation & reputation management",
+      "Geo-tagged photos, posts & Q&A management",
+    ],
+    tags: ["GMB OPTIMIZATION", "GOOGLE MAPS", "CITATIONS", "REVIEWS", "LOCAL 3-PACK"],
+  },
+  {
+    title: "WordPress Development",
+    period: "Design + build",
+    description:
+      "Fast, mobile-friendly WordPress websites built to convert and built to rank. From business sites to WooCommerce stores — clean code, sharp design, SEO baked in from the first line.",
+    points: [
+      "Custom WordPress design & development",
+      "WooCommerce stores with payment integration",
+      "Speed optimization & Core Web Vitals",
+      "On-page SEO structure from day one",
+      "Care, maintenance & training included",
+    ],
+    tags: ["WORDPRESS", "WOOCOMMERCE", "ELEMENTOR", "SPEED", "ON-PAGE SEO"],
+  },
+  {
+    title: "Social Media Marketing",
+    period: "Growth",
+    description:
+      "Content and campaigns that turn followers into customers. Monthly content calendars, profile optimization and community management for brands that want to be impossible to ignore.",
+    points: [
+      "Monthly content calendars & post design",
+      "Profile optimization for discoverability",
+      "Community management & engagement",
+      "Paid social campaigns with ROI tracking",
+      "Monthly reporting in plain language",
+    ],
+    tags: ["CONTENT", "INSTAGRAM", "FACEBOOK", "PAID SOCIAL", "BRANDING"],
+  },
+  {
+    title: "Google Ads",
+    period: "Paid traffic",
+    description:
+      "Search campaigns that bring customers, not just clicks. Tightly targeted Google Ads with conversion tracking, so every rupee of ad spend is accountable.",
+    points: [
+      "Search & Maps campaign setup",
+      "Keyword research & negative keyword sculpting",
+      "Conversion tracking & call tracking",
+      "Landing page guidance for better Quality Scores",
+      "Weekly optimization & transparent reporting",
+    ],
+    tags: ["GOOGLE ADS", "PPC", "CONVERSIONS", "TRACKING"],
+  },
+];
+
+export interface Insight {
+  title: string;
+  excerpt: string;
+  readTime: string;
+  date: string;
+}
+
+export const INSIGHTS: Insight[] = [
+  {
+    title: "How to Rank #1 on Google Maps in 2026",
+    excerpt:
+      "The map pack isn't luck — it's a system. Profile completeness, review velocity, citations and posting cadence: here's the exact order I optimize them in.",
+    readTime: "8 min read",
+    date: "Oct 2026",
+  },
+  {
+    title: "Geo-Tagged Photos: The Local SEO Signal Everyone Ignores",
+    excerpt:
+      "Google reads the GPS data in your business photos. Here's how I geo-tag images for my clients and why it moves the needle on local rankings.",
+    readTime: "6 min read",
+    date: "Sep 2026",
+  },
+  {
+    title: "Why Your WordPress Site Is Slow (And How I Fix It)",
+    excerpt:
+      "Bloated themes, render-blocking scripts, unoptimized images. A practical checklist for getting a WordPress site under 2 seconds — without breaking it.",
+    readTime: "10 min read",
+    date: "Aug 2026",
+  },
+];
+
+export const TOOLKIT = [
+  "Google Business Profile",
+  "Ahrefs",
+  "SEMrush",
+  "Screaming Frog",
+  "WordPress",
+  "Google Search Console",
+  "Google Ads",
+  "Canva",
 ] as const;
 
 export type ServiceSlug = "local-seo" | "social-media-marketing" | "technical-seo";

@@ -4,84 +4,60 @@ import { NAV_LINKS, SITE } from "@/lib/site";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-ink-950" aria-label="Site footer">
-      <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-3">
+    <footer className="border-t border-white/10 bg-ink-900/40">
+      <div className="mx-auto max-w-6xl px-5 py-12 sm:px-8">
+        <div className="flex flex-col items-start justify-between gap-8 md:flex-row md:items-center">
           <div>
-            <p className="font-display text-xl font-bold text-white">
-              Zamin <span className="text-gold-gradient">Abbas</span>
+            <p className="font-display text-2xl text-white">
+              Rana <em className="text-gradient-accent">.</em>
             </p>
-            <p className="mt-3 max-w-xs text-sm leading-relaxed text-mist-300">
-              SEO specialist &amp; web developer helping businesses grow online with
-              data-driven strategies and high-performance websites.
+            <p className="mt-2 max-w-sm text-sm leading-relaxed text-mist-500">
+              Local SEO expert in Multan, Pakistan — helping businesses rank #1 on
+              Google Maps.
             </p>
           </div>
 
-          <nav aria-label="Footer">
-            <p className="font-display text-sm font-bold tracking-widest text-gold-400 uppercase">
-              Quick Links
-            </p>
-            <ul className="mt-4 grid grid-cols-2 gap-2">
-              {NAV_LINKS.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-mist-300 transition-colors hover:text-gold-300"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          <div>
-            <p className="font-display text-sm font-bold tracking-widest text-gold-400 uppercase">
-              Get In Touch
-            </p>
-            <address className="mt-4 space-y-3 text-sm not-italic">
-              <p className="flex items-start gap-3 text-mist-300">
-                <LocationIcon className="mt-0.5 h-5 w-5 shrink-0 text-gold-400" />
-                {SITE.address}
-              </p>
-              <p>
-                <a
-                  href={`mailto:${SITE.email}`}
-                  className="flex items-center gap-3 text-mist-300 transition-colors hover:text-gold-300"
+          <ul className="flex flex-wrap gap-x-6 gap-y-2">
+            {NAV_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className="text-sm text-mist-500 transition-colors hover:text-white"
                 >
-                  <MailIcon className="h-5 w-5 shrink-0 text-gold-400" />
-                  {SITE.email}
-                </a>
-              </p>
-              <p>
-                <a
-                  href={`tel:${SITE.phoneHref}`}
-                  className="flex items-center gap-3 text-mist-300 transition-colors hover:text-gold-300"
-                >
-                  <PhoneIcon className="h-5 w-5 shrink-0 text-gold-400" />
-                  {SITE.phoneDisplay}
-                </a>
-              </p>
-              <p>
-                <a
-                  href={SITE.whatsapp}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-mist-300 transition-colors hover:text-gold-300"
-                >
-                  <ChatIcon className="h-5 w-5 shrink-0 text-gold-400" />
-                  WhatsApp: {SITE.phoneDisplay}
-                </a>
-              </p>
-            </address>
-          </div>
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 sm:flex-row">
-          <p className="text-sm text-mist-500">© 2026 {SITE.name}. All rights reserved.</p>
-          <p className="text-sm text-mist-500">
-            SEO Specialist &amp; Web Developer — {SITE.locality}, {SITE.country}
-          </p>
+        <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-8 text-sm text-mist-500 md:flex-row md:items-center md:justify-between">
+          <p>© {new Date().getFullYear()} {SITE.fullName}. All rights reserved.</p>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+            <a
+              href={`tel:${SITE.phoneHref}`}
+              className="inline-flex items-center gap-2 transition-colors hover:text-white"
+            >
+              <PhoneIcon className="h-4 w-4" /> {SITE.phoneDisplay}
+            </a>
+            <a
+              href={`mailto:${SITE.email}`}
+              className="inline-flex items-center gap-2 transition-colors hover:text-white"
+            >
+              <MailIcon className="h-4 w-4" /> Email
+            </a>
+            <a
+              href={SITE.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 transition-colors hover:text-white"
+            >
+              <ChatIcon className="h-4 w-4" /> WhatsApp
+            </a>
+            <span className="inline-flex items-center gap-2">
+              <LocationIcon className="h-4 w-4" /> {SITE.locality}, {SITE.country}
+            </span>
+          </div>
         </div>
       </div>
     </footer>
