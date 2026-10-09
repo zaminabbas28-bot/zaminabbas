@@ -92,7 +92,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${display.variable} ${inter.variable} ${mono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-ink-950 text-mist-100">
+      <body className="flex min-h-full flex-col bg-paper text-body">
         <a href="#main-content" className="skip-link">
           Skip to main content
         </a>

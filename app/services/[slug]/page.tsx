@@ -82,9 +82,9 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <nav aria-label="Breadcrumb">
-              <ol className="flex flex-wrap items-center gap-2 text-sm text-mist-500">
+              <ol className="flex flex-wrap items-center gap-2 text-sm text-muted">
                 <li>
-                  <Link href="/" className="transition-colors hover:text-gold-300">
+                  <Link href="/" className="transition-colors hover:text-accent">
                     Home
                   </Link>
                 </li>
@@ -92,14 +92,14 @@ export default async function ServicePage({ params }: ServicePageProps) {
                   <ChevronDownIcon className="h-3.5 w-3.5 -rotate-90" />
                 </li>
                 <li>
-                  <Link href="/#services" className="transition-colors hover:text-gold-300">
+                  <Link href="/#services" className="transition-colors hover:text-accent">
                     Services
                   </Link>
                 </li>
                 <li aria-hidden>
                   <ChevronDownIcon className="h-3.5 w-3.5 -rotate-90" />
                 </li>
-                <li aria-current="page" className="font-medium text-gold-300">
+                <li aria-current="page" className="font-medium text-accent">
                   {service.title}
                 </li>
               </ol>
@@ -107,19 +107,19 @@ export default async function ServicePage({ params }: ServicePageProps) {
           </Reveal>
 
           <Reveal delay={100}>
-            <p className="mt-8 text-xs font-bold tracking-[0.3em] text-gold-400 uppercase">
+            <p className="mt-8 text-xs font-bold tracking-[0.3em] text-accent uppercase">
               Service {service.number}
             </p>
-            <h1 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
-              {service.title} <span className="text-gold-gradient">Services</span>
+            <h1 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-ink sm:text-5xl">
+              {service.title} <span className="text-gradient-accent">Services</span>
             </h1>
-            <p className="mt-5 text-xl leading-relaxed text-mist-300">{service.short}</p>
+            <p className="mt-5 text-xl leading-relaxed text-body">{service.short}</p>
           </Reveal>
 
           <Reveal delay={180}>
             <div className="mt-10 space-y-6">
               {service.paragraphs.map((p, i) => (
-                <p key={i} className="text-lg leading-relaxed text-mist-100/90">
+                <p key={i} className="text-lg leading-relaxed text-body">
                   {p}
                 </p>
               ))}
@@ -127,37 +127,37 @@ export default async function ServicePage({ params }: ServicePageProps) {
           </Reveal>
 
           <Reveal delay={120}>
-            <h2 className="mt-12 font-display text-2xl font-bold text-white">
-              What&apos;s <span className="text-gold-gradient">Included</span>
+            <h2 className="mt-12 font-display text-2xl font-bold text-ink">
+              What&apos;s <span className="text-gradient-accent">Included</span>
             </h2>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2" aria-label={`${service.title} benefits`}>
               {service.benefits.map((benefit) => (
                 <li
                   key={benefit}
-                  className="flex items-start gap-3 rounded-2xl border border-white/10 bg-ink-800/70 p-4"
+                  className="flex items-start gap-3 rounded-2xl border border-line bg-white p-4 shadow-sm"
                 >
-                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold-400/15 text-gold-400">
+                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent">
                     <CheckIcon className="h-4 w-4" />
                   </span>
-                  <span className="text-sm font-medium text-mist-100 sm:text-base">{benefit}</span>
+                  <span className="text-sm font-medium text-ink sm:text-base">{benefit}</span>
                 </li>
               ))}
             </ul>
           </Reveal>
 
           <Reveal delay={100}>
-            <div className="mt-12 rounded-3xl border border-gold-400/25 bg-gradient-to-br from-ink-800 to-ink-900 p-8 text-center sm:p-10">
-              <h2 className="font-display text-2xl font-extrabold text-white sm:text-3xl">
-                Ready to grow with <span className="text-gold-gradient">{service.title}</span>?
+            <div className="mt-12 rounded-3xl border border-accent/25 bg-gradient-to-br from-accent-soft to-white p-8 text-center sm:p-10">
+              <h2 className="font-display text-2xl font-extrabold text-ink sm:text-3xl">
+                Ready to grow with <span className="text-gradient-accent">{service.title}</span>?
               </h2>
-              <p className="mx-auto mt-3 max-w-xl text-mist-300">
+              <p className="mx-auto mt-3 max-w-xl text-body">
                 Get a free consultation and a clear action plan for your business — no
                 obligations, no jargon.
               </p>
               <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
                 <Link
                   href="/#contact"
-                  className="inline-flex items-center gap-2 rounded-full bg-gold-400 px-8 py-3.5 text-base font-bold text-ink-950 transition-all hover:bg-gold-300 hover:shadow-xl hover:shadow-gold-500/25"
+                  className="inline-flex items-center gap-2 rounded-full bg-accent px-8 py-3.5 text-base font-bold text-white transition-all hover:bg-accent-deep hover:shadow-xl hover:shadow-accent/25"
                 >
                   Start a Project <ArrowRightIcon className="h-5 w-5" />
                 </Link>
@@ -165,7 +165,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                   href={SITE.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/20 px-8 py-3.5 text-base font-semibold text-white transition-colors hover:border-gold-400/60 hover:text-gold-300"
+                  className="inline-flex items-center gap-2 rounded-full border border-line-dark bg-white px-8 py-3.5 text-base font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
                 >
                   WhatsApp Me
                 </Link>
@@ -174,24 +174,24 @@ export default async function ServicePage({ params }: ServicePageProps) {
           </Reveal>
 
           <Reveal delay={80}>
-            <h2 className="mt-14 font-display text-2xl font-bold text-white">
-              Explore Other <span className="text-gold-gradient">Services</span>
+            <h2 className="mt-14 font-display text-2xl font-bold text-ink">
+              Explore Other <span className="text-gradient-accent">Services</span>
             </h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {others.map((other) => (
                 <Link
                   key={other.slug}
                   href={`/services/${other.slug}`}
-                  className="card-glow group rounded-2xl border border-white/10 bg-ink-800/70 p-6"
+                  className="card-surface card-hover group p-6"
                 >
-                  <p className="text-xs font-bold tracking-widest text-gold-500">
+                  <p className="text-xs font-bold tracking-widest text-accent">
                     {other.number}
                   </p>
-                  <h3 className="mt-2 font-display text-lg font-bold text-white transition-colors group-hover:text-gold-300">
+                  <h3 className="mt-2 font-display text-lg font-bold text-ink transition-colors group-hover:text-accent">
                     {other.title}
                   </h3>
-                  <p className="mt-2 text-sm text-mist-300">{other.short}</p>
-                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-gold-400">
+                  <p className="mt-2 text-sm text-muted">{other.short}</p>
+                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-accent">
                     Learn More <ArrowRightIcon className="h-4 w-4" />
                   </span>
                 </Link>

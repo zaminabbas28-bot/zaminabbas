@@ -20,14 +20,14 @@ export default function Header() {
     <header className="fixed inset-x-0 top-4 z-50 flex justify-center px-4">
       <nav
         aria-label="Primary"
-        className={`flex items-center gap-1 rounded-full border border-white/10 bg-ink-900/80 py-1.5 pl-2 pr-1.5 shadow-2xl shadow-black/60 backdrop-blur-xl transition-all duration-300 ${
-          scrolled ? "bg-ink-900/95" : ""
+        className={`flex items-center gap-1 rounded-full border border-line bg-white/85 py-1.5 pl-2 pr-1.5 shadow-xl shadow-ink/10 backdrop-blur-xl transition-all duration-300 ${
+          scrolled ? "shadow-2xl shadow-ink/15" : ""
         }`}
       >
         <Link
           href="/#top"
           aria-label={`${SITE.name} — home`}
-          className="mr-1 flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-accent-violet to-accent-pink font-display text-base font-bold text-white"
+          className="mr-1 flex h-9 w-9 items-center justify-center rounded-full bg-accent font-display text-base font-bold text-white"
         >
           Z
         </Link>
@@ -39,8 +39,8 @@ export default function Header() {
                 href={link.href}
                 className={`rounded-full px-4 py-2 text-sm transition-colors ${
                   i === 0
-                    ? "bg-white/10 font-medium text-white"
-                    : "text-mist-300 hover:bg-white/5 hover:text-white"
+                    ? "bg-cream font-medium text-ink"
+                    : "text-body hover:bg-cream hover:text-ink"
                 }`}
               >
                 {link.label}
@@ -53,7 +53,7 @@ export default function Header() {
           href={SITE.whatsapp}
           target="_blank"
           rel="noopener noreferrer"
-          className="ml-1 hidden items-center gap-1.5 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-white/15 md:inline-flex"
+          className="ml-1 hidden items-center gap-1.5 rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-accent md:inline-flex"
         >
           Hire Me
         </Link>
@@ -61,14 +61,14 @@ export default function Header() {
         <Link
           href="/#insights"
           aria-label="Search insights"
-          className="hidden h-9 w-9 items-center justify-center rounded-full border border-white/10 text-mist-300 transition-colors hover:text-white md:inline-flex"
+          className="hidden h-9 w-9 items-center justify-center rounded-full border border-line text-muted transition-colors hover:text-ink md:inline-flex"
         >
           <SearchIcon className="h-4 w-4" />
         </Link>
 
         <button
           type="button"
-          className="inline-flex h-9 w-9 items-center justify-center rounded-full text-white md:hidden"
+          className="inline-flex h-9 w-9 items-center justify-center rounded-full text-ink md:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -81,7 +81,7 @@ export default function Header() {
       {open && (
         <div
           id="mobile-menu"
-          className="absolute top-full mt-2 w-[calc(100%-2rem)] max-w-sm rounded-3xl border border-white/10 bg-ink-900/95 p-3 shadow-2xl shadow-black/60 backdrop-blur-xl md:hidden"
+          className="absolute top-full mt-2 w-[calc(100%-2rem)] max-w-sm rounded-3xl border border-line bg-white/95 p-3 shadow-2xl shadow-ink/15 backdrop-blur-xl md:hidden"
         >
           <ul className="space-y-1">
             {NAV_LINKS.map((link) => (
@@ -89,7 +89,7 @@ export default function Header() {
                 <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-2xl px-4 py-3 text-base font-medium text-mist-100 hover:bg-white/5"
+                  className="block rounded-2xl px-4 py-3 text-base font-medium text-ink hover:bg-cream"
                 >
                   {link.label}
                 </Link>
@@ -101,7 +101,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-4 py-3 text-base font-medium text-white"
+                className="flex items-center justify-center gap-2 rounded-2xl bg-ink px-4 py-3 text-base font-medium text-white"
               >
                 Hire Me <ArrowUpRightIcon className="h-4 w-4" />
               </Link>
