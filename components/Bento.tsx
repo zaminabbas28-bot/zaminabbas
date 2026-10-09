@@ -10,7 +10,7 @@ export default function Bento() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>
           <p className="label-caps text-center">Let&apos;s connect</p>
-          <h2 className="font-display mx-auto mt-4 max-w-2xl text-center text-5xl leading-tight text-white sm:text-6xl">
+          <h2 className="font-display mx-auto mt-4 max-w-2xl text-center text-5xl leading-tight text-ink sm:text-6xl">
             Have a business?
             <br />
             <em className="text-gradient-accent">Let&apos;s rank it.</em>
@@ -30,7 +30,7 @@ export default function Bento() {
               </div>
               <div className="mt-8">
                 <p className="label-caps">Toolkit</p>
-                <p className="mt-2 text-lg font-medium text-white">My SEO arsenal</p>
+                <p className="mt-2 text-lg font-medium text-ink">My SEO arsenal</p>
               </div>
             </div>
           </Reveal>
@@ -40,13 +40,13 @@ export default function Bento() {
             <div className="card-surface card-hover relative flex h-full min-h-[320px] flex-col justify-between overflow-hidden p-7">
               <div>
                 <p className="label-caps">Behind the rankings</p>
-                <p className="mt-2 text-lg font-medium text-white">Journey & experience</p>
-                <p className="mt-3 text-sm leading-relaxed text-mist-500">
+                <p className="mt-2 text-lg font-medium text-ink">Journey & experience</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted">
                   From Multan to the map pack — 500+ websites ranked, one honest
                   report at a time.
                 </p>
               </div>
-              <div className="relative mx-auto mt-6 w-40 overflow-hidden rounded-2xl border border-white/15">
+              <div className="relative mx-auto mt-6 w-40 overflow-hidden rounded-2xl border border-line">
                 <div className="relative aspect-square">
                   <Image
                     src="/images/rana-1.jpg"
@@ -70,17 +70,17 @@ export default function Bento() {
             >
               <div
                 aria-hidden
-                className="pointer-events-none absolute inset-0 bg-gradient-to-br from-accent-violet/20 to-transparent opacity-0 transition-opacity group-hover:opacity-100"
+                className="pointer-events-none absolute inset-0 bg-gradient-to-br from-accent-soft to-transparent opacity-0 transition-opacity group-hover:opacity-100"
               />
               <div className="relative">
                 <p className="label-caps">Say hello</p>
-                <p className="mt-2 text-lg font-medium text-white">Start a conversation</p>
-                <p className="mt-3 text-sm leading-relaxed text-mist-500">
+                <p className="mt-2 text-lg font-medium text-ink">Start a conversation</p>
+                <p className="mt-3 text-sm leading-relaxed text-muted">
                   WhatsApp me at {SITE.phoneDisplay} — I reply fast, and the first
                   audit is free.
                 </p>
               </div>
-              <span className="relative mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-ink-950 transition-transform group-hover:translate-x-1">
+              <span className="relative mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-semibold text-white transition-colors group-hover:bg-accent">
                 Chat now <ArrowUpRightIcon className="h-4 w-4" />
               </span>
             </Link>
@@ -93,10 +93,10 @@ export default function Bento() {
               href={SITE.fiverr}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 text-sm font-medium text-mist-300 transition-colors hover:text-white"
+              className="group inline-flex items-center gap-3 text-sm font-medium text-body transition-colors hover:text-ink"
             >
               <span className="label-caps">Prefer Fiverr?</span>
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 px-4 py-2 transition-colors group-hover:border-white/30">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-line bg-white px-4 py-2 transition-colors group-hover:border-line-dark">
                 Order a gig <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>
             </Link>
@@ -107,7 +107,7 @@ export default function Bento() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Rana on LinkedIn"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-mist-300 transition-colors hover:border-white/30 hover:text-white"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-line bg-white text-body shadow-sm transition-colors hover:border-line-dark hover:text-ink"
               >
                 <LinkedInIcon className="h-4 w-4" />
               </a>

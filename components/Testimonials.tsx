@@ -6,12 +6,12 @@ import { PauseIcon, PlayIcon, QuoteIcon, StarIcon } from "./icons";
 import Reveal from "./Reveal";
 
 const CARD_GRADIENTS = [
-  "from-fuchsia-600/30 via-purple-900/40 to-ink-900",
-  "from-blue-600/30 via-indigo-900/40 to-ink-900",
-  "from-teal-600/30 via-emerald-900/40 to-ink-900",
-  "from-orange-600/30 via-amber-900/40 to-ink-900",
-  "from-sky-600/30 via-cyan-900/40 to-ink-900",
-  "from-pink-600/30 via-rose-900/40 to-ink-900",
+  "from-orange-100 via-amber-50 to-white",
+  "from-sky-100 via-blue-50 to-white",
+  "from-emerald-100 via-teal-50 to-white",
+  "from-amber-100 via-orange-50 to-white",
+  "from-blue-100 via-indigo-50 to-white",
+  "from-rose-100 via-pink-50 to-white",
 ];
 
 export default function Testimonials() {
@@ -35,15 +35,15 @@ export default function Testimonials() {
   const cards = Array.from({ length: visible }, (_, k) => REVIEWS[(index + k) % REVIEWS.length]);
 
   return (
-    <section id="reviews" className="relative overflow-hidden py-24 sm:py-32">
+    <section id="reviews" className="relative overflow-hidden bg-cream py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>
           <p className="label-caps">Testimonials</p>
-          <h2 className="font-display mt-3 text-4xl text-white sm:text-5xl">
+          <h2 className="font-display mt-3 text-4xl text-ink sm:text-5xl">
             Word on the <em className="text-gradient-accent">street</em>
           </h2>
-          <p className="mt-4 flex items-center gap-2 text-sm text-mist-500">
-            <span className="flex text-amber-400">
+          <p className="mt-4 flex items-center gap-2 text-sm text-muted">
+            <span className="flex text-amber-500">
               {Array.from({ length: 5 }).map((_, i) => (
                 <StarIcon key={i} className="h-4 w-4" />
               ))}
@@ -63,21 +63,21 @@ export default function Testimonials() {
                   className={`card-surface relative flex min-h-[300px] flex-col justify-between overflow-hidden bg-gradient-to-br p-7 ${CARD_GRADIENTS[(index + k) % CARD_GRADIENTS.length]}`}
                 >
                   <div>
-                    <QuoteIcon className="h-7 w-7 text-white/25" />
-                    <blockquote className="mt-4 text-[0.95rem] leading-relaxed text-mist-100">
+                    <QuoteIcon className="h-7 w-7 text-accent/30" />
+                    <blockquote className="mt-4 text-[0.95rem] leading-relaxed text-ink">
                       “{review.quote}”
                     </blockquote>
                   </div>
                   <figcaption className="mt-6 flex items-center gap-3">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 font-display text-sm font-bold text-white backdrop-blur-sm">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent font-display text-sm font-bold text-white">
                       {review.initials}
                     </span>
                     <span>
-                      <span className="block text-sm font-semibold text-white">
+                      <span className="block text-sm font-semibold text-ink">
                         {review.name}
                       </span>
-                      <span className="flex items-center gap-1 text-xs text-mist-500">
-                        <StarIcon className="h-3 w-3 text-amber-400" /> Google review
+                      <span className="flex items-center gap-1 text-xs text-muted">
+                        <StarIcon className="h-3 w-3 text-amber-500" /> Google review
                       </span>
                     </span>
                   </figcaption>
@@ -87,7 +87,7 @@ export default function Testimonials() {
 
             {/* controls */}
             <div className="mt-8 flex items-center justify-center gap-4">
-              <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2.5">
+              <div className="flex items-center gap-2 rounded-full border border-line bg-white px-4 py-2.5 shadow-sm">
                 {REVIEWS.map((_, i) => (
                   <button
                     key={i}
@@ -95,7 +95,7 @@ export default function Testimonials() {
                     onClick={() => setIndex(i)}
                     aria-label={`Go to testimonial ${i + 1}`}
                     className={`h-1.5 rounded-full transition-all ${
-                      i === index ? "w-6 bg-white" : "w-1.5 bg-white/30 hover:bg-white/50"
+                      i === index ? "w-6 bg-ink" : "w-1.5 bg-line-dark hover:bg-muted"
                     }`}
                   />
                 ))}
@@ -104,7 +104,7 @@ export default function Testimonials() {
                 type="button"
                 onClick={() => setPaused((p) => !p)}
                 aria-label={paused ? "Play testimonials" : "Pause testimonials"}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-line bg-white text-ink shadow-sm transition-colors hover:bg-cream"
               >
                 {paused ? <PlayIcon className="h-4 w-4" /> : <PauseIcon className="h-4 w-4" />}
               </button>
