@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   const description = `${service.short} Work with ${SITE.name}, a local SEO expert in Multan, Pakistan offering ${service.title.toLowerCase()} that is built to rank and convert.`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     keywords: [service.title, "SEO specialist Pakistan", SITE.name, "hire SEO expert"],
     alternates: { canonical: `/services/${service.slug}` },
