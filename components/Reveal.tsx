@@ -27,8 +27,14 @@ export default function Reveal({ children, className = "", delay = 0, as }: Reve
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
+    // Failsafe: never leave content faded — force visible after 2.5s
+    // even if the observer never fires (slow devices, odd viewports).
+    const fallback = window.setTimeout(() => {
+      el.classList.add("is-visible");
+    }, 2500);
     if (typeof IntersectionObserver === "undefined") {
       el.classList.add("is-visible");
+      window.clearTimeout(fallback);
       return;
     }
     const observer = new IntersectionObserver(
@@ -36,14 +42,18 @@ export default function Reveal({ children, className = "", delay = 0, as }: Reve
         for (const entry of entries) {
           if (entry.isIntersecting) {
             entry.target.classList.add("is-visible");
+            window.clearTimeout(fallback);
             observer.unobserve(entry.target);
           }
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.08, rootMargin: "0px 0px -20px 0px" }
     );
     observer.observe(el);
-    return () => observer.disconnect();
+    return () => {
+      window.clearTimeout(fallback);
+      observer.disconnect();
+    };
   }, []);
 
   return (
