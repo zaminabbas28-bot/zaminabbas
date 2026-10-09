@@ -1,151 +1,146 @@
 import Image from "next/image";
 import Link from "next/link";
-import { HERO_PHOTOS, SITE } from "@/lib/site";
-import { ArrowRightIcon, ArrowUpRightIcon } from "./icons";
 import Reveal from "./Reveal";
+import { SITE } from "@/lib/site";
+
+const CHECKLIST = [
+  "Google Business Profile setup & optimization",
+  "Google Maps 3-pack ranking strategy",
+  "SEO-ready WordPress development",
+  "Fast, direct communication",
+];
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-36 pb-0">
-      {/* soft glow accents */}
+    <section
+      id="home"
+      className="relative overflow-hidden bg-[#0a0f1c] text-white"
+    >
+      {/* subtle orange glow */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-40 left-1/2 h-[480px] w-[820px] -translate-x-1/2 rounded-full bg-accent/10 blur-[140px]"
+        className="pointer-events-none absolute -top-32 right-0 h-[480px] w-[480px] rounded-full bg-accent/15 blur-[140px]"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute top-40 -right-40 h-[380px] w-[380px] rounded-full bg-accent/10 blur-[120px]"
+        className="pointer-events-none absolute bottom-0 left-0 h-[320px] w-[320px] rounded-full bg-accent/10 blur-[120px]"
       />
 
-      <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
-        <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
-          {/* Left: headline + photos */}
-          <div>
-            <Reveal>
-              <h1 className="font-display text-[clamp(3.2rem,9vw,7rem)] leading-[0.95] text-ink">
-                Local SEO
-                <br />
-                <em className="text-gradient-accent pr-2">expert</em>
-              </h1>
-            </Reveal>
-            <Reveal delay={120}>
-              <p className="label-caps mt-6">
-                Based in Multan, Pakistan · Ranking local businesses since 2022
-              </p>
-            </Reveal>
+      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-32 sm:px-8 lg:grid-cols-2 lg:gap-8 lg:pt-36">
+        {/* ---------- Left: copy ---------- */}
+        <div>
+          <Reveal>
+            <p className="font-mono text-xs tracking-[0.3em] text-accent">
+              I&rsquo;M RANA
+            </p>
+            <h1 className="mt-5 font-sans text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
+              Get Found.
+              <br />
+              Get Calls.
+              <br />
+              <span className="text-gradient-accent">Grow Local.</span>
+            </h1>
+            <p className="mt-6 max-w-md leading-relaxed text-white/70">
+              Local SEO expert in Multan, Pakistan. I put local businesses on
+              the Google Map — optimized profiles, map-pack rankings, and
+              WordPress websites built to convert.
+            </p>
+          </Reveal>
 
-            {/* photo stack */}
-            <Reveal delay={200}>
-              <div className="relative mt-10 flex h-44 items-center sm:h-52" aria-label="Photos of Rana">
-                {HERO_PHOTOS.map((photo, i) => (
-                  <div
-                    key={photo.src}
-                    className="photo-tilt animate-floaty absolute overflow-hidden rounded-2xl"
-                    style={
-                      {
-                        left: `${i * 24}%`,
-                        width: "34%",
-                        aspectRatio: "1 / 1",
-                        transform: `rotate(${photo.rotate})`,
-                        zIndex: HERO_PHOTOS.length - i,
-                        animationDelay: `${i * 0.7}s`,
-                        "--float-rotate": photo.rotate,
-                      } as React.CSSProperties
-                    }
-                  >
-                    <Image
-                      src={photo.src}
-                      alt={photo.alt}
-                      fill
-                      sizes="(max-width: 768px) 40vw, 220px"
-                      className="object-cover"
-                      priority={i === 0}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Reveal>
-          </div>
+          <Reveal delay={120}>
+            <p className="mt-8 font-mono text-xs tracking-[0.25em] text-white/50">
+              WHY WORK WITH ME?
+            </p>
+            <ul className="mt-4 space-y-3">
+              {CHECKLIST.map((item) => (
+                <li key={item} className="flex items-center gap-3 text-[15px] text-white/85">
+                  <span aria-hidden className="h-2.5 w-2.5 shrink-0 bg-accent" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
 
-          {/* Right: availability + name */}
-          <div className="lg:pb-2 lg:text-right">
-            <Reveal delay={150}>
-              <p className="label-caps flex items-center gap-2 lg:justify-end">
-                <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-60" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
-                </span>
-                Available for projects
-              </p>
+          <Reveal delay={200}>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
-                href={SITE.fiverr}
+                href="https://www.fiverr.com/zaminabbas28"
                 target="_blank"
-                rel="noopener noreferrer"
-                className="group mt-3 inline-flex items-center gap-2 font-display text-2xl text-ink transition-colors hover:text-accent sm:text-3xl"
+                rel="noopener"
+                className="rounded-full border border-white/20 px-5 py-2 text-sm font-semibold text-white/85 transition hover:border-accent hover:text-accent"
               >
-                Zeeshi Local SEO Expert
-                <ArrowUpRightIcon className="h-6 w-6 text-muted transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent" />
+                Fiverr
               </Link>
-              <p className="label-caps mt-1">Hire me on Fiverr</p>
-            </Reveal>
-            <Reveal delay={250}>
-              <p className="mt-8 text-xl text-body sm:text-2xl">
-                Marketing with data.
-                <br />
-                Built to rank.
-              </p>
-              <p className="font-display mt-4 text-[clamp(2.6rem,6vw,4.5rem)] leading-none text-ink">
-                Rana
-              </p>
-            </Reveal>
-          </div>
+              <Link
+                href={SITE.linkedin}
+                target="_blank"
+                rel="noopener"
+                className="rounded-full border border-white/20 px-5 py-2 text-sm font-semibold text-white/85 transition hover:border-accent hover:text-accent"
+              >
+                LinkedIn
+              </Link>
+            </div>
+            <div className="mt-6 flex flex-wrap gap-4">
+              <Link
+                href="#contact"
+                className="group inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-bold text-white transition hover:bg-accent-deep"
+              >
+                Hire Me
+                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+              </Link>
+              <Link
+                href="#work"
+                className="inline-flex items-center gap-2 rounded-full border border-white/25 px-7 py-3.5 text-sm font-bold text-white transition hover:border-white hover:bg-white/10"
+              >
+                See My Work
+              </Link>
+            </div>
+          </Reveal>
         </div>
+
+        {/* ---------- Right: photo ---------- */}
+        <Reveal delay={150} className="relative mx-auto w-full max-w-md lg:max-w-none">
+          <div className="relative">
+            {/* giant outlined letterform */}
+            <span
+              aria-hidden
+              className="pointer-events-none absolute -top-16 right-0 select-none font-sans text-[11rem] font-extrabold leading-none text-transparent sm:text-[15rem]"
+              style={{ WebkitTextStroke: "2px rgba(249,106,27,0.35)" }}
+            >
+              R
+            </span>
+            {/* orange outlined frame */}
+            <div
+              aria-hidden
+              className="absolute -right-4 -top-4 h-full w-full rounded-3xl border-2 border-accent/70"
+            />
+            <div className="relative overflow-hidden rounded-3xl border border-white/10">
+              <Image
+                src="/images/rana-1.jpg"
+                alt="Rana — Local SEO expert in Multan, Pakistan"
+                width={880}
+                height={1060}
+                priority
+                className="h-auto w-full object-cover"
+              />
+              <div
+                aria-hidden
+                className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/50 to-transparent"
+              />
+            </div>
+            {/* orange bar at bottom edge */}
+            <div aria-hidden className="absolute -bottom-3 left-10 right-10 h-2 rounded-full bg-accent" />
+            {/* availability badge */}
+            <div className="absolute -left-3 top-8 flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-bold text-ink shadow-xl sm:-left-6">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
+                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
+              </span>
+              AVAILABLE FOR PROJECTS
+            </div>
+          </div>
+        </Reveal>
       </div>
-
-      {/* bottom strip */}
-      <Reveal delay={100}>
-        <div className="relative mx-auto mt-16 max-w-6xl px-5 sm:px-8">
-          <div className="grid grid-cols-2 overflow-hidden rounded-t-3xl border border-b-0 border-line bg-white shadow-lg shadow-ink/5 lg:grid-cols-4">
-            <div className="border-b border-r border-line p-5 sm:p-6">
-              <p className="label-caps flex items-center gap-2">
-                <span className="h-2 w-2 rounded-[2px] bg-emerald-500" /> Now
-              </p>
-              <p className="mt-3 font-medium text-ink">Local SEO Expert</p>
-              <p className="mt-1 text-sm text-muted">Zeeshi Local SEO Expert · Multan</p>
-            </div>
-            <div className="border-b border-line p-5 sm:p-6 lg:border-r">
-              <p className="label-caps flex items-center gap-2">
-                <span className="h-2 w-2 rounded-[2px] bg-accent" /> Services
-              </p>
-              <p className="mt-3 font-medium text-ink">What I do</p>
-              <p className="mt-1 text-sm text-muted">Local SEO · WordPress · Social</p>
-            </div>
-            <div className="border-r border-line p-5 sm:p-6">
-              <p className="label-caps flex items-center gap-2">
-                <span className="h-2 w-2 rounded-[2px] bg-sky-500" /> Insights
-              </p>
-              <p className="mt-3 font-medium text-ink">SEO playbooks</p>
-              <p className="mt-1 text-sm text-muted">Tips that actually rank</p>
-            </div>
-            <div className="p-5 sm:p-6">
-              <p className="label-caps flex items-center gap-2">
-                <span className="h-2 w-2 rounded-[2px] bg-accent" /> Reach out
-              </p>
-              <Link
-                href={SITE.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group mt-3 inline-flex w-full items-center justify-between rounded-full border border-line bg-cream px-5 py-3 text-sm font-medium text-ink transition-colors hover:border-line-dark"
-              >
-                Start a conversation
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-ink text-white transition-transform group-hover:translate-x-1">
-                  <ArrowRightIcon className="h-4 w-4" />
-                </span>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </Reveal>
     </section>
   );
 }
