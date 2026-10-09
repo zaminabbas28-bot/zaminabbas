@@ -1,0 +1,1 @@
+{"$schema":"https://openapi.vercel.sh/vercel.json","redirects":[{"destination":"/","permanent":true,"source":"/seo"},{"destination":"/","permanent":true,"source":"/google-ads"},{"destination":"https://zaminabbas.me/:path*","has":[{"type":"host","value":"www.zaminabbas.me"}],"permanent":true,"source":"/:path*"}]}
