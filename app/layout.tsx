@@ -25,12 +25,12 @@ const mono = JetBrains_Mono({
 });
 
 const DESCRIPTION =
-  "Rana (Zeeshan Abbas) — Local SEO expert in Multan, Pakistan. Google Business Profile optimization, WordPress development & social media marketing that gets local businesses found on Google Maps.";
+  "Rana is a Local SEO Expert in Multan, Pakistan helping businesses improve Google Maps visibility, Google Business Profile rankings, local search traffic and customer leads.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Rana | Local SEO Expert in Multan, Pakistan",
+    default: "Local SEO Expert in Multan, Pakistan | Rana",
     template: "%s | Rana",
   },
   description: DESCRIPTION,
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE.url,
     siteName: SITE.name,
-    title: "Rana | Local SEO Expert in Multan, Pakistan",
+    title: "Local SEO Expert in Multan, Pakistan | Rana",
     description: DESCRIPTION,
     images: [
       {
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rana | Local SEO Expert in Multan, Pakistan",
+    title: "Local SEO Expert in Multan, Pakistan | Rana",
     description: DESCRIPTION,
     images: ["/opengraph-image"],
   },

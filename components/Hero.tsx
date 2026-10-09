@@ -34,12 +34,13 @@ export default function Hero() {
               RANA &mdash; LOCAL SEO EXPERT
             </p>
             <h1 className="mt-5 font-sans text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
-              Get Found.
+              Local SEO Expert
               <br />
-              Get Calls.
-              <br />
-              <span className="text-gradient-accent">Grow Local.</span>
+              in Multan, <span className="text-gradient-accent">Pakistan.</span>
             </h1>
+            <p className="font-display mt-4 text-2xl italic text-white/85 sm:text-3xl">
+              Get found. Get calls. Grow local.
+            </p>
             <p className="mt-6 max-w-md leading-relaxed text-white/70">
               Local SEO expert in Multan, Pakistan. I put local businesses on
               the Google Map — optimized profiles, map-pack rankings, and

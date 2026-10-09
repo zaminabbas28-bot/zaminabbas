@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ChatIcon, LinkedInIcon, LocationIcon, MailIcon, PhoneIcon } from "./icons";
-import { NAV_LINKS, SITE } from "@/lib/site";
+import { NAV_LINKS, SERVICES, SITE } from "@/lib/site";
 
 export default function Footer() {
   return (
@@ -12,23 +12,37 @@ export default function Footer() {
               Rana <em className="text-gradient-accent">.</em>
             </p>
             <p className="mt-2 max-w-sm text-sm leading-relaxed text-mist-500">
-              Local SEO expert in Multan, Pakistan — helping businesses rank #1 on
-              Google Maps.
+              Local SEO expert in Multan, Pakistan — helping businesses improve
+              their Google Maps rankings.
             </p>
           </div>
 
-          <ul className="flex flex-wrap gap-x-6 gap-y-2">
-            {NAV_LINKS.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="text-sm text-mist-500 transition-colors hover:text-white"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <div className="flex flex-col gap-6">
+            <ul className="flex flex-wrap gap-x-6 gap-y-2">
+              {NAV_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-mist-500 transition-colors hover:text-white"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <ul className="flex flex-wrap gap-x-6 gap-y-2">
+              {SERVICES.map((s) => (
+                <li key={s.slug}>
+                  <Link
+                    href={`/services/${s.slug}`}
+                    className="text-sm text-mist-500 transition-colors hover:text-white"
+                  >
+                    {s.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
         <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-8 text-sm text-mist-500 md:flex-row md:items-center md:justify-between">

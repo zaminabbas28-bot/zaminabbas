@@ -86,11 +86,6 @@ const serviceSchema = {
       },
     })),
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "5",
-    reviewCount: "6",
-  },
 };
 
 export default function Home() {
