@@ -77,7 +77,7 @@ export default function Testimonials() {
                         {review.name}
                       </span>
                       <span className="flex items-center gap-1 text-xs text-mist-500">
-                        <StarIcon className="h-3 w-3 text-amber-400" /> Google review
+                        <StarIcon className="h-3 w-3 text-amber-400" /> Client testimonial
                       </span>
                     </span>
                   </figcaption>
