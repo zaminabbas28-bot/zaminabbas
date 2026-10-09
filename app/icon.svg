@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#070b18"/>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="12" fill="none" stroke="#fbbf24" stroke-opacity="0.45" stroke-width="2"/>
+  <text x="32" y="43" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="700" fill="#fbbf24" text-anchor="middle" letter-spacing="1">ZA</text>
+</svg>
