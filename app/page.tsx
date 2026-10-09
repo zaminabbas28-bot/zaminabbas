@@ -40,19 +40,38 @@ const personSchema = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": `${SITE.url}/#business`,
   name: `${SITE.name} — Local SEO & Digital Marketing`,
   url: SITE.url,
+  image: `${SITE.url}/images/rana-1.jpg`,
   description:
     "Local SEO expert in Multan, Pakistan: Google Business Profile optimization, WordPress development, social media marketing and Google Ads.",
   provider: { "@type": "Person", name: SITE.fullName, url: SITE.url },
-  areaServed: { "@type": "Country", name: SITE.country },
+  areaServed: [
+    { "@type": "City", name: "Multan" },
+    { "@type": "Country", name: SITE.country },
+  ],
   telephone: SITE.phoneHref,
   email: `mailto:${SITE.email}`,
+  priceRange: "$$",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Metro Station, Pracha Street",
     addressLocality: SITE.locality,
+    addressRegion: "Punjab",
+    postalCode: "60000",
     addressCountry: "PK",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 30.17295,
+    longitude: 71.49142,
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    opens: "09:00",
+    closes: "21:00",
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -70,7 +89,7 @@ const serviceSchema = {
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "5",
-    reviewCount: "7",
+    reviewCount: "6",
   },
 };
 

@@ -2,7 +2,7 @@ export const SITE = {
   name: "Rana",
   fullName: "Zeeshan Abbas",
   tagline: "Local SEO Expert in Multan, Pakistan",
-  url: "https://zaminabbas.me",
+  url: "https://zaminabbas28.vercel.app",
   email: "digitalmarketingskills46@gmail.com",
   phoneDisplay: "+92 304 282 8068",
   phoneHref: "+923042828068",
@@ -278,9 +278,14 @@ export const FAQS: Faq[] = [
       "Yes. Every business is different, so I build packages around your goals, market, and budget rather than forcing you into a fixed plan. Whether you are a local shop needing map-pack visibility or a growing company needing full technical and content SEO, we scope the work together and you only pay for what actually moves the needle.",
   },
   {
-    question: "Why are you considered a top-ranked SEO specialist?",
+    question: "Why should I hire you as my SEO specialist?",
     answer:
-      "With 10+ years of hands-on SEO experience and 500+ websites ranked, my work speaks through results: first-page rankings, growing organic traffic, and clients who stay because reporting is transparent. I follow a data-driven process — audits first, strategy second, execution with measurable reporting — and I never use risky shortcuts that could get your site penalized.",
+      "Because I specialize in what actually moves the needle for local businesses: Google Business Profile optimization, Maps ranking, and websites built to convert. My process is data-driven — audits first, strategy second, execution with transparent monthly reporting — and I never use risky shortcuts that could get your site penalized. You always know what was done, why it was done, and what it achieved.",
+  },
+  {
+    question: "How do I rank my business on Google Maps in Pakistan?",
+    answer:
+      "Ranking on Google Maps comes down to four things done consistently: a fully completed and verified Google Business Profile, the right primary and secondary categories, a steady flow of genuine customer reviews that you reply to, and local citations with matching name, address and phone number. Add weekly Google Posts and geo-tagged photos, and most local businesses in Pakistan start seeing map-pack movement within 2 to 3 months. That is exactly the system I run for my clients.",
   },
   {
     question: "Do you provide ongoing monitoring and reporting?",

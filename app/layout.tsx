@@ -25,7 +25,7 @@ const mono = JetBrains_Mono({
 });
 
 const DESCRIPTION =
-  "Rana (Zeeshan Abbas) — Local SEO expert in Multan, Pakistan. Google Business Profile optimization, WordPress development & social media marketing that ranks local businesses #1 on Google Maps.";
+  "Rana (Zeeshan Abbas) — Local SEO expert in Multan, Pakistan. Google Business Profile optimization, WordPress development & social media marketing that gets local businesses found on Google Maps.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),

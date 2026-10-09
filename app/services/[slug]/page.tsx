@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
   if (!service) return {};
 
   const title = `${service.title} Services | ${SITE.name}`;
-  const description = `${service.short} Work with ${SITE.name}, a top-ranked SEO specialist in Pakistan with 10+ years of experience and 500+ websites ranked.`;
+  const description = `${service.short} Work with ${SITE.name}, a local SEO expert in Multan, Pakistan offering ${service.title.toLowerCase()} that is built to rank and convert.`;
 
   return {
     title,

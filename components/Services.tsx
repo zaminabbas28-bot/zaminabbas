@@ -10,6 +10,11 @@ const CARD_GRADIENTS = [
   "from-pink-600/40 via-rose-600/20 to-transparent",
   "from-orange-600/40 via-amber-600/20 to-transparent",
 ];
+// Detail pages exist for these services — deep internal links for SEO.
+const CARD_DETAIL_LINKS: Record<string, string> = {
+  "Local SEO": "/services/local-seo",
+  "Social Media Marketing": "/services/social-media-marketing",
+};
 
 export default function Services() {
   return (
@@ -87,6 +92,15 @@ export default function Services() {
                       </span>
                     ))}
                   </div>
+                  {CARD_DETAIL_LINKS[service.title] && (
+                    <Link
+                      href={CARD_DETAIL_LINKS[service.title]}
+                      className="group mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold-300 transition-colors hover:text-white"
+                    >
+                      Learn more about {service.title}
+                      <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </Link>
+                  )}
                 </Reveal>
               </div>
             );
