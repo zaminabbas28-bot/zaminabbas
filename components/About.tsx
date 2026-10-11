@@ -37,20 +37,25 @@ function PhotoCarousel() {
             "0 40px 80px -30px rgba(216,180,96,0.35), 0 25px 60px -20px rgba(0,0,0,0.8)",
         }}
       >
-        <div className="relative aspect-[4/5] overflow-hidden rounded-[calc(1.75rem-1px)] bg-ink-900">
-          {HERO_PHOTOS.map((photo, i) => (
-            <Image
-              key={photo.src}
-              src={photo.src}
-              alt={photo.alt}
-              fill
-              sizes="(max-width: 768px) 90vw, 420px"
-              priority={i === 0}
-              className={`object-cover transition-opacity duration-1000 ${
-                i === index ? "opacity-100" : "opacity-0"
-              }`}
-            />
-          ))}
+        <div className="relative overflow-hidden rounded-[calc(1.75rem-1px)] bg-ink-900">
+          {/* sliding track */}
+          <div
+            className="flex transition-transform duration-700 ease-in-out"
+            style={{ transform: `translateX(-${index * 100}%)` }}
+          >
+            {HERO_PHOTOS.map((photo, i) => (
+              <div key={photo.src} className="relative aspect-[4/5] w-full shrink-0">
+                <Image
+                  src={photo.src}
+                  alt={photo.alt}
+                  fill
+                  sizes="(max-width: 768px) 90vw, 420px"
+                  priority={i === 0}
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
           <div
             aria-hidden
             className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink-950/80 to-transparent"
@@ -73,6 +78,23 @@ function PhotoCarousel() {
           <span className="absolute right-4 top-4 rounded-full border border-white/15 bg-ink-950/60 px-3 py-1 font-mono text-[0.65rem] tracking-[0.15em] text-white/80 backdrop-blur-sm">
             {index + 1} / {HERO_PHOTOS.length}
           </span>
+          {/* prev/next arrows */}
+          <button
+            type="button"
+            onClick={() => setIndex((index - 1 + HERO_PHOTOS.length) % HERO_PHOTOS.length)}
+            aria-label="Previous photo"
+            className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-ink-950/60 text-white/80 backdrop-blur-sm transition hover:bg-ink-950/90 hover:text-white"
+          >
+            <span aria-hidden>&larr;</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => setIndex((index + 1) % HERO_PHOTOS.length)}
+            aria-label="Next photo"
+            className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-ink-950/60 text-white/80 backdrop-blur-sm transition hover:bg-ink-950/90 hover:text-white"
+          >
+            <span aria-hidden>&rarr;</span>
+          </button>
         </div>
         <div className="flex items-center justify-between bg-ink-950/95 px-4 py-4">
           <div>
