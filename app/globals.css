@@ -293,6 +293,19 @@ button:focus-visible {
   .spotlight-beam, .spotlight-top-glow { animation: none; }
 }
 
+/* ---------- 3D about photo ---------- */
+.about-photo-3d {
+  transform: perspective(1400px) rotateY(7deg) rotateX(2deg);
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+.about-photo-3d:hover {
+  transform: perspective(1400px) rotateY(0deg) rotateX(0deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  .about-photo-3d { transform: none; transition: none; }
+}
+
 /* ---------- 3D extruded gold text ---------- */
 .text-3d-gold {
   text-shadow:

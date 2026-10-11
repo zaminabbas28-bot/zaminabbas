@@ -1,6 +1,92 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import { SITE, STATS } from "@/lib/site";
+import { HERO_PHOTOS, SITE, STATS } from "@/lib/site";
 import Reveal from "./Reveal";
+
+const SLIDE_MS = 4000;
+
+function PhotoCarousel() {
+  const [index, setIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  useEffect(() => {
+    if (paused) return;
+    const id = setInterval(
+      () => setIndex((i) => (i + 1) % HERO_PHOTOS.length),
+      SLIDE_MS
+    );
+    return () => clearInterval(id);
+  }, [paused]);
+
+  return (
+    <div
+      className="about-photo-3d relative mx-auto max-w-md"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-gold/25 via-accent-pink/10 to-transparent blur-2xl"
+      />
+      <div
+        className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-gold/60 via-gold/15 to-transparent p-[1px]"
+        style={{
+          boxShadow:
+            "0 40px 80px -30px rgba(216,180,96,0.35), 0 25px 60px -20px rgba(0,0,0,0.8)",
+        }}
+      >
+        <div className="relative aspect-[4/5] overflow-hidden rounded-[calc(1.75rem-1px)] bg-ink-900">
+          {HERO_PHOTOS.map((photo, i) => (
+            <Image
+              key={photo.src}
+              src={photo.src}
+              alt={photo.alt}
+              fill
+              sizes="(max-width: 768px) 90vw, 420px"
+              priority={i === 0}
+              className={`object-cover transition-opacity duration-1000 ${
+                i === index ? "opacity-100" : "opacity-0"
+              }`}
+            />
+          ))}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink-950/80 to-transparent"
+          />
+          {/* slide dots */}
+          <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+            {HERO_PHOTOS.map((photo, i) => (
+              <button
+                key={photo.src}
+                type="button"
+                onClick={() => setIndex(i)}
+                aria-label={`Show photo ${i + 1}`}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  i === index ? "w-6 bg-gold" : "w-2 bg-white/40 hover:bg-white/70"
+                }`}
+              />
+            ))}
+          </div>
+          {/* counter */}
+          <span className="absolute right-4 top-4 rounded-full border border-white/15 bg-ink-950/60 px-3 py-1 font-mono text-[0.65rem] tracking-[0.15em] text-white/80 backdrop-blur-sm">
+            {index + 1} / {HERO_PHOTOS.length}
+          </span>
+        </div>
+        <div className="flex items-center justify-between bg-ink-950/95 px-4 py-4">
+          <div>
+            <p className="font-medium text-white">{SITE.fullName}</p>
+            <p className="text-sm text-mist-500">
+              {SITE.locality}, {SITE.country}
+            </p>
+          </div>
+          <span className="tag-pill">● OPEN TO WORK</span>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default function About() {
   return (
@@ -52,30 +138,7 @@ export default function About() {
           </div>
 
           <Reveal delay={150}>
-            <div className="relative mx-auto max-w-md">
-              <div
-                aria-hidden
-                className="pointer-events-none absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-accent-violet/25 via-accent-pink/10 to-transparent blur-2xl"
-              />
-              <div className="card-surface relative overflow-hidden p-3">
-                <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
-                  <Image
-                    src="/images/rana-3.jpg"
-                    alt="Zamin Abbas — Local SEO Expert in Multan"
-                    fill
-                    sizes="(max-width: 768px) 90vw, 420px"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="flex items-center justify-between px-3 py-4">
-                  <div>
-                    <p className="font-medium text-white">{SITE.fullName}</p>
-                    <p className="text-sm text-mist-500">{SITE.locality}, {SITE.country}</p>
-                  </div>
-                  <span className="tag-pill">● OPEN TO WORK</span>
-                </div>
-              </div>
-            </div>
+            <PhotoCarousel />
           </Reveal>
         </div>
       </div>
