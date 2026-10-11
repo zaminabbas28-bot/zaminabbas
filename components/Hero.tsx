@@ -88,6 +88,10 @@ export default function Hero() {
                 aria-label="Zamin Abbas — cinematic intro video"
                 className="h-full w-full object-cover"
               />
+              {/* top-down spotlight effect */}
+              <div aria-hidden className="spotlight-top-glow" />
+              <div aria-hidden className="spotlight-beam" />
+              <div aria-hidden className="spotlight-floor" />
               <div
                 aria-hidden
                 className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-ink-950/70 to-transparent"

@@ -254,6 +254,45 @@ button:focus-visible {
   .stack-card { position: relative; top: 0; }
 }
 
+/* ---------- Hero spotlight beam ---------- */
+@keyframes spotlight-breathe {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; }
+}
+.spotlight-beam {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* light cone fanning down from top-center */
+  background: conic-gradient(
+    from 180deg at 50% -8%,
+    transparent 44%,
+    rgba(255, 238, 190, 0.16) 50%,
+    transparent 56%
+  );
+  filter: blur(6px);
+  animation: spotlight-breathe 7s ease-in-out infinite;
+}
+.spotlight-top-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* bright source glow at the very top */
+  background:
+    radial-gradient(ellipse 75% 22% at 50% -4%, rgba(255, 246, 220, 0.75), rgba(255, 240, 200, 0.18) 55%, transparent 75%);
+  animation: spotlight-breathe 7s ease-in-out infinite;
+}
+.spotlight-floor {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* warm pool of light where the beam lands */
+  background: radial-gradient(ellipse 55% 30% at 50% 88%, rgba(255, 225, 160, 0.12), transparent 70%);
+}
+@media (prefers-reduced-motion: reduce) {
+  .spotlight-beam, .spotlight-top-glow { animation: none; }
+}
+
 /* ---------- Gold glow ---------- */
 .gold-glow {
   box-shadow:
