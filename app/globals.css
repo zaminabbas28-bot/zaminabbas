@@ -306,6 +306,22 @@ button:focus-visible {
     0 10px 22px rgba(0, 0, 0, 0.85);
 }
 
+/* ---------- 3D insight cards ---------- */
+.insight-card {
+  transform: perspective(1200px) rotateY(-4deg);
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+.insight-card.tilt-r {
+  transform: perspective(1200px) rotateY(4deg);
+}
+.insight-card:hover {
+  transform: perspective(1200px) rotateY(0deg) translateY(-8px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .insight-card { transform: none; transition: none; }
+}
+
 /* ---------- Gold glow ---------- */
 .gold-glow {
   box-shadow:

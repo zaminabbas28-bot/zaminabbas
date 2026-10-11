@@ -3,10 +3,10 @@ import { ArrowRightIcon, TrendingUpIcon, MapPinIcon, GearCodeIcon } from "./icon
 import Reveal from "./Reveal";
 
 const CARD_ICONS = [MapPinIcon, TrendingUpIcon, GearCodeIcon];
-const CARD_GRADIENTS = [
-  "from-violet-600/50 via-purple-600/20 to-transparent",
-  "from-sky-600/50 via-blue-600/20 to-transparent",
-  "from-pink-600/50 via-rose-600/20 to-transparent",
+const CARD_STYLES = [
+  { gradient: "from-violet-700 via-purple-600 to-fuchsia-500", glow: "rgba(168,85,247,0.4)" },
+  { gradient: "from-sky-600 via-blue-600 to-indigo-500", glow: "rgba(56,189,248,0.4)" },
+  { gradient: "from-pink-600 via-rose-600 to-red-500", glow: "rgba(236,72,153,0.4)" },
 ];
 
 export default function Insights() {
@@ -20,30 +20,41 @@ export default function Insights() {
           </h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-3" style={{ perspective: "1200px" }}>
           {INSIGHTS.map((post, i) => {
             const Icon = CARD_ICONS[i % CARD_ICONS.length];
+            const style = CARD_STYLES[i % CARD_STYLES.length];
             return (
-              <Reveal key={post.title} delay={i * 100}>
-                <article className="card-surface card-hover flex h-full flex-col overflow-hidden">
-                  <div
-                    className={`relative flex h-44 items-center justify-center bg-gradient-to-br ${CARD_GRADIENTS[i % CARD_GRADIENTS.length]}`}
-                  >
-                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/15 bg-ink-950/60 backdrop-blur-sm">
-                      <Icon className="h-8 w-8 text-white" />
+              <Reveal key={post.title} delay={i * 100} className="h-full">
+                <article
+                  className={`insight-card group flex h-full flex-col overflow-hidden rounded-[1.5rem] bg-gradient-to-br ${style.gradient} p-[1px]${i % 2 === 1 ? " tilt-r" : ""}`}
+                  style={{
+                    boxShadow: `0 30px 60px -25px ${style.glow}, 0 20px 40px -20px rgba(0,0,0,0.7)`,
+                  }}
+                >
+                  <div className="flex h-full flex-col overflow-hidden rounded-[calc(1.5rem-1px)] bg-ink-950/90 backdrop-blur-sm">
+                    <div
+                      className={`relative flex h-44 items-center justify-center bg-gradient-to-br ${style.gradient} opacity-90`}
+                    >
+                      <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/20 bg-ink-950/60 shadow-lg backdrop-blur-sm transition-transform duration-500 group-hover:scale-110">
+                        <Icon className="h-8 w-8 text-white" />
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex flex-1 flex-col p-6">
-                    <h3 className="text-lg font-semibold leading-snug text-white">
-                      {post.title}
-                    </h3>
-                    <p className="mt-3 flex-1 text-sm leading-relaxed text-mist-500">
-                      {post.excerpt}
-                    </p>
-                    <div className="mt-6 flex items-center justify-between border-t border-white/10 pt-4">
-                      <p className="label-caps">
-                        {post.readTime} · {post.date}
+                    <div className="flex flex-1 flex-col p-6">
+                      <h3 className="text-lg font-semibold leading-snug text-white">
+                        {post.title}
+                      </h3>
+                      <p className="mt-3 flex-1 text-sm leading-relaxed text-mist-500">
+                        {post.excerpt}
                       </p>
+                      <div className="mt-6 flex items-center justify-between border-t border-white/10 pt-4">
+                        <p className="label-caps">
+                          {post.readTime} · {post.date}
+                        </p>
+                        <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 text-mist-300 transition-all duration-300 group-hover:border-gold group-hover:text-gold">
+                          <ArrowRightIcon className="h-4 w-4" />
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </article>
