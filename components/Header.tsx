@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { NAV_LINKS, SITE } from "@/lib/site";
-import { ArrowUpRightIcon, CloseIcon, MenuIcon, SearchIcon } from "./icons";
+import { ArrowUpRightIcon, CloseIcon, MenuIcon } from "./icons";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -17,31 +17,38 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-4 z-50 flex justify-center px-4">
+    <header
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "border-b border-white/10 bg-ink-950/90 backdrop-blur-xl"
+          : "border-b border-transparent bg-transparent"
+      }`}
+    >
       <nav
         aria-label="Primary"
-        className={`flex items-center gap-1 rounded-full border border-white/10 bg-ink-900/80 py-1.5 pl-2 pr-1.5 shadow-2xl shadow-black/60 backdrop-blur-xl transition-all duration-300 ${
-          scrolled ? "bg-ink-900/95" : ""
-        }`}
+        className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8"
       >
+        {/* Logo */}
         <Link
           href="/#top"
           aria-label={`${SITE.name} — home`}
-          className="mr-1 flex h-9 w-9 items-center justify-center rounded-full bg-gradient-to-br from-accent-violet to-accent-pink font-display text-base font-bold text-white"
+          className="flex items-center gap-2.5"
         >
-          Z
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-gold-soft via-gold to-gold-deep font-sans text-base font-extrabold text-ink-950">
+            Z
+          </span>
+          <span className="font-sans text-sm font-extrabold tracking-[0.18em] text-white">
+            ZAMIN&nbsp;ABBAS
+          </span>
         </Link>
 
-        <ul className="hidden items-center md:flex">
-          {NAV_LINKS.map((link, i) => (
+        {/* Desktop links */}
+        <ul className="hidden items-center gap-1 lg:flex">
+          {NAV_LINKS.filter((l) => l.label !== "Home").map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`rounded-full px-4 py-2 text-sm transition-colors ${
-                  i === 0
-                    ? "bg-white/10 font-medium text-white"
-                    : "text-mist-300 hover:bg-white/5 hover:text-white"
-                }`}
+                className="rounded-full px-4 py-2 text-sm font-medium text-mist-300 transition-colors hover:bg-white/5 hover:text-white"
               >
                 {link.label}
               </Link>
@@ -49,26 +56,22 @@ export default function Header() {
           ))}
         </ul>
 
-        <Link
-          href={SITE.whatsapp}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-1 hidden items-center gap-1.5 rounded-full bg-white/10 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-white/15 md:inline-flex"
-        >
-          Hire Me
-        </Link>
+        <div className="hidden items-center gap-3 lg:flex">
+          <Link
+            href={SITE.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 rounded-full bg-gold px-6 py-2.5 text-sm font-bold text-ink-950 transition hover:bg-gold-soft"
+          >
+            Let&rsquo;s Work Together
+            <ArrowUpRightIcon className="h-4 w-4" />
+          </Link>
+        </div>
 
-        <Link
-          href="/#insights"
-          aria-label="Search insights"
-          className="hidden h-9 w-9 items-center justify-center rounded-full border border-white/10 text-mist-300 transition-colors hover:text-white md:inline-flex"
-        >
-          <SearchIcon className="h-4 w-4" />
-        </Link>
-
+        {/* Mobile toggle */}
         <button
           type="button"
-          className="inline-flex h-9 w-9 items-center justify-center rounded-full text-white md:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -81,10 +84,10 @@ export default function Header() {
       {open && (
         <div
           id="mobile-menu"
-          className="absolute top-full mt-2 w-[calc(100%-2rem)] max-w-sm rounded-3xl border border-white/10 bg-ink-900/95 p-3 shadow-2xl shadow-black/60 backdrop-blur-xl md:hidden"
+          className="mx-4 mb-4 rounded-3xl border border-white/10 bg-ink-900/95 p-3 shadow-2xl shadow-black/60 backdrop-blur-xl lg:hidden"
         >
           <ul className="space-y-1">
-            {NAV_LINKS.map((link) => (
+            {NAV_LINKS.filter((l) => l.label !== "Home").map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
@@ -101,9 +104,9 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="flex items-center justify-center gap-2 rounded-2xl bg-white/10 px-4 py-3 text-base font-medium text-white"
+                className="flex items-center justify-center gap-2 rounded-2xl bg-gold px-4 py-3 text-base font-bold text-ink-950"
               >
-                Hire Me <ArrowUpRightIcon className="h-4 w-4" />
+                Let&rsquo;s Work Together <ArrowUpRightIcon className="h-4 w-4" />
               </Link>
             </li>
           </ul>

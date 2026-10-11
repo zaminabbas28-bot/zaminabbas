@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Ticker from "@/components/Ticker";
+import Capabilities from "@/components/Capabilities";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
@@ -101,12 +102,13 @@ export default function Home() {
         <JsonLd id="service-jsonld" data={serviceSchema} />
         <Hero />
         <Ticker />
+        <Capabilities />
         <About />
         <Services />
         <Projects />
-        <Insights />
         <Testimonials />
         <Bento />
+        <Insights />
       </div>
     </div>
   );

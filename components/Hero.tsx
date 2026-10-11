@@ -1,143 +1,106 @@
-import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
 import { SITE } from "@/lib/site";
 
-const CHECKLIST = [
-  "Google Business Profile setup & optimization",
-  "Google Maps 3-pack ranking strategy",
-  "SEO-ready WordPress development",
-  "Fast, direct communication",
-];
-
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="relative overflow-hidden bg-[#0a0f1c] text-white"
-    >
-      {/* subtle orange glow */}
+    <section id="home" className="relative overflow-hidden bg-ink-950 text-white">
+      {/* gold ambient glows */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-32 right-0 h-[480px] w-[480px] rounded-full bg-accent/15 blur-[140px]"
+        className="pointer-events-none absolute -top-40 right-[-10%] h-[560px] w-[560px] rounded-full bg-gold/10 blur-[160px]"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute bottom-0 left-0 h-[320px] w-[320px] rounded-full bg-accent/10 blur-[120px]"
+        className="pointer-events-none absolute bottom-[-20%] left-[-10%] h-[420px] w-[420px] rounded-full bg-gold/5 blur-[140px]"
       />
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-20 pt-32 sm:px-8 lg:grid-cols-2 lg:gap-8 lg:pt-36">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-24 pt-32 sm:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10 lg:pt-40">
         {/* ---------- Left: copy ---------- */}
         <div>
           <Reveal>
-            <p className="font-mono text-xs tracking-[0.3em] text-accent">
-              ZAMIN ABBAS &mdash; LOCAL SEO EXPERT
+            <p className="label-caps !text-gold">
+              Zamin Abbas &mdash; Local SEO Expert &amp; Web Developer
             </p>
-            <h1 className="mt-5 font-sans text-5xl font-extrabold leading-[1.02] tracking-tight sm:text-6xl lg:text-7xl">
+            <h1 className="display-mega mt-6 font-sans text-[2.9rem] sm:text-7xl lg:text-[5.2rem]">
               Local SEO Expert
               <br />
-              in Multan, <span className="text-gradient-accent">Pakistan.</span>
+              in Multan,{" "}
+              <span className="text-gradient-accent">Pakistan.</span>
             </h1>
-            <p className="font-display mt-4 text-2xl italic text-white/85 sm:text-3xl">
-              Get found. Get calls. Grow local.
-            </p>
-            <p className="mt-6 max-w-md leading-relaxed text-white/70">
-              Local SEO expert in Multan, Pakistan. I put local businesses on
-              the Google Map — optimized profiles, map-pack rankings, and
-              WordPress websites built to convert.
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-mist-300 sm:text-xl">
+              I get local businesses found on Google — map-pack rankings,
+              optimized profiles, and WordPress websites built to turn
+              searches into calls.
             </p>
           </Reveal>
 
-          <Reveal delay={120}>
-            <p className="mt-8 font-mono text-xs tracking-[0.25em] text-white/50">
-              WHY WORK WITH ME?
-            </p>
-            <ul className="mt-4 space-y-3">
-              {CHECKLIST.map((item) => (
-                <li key={item} className="flex items-center gap-3 text-[15px] text-white/85">
-                  <span aria-hidden className="h-2.5 w-2.5 shrink-0 bg-accent" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </Reveal>
-
-          <Reveal delay={200}>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+          <Reveal delay={140}>
+            <div className="mt-9 flex flex-wrap items-center gap-4">
               <Link
-                href="https://www.fiverr.com/zaminabbas28"
+                href={SITE.whatsapp}
                 target="_blank"
-                rel="noopener"
-                className="rounded-full border border-white/20 px-5 py-2 text-sm font-semibold text-white/85 transition hover:border-accent hover:text-accent"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 rounded-full bg-gold px-8 py-4 text-sm font-bold text-ink-950 transition hover:bg-gold-soft"
               >
-                Fiverr
-              </Link>
-              <Link
-                href={SITE.linkedin}
-                target="_blank"
-                rel="noopener"
-                className="rounded-full border border-white/20 px-5 py-2 text-sm font-semibold text-white/85 transition hover:border-accent hover:text-accent"
-              >
-                LinkedIn
-              </Link>
-            </div>
-            <div className="mt-6 flex flex-wrap gap-4">
-              <Link
-                href="#contact"
-                className="group inline-flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 text-sm font-bold text-white transition hover:bg-accent-deep"
-              >
-                Hire Me
-                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                Let&rsquo;s Work Together
+                <span aria-hidden className="transition-transform group-hover:translate-x-1">
+                  &rarr;
+                </span>
               </Link>
               <Link
                 href="#work"
-                className="inline-flex items-center gap-2 rounded-full border border-white/25 px-7 py-3.5 text-sm font-bold text-white transition hover:border-white hover:bg-white/10"
+                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-8 py-4 text-sm font-bold text-white transition hover:border-gold hover:text-gold"
               >
                 See My Work
               </Link>
             </div>
+            <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-mist-500">
+              <span className="inline-flex items-center gap-2">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
+                  <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
+                </span>
+                Available for projects
+              </span>
+              <span>Multan, Pakistan &middot; Working worldwide</span>
+            </div>
           </Reveal>
         </div>
 
-        {/* ---------- Right: photo ---------- */}
-        <Reveal delay={150} className="relative mx-auto w-full max-w-md lg:max-w-none">
+        {/* ---------- Right: hero video ---------- */}
+        <Reveal delay={180} className="relative mx-auto w-full max-w-sm lg:max-w-none">
           <div className="relative">
-            {/* giant outlined letterform */}
-            <span
-              aria-hidden
-              className="pointer-events-none absolute -top-16 right-0 select-none font-sans text-[11rem] font-extrabold leading-none text-transparent sm:text-[15rem]"
-              style={{ WebkitTextStroke: "2px rgba(249,106,27,0.35)" }}
-            >
-              R
-            </span>
-            {/* orange outlined frame */}
+            {/* gold ring frame */}
             <div
               aria-hidden
-              className="absolute -right-4 -top-4 h-full w-full rounded-3xl border-2 border-accent/70"
+              className="absolute -inset-3 rounded-[2rem] bg-gradient-to-b from-gold/50 via-gold/10 to-transparent blur-[2px]"
             />
-            <div className="relative overflow-hidden rounded-3xl border border-white/10">
-              <Image
-                src="/images/zamin-abbas-local-seo-expert.jpg"
-                alt="Zamin Abbas — Local SEO expert in Multan, Pakistan"
-                width={880}
-                height={1060}
-                priority
-                className="h-auto w-full object-cover"
+            <div className="gold-glow relative aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-gold/25 bg-ink-900">
+              <video
+                src="/videos/hero-video.mp4"
+                poster="/videos/hero-video-poster.jpg"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                aria-label="Zamin Abbas — cinematic intro video"
+                className="h-full w-full object-cover"
               />
               <div
                 aria-hidden
-                className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/50 to-transparent"
+                className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-ink-950/70 to-transparent"
               />
             </div>
-            {/* orange bar at bottom edge */}
-            <div aria-hidden className="absolute -bottom-3 left-10 right-10 h-2 rounded-full bg-accent" />
-            {/* availability badge */}
-            <div className="absolute -left-3 top-8 flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-bold text-ink shadow-xl sm:-left-6">
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
-                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
-              </span>
-              AVAILABLE FOR PROJECTS
+            {/* floating badge */}
+            <div className="absolute -left-4 top-6 rounded-2xl border border-gold/30 bg-ink-900/90 px-4 py-3 shadow-xl backdrop-blur sm:-left-8">
+              <p className="font-mono text-[0.65rem] tracking-[0.2em] text-gold">
+                GOOGLE MAPS
+              </p>
+              <p className="mt-1 font-sans text-sm font-bold text-white">
+                Ranking Specialist
+              </p>
             </div>
           </div>
         </Reveal>

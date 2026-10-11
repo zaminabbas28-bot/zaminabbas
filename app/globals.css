@@ -15,8 +15,11 @@
   --color-accent-pink: #f472b6;
   --color-accent-violet: #a855f7;
   --color-accent-orange: #fb923c;
-  --color-accent: #f96a1b;
-  --color-accent-deep: #d9530f;
+  --color-accent: #d8b460;
+  --color-accent-deep: #b48430;
+  --color-gold: #d8b460;
+  --color-gold-deep: #b48430;
+  --color-gold-soft: #f0d998;
 
   --font-display: "Instrument Serif", ui-serif, Georgia, serif;
   --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -37,8 +40,8 @@ body {
 }
 
 ::selection {
-  background: var(--color-accent-violet);
-  color: white;
+  background: var(--color-accent);
+  color: #0a0a0a;
 }
 
 /* ---------- Serif display helpers ---------- */
@@ -48,7 +51,7 @@ body {
 }
 
 .text-gradient-accent {
-  background: linear-gradient(100deg, #c084fc 0%, #f472b6 45%, #fb923c 100%);
+  background: linear-gradient(100deg, #f0d998 0%, #d8b460 45%, #b48430 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -89,7 +92,7 @@ body {
 .card-hover:hover {
   transform: translateY(-5px);
   border-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 24px 60px -24px rgba(168, 85, 247, 0.35);
+  box-shadow: 0 24px 60px -24px rgba(216, 180, 96, 0.35);
 }
 
 /* ---------- Tag pills ---------- */
@@ -178,7 +181,7 @@ body {
 /* ---------- Focus visibility ---------- */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--color-accent-violet);
+  outline: 2px solid var(--color-accent);
   outline-offset: 3px;
   border-radius: 6px;
 }
@@ -189,8 +192,8 @@ button:focus-visible {
   left: 1rem;
   top: -4rem;
   z-index: 100;
-  background: var(--color-accent-violet);
-  color: white;
+  background: var(--color-accent);
+  color: #0a0a0a;
   font-weight: 700;
   padding: 0.75rem 1.25rem;
   border-radius: 0.5rem;
@@ -239,4 +242,28 @@ button:focus-visible {
 
 @media (prefers-reduced-motion: reduce) {
   .anim-zoom, .anim-wave, .anim-marquee, .anim-sway, .anim-pulse { animation: none; }
+}
+
+/* ---------- Sticky scroll-stack cards ---------- */
+.stack-card {
+  position: sticky;
+  top: 6.5rem;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .stack-card { position: relative; top: 0; }
+}
+
+/* ---------- Gold glow ---------- */
+.gold-glow {
+  box-shadow:
+    0 0 80px -18px rgba(216, 180, 96, 0.45),
+    0 30px 80px -30px rgba(0, 0, 0, 0.8);
+}
+
+/* ---------- Giant display headline ---------- */
+.display-mega {
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 0.98;
 }
