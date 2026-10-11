@@ -14,6 +14,7 @@ const CAPABILITIES = [
     tags: ["Google Maps", "3-Pack Ranking", "Reviews"],
     gradient: "from-violet-700 via-purple-600 to-fuchsia-500",
     glow: "rgba(168,85,247,0.45)",
+    slug: "local-seo",
   },
   {
     n: "02",
@@ -23,6 +24,7 @@ const CAPABILITIES = [
     tags: ["Business Websites", "WooCommerce", "Speed"],
     gradient: "from-fuchsia-700 via-pink-600 to-rose-500",
     glow: "rgba(236,72,153,0.45)",
+    slug: "wordpress-development",
   },
   {
     n: "03",
@@ -32,6 +34,7 @@ const CAPABILITIES = [
     tags: ["Profile Setup", "Categories", "Posts"],
     gradient: "from-teal-600 via-cyan-600 to-sky-500",
     glow: "rgba(34,211,238,0.4)",
+    slug: "local-seo",
   },
   {
     n: "04",
@@ -41,6 +44,7 @@ const CAPABILITIES = [
     tags: ["Content", "Profiles", "Growth"],
     gradient: "from-amber-600 via-orange-500 to-yellow-500",
     glow: "rgba(251,146,60,0.45)",
+    slug: "social-media-marketing",
   },
   {
     n: "05",
@@ -50,6 +54,7 @@ const CAPABILITIES = [
     tags: ["Search Ads", "Targeting", "ROI"],
     gradient: "from-blue-700 via-indigo-600 to-violet-500",
     glow: "rgba(99,102,241,0.45)",
+    slug: "google-ads",
   },
 ];
 
@@ -156,15 +161,24 @@ export default function Capabilities() {
                           </span>
                         ))}
                       </div>
-                      <Link
-                        href={SITE.whatsapp}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={`Discuss ${cap.title} on WhatsApp`}
-                        className="mt-6 inline-flex items-center gap-2 rounded-full bg-white/95 px-6 py-3 text-sm font-bold text-ink-950 transition hover:bg-white"
-                      >
-                        Start Project <span aria-hidden>&rarr;</span>
-                      </Link>
+                      <div className="flex items-center gap-3">
+                        <Link
+                          href={`/services/${cap.slug}`}
+                          aria-label={`Learn more about ${cap.title}`}
+                          className="inline-flex items-center gap-2 rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-white/90 transition hover:border-white/60 hover:text-white"
+                        >
+                          Learn More <span aria-hidden>&rarr;</span>
+                        </Link>
+                        <Link
+                          href={SITE.whatsapp}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Discuss ${cap.title} on WhatsApp`}
+                          className="inline-flex items-center gap-2 rounded-full bg-white/95 px-6 py-3 text-sm font-bold text-ink-950 transition hover:bg-white"
+                        >
+                          Start Project <span aria-hidden>&rarr;</span>
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </article>

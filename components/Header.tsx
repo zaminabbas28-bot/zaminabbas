@@ -44,7 +44,7 @@ export default function Header() {
 
         {/* Desktop links */}
         <ul className="hidden items-center gap-1 lg:flex">
-          {NAV_LINKS.filter((l) => l.label !== "Home").map((link) => (
+          {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
@@ -87,7 +87,7 @@ export default function Header() {
           className="mx-4 mb-4 rounded-3xl border border-white/10 bg-ink-900/95 p-3 shadow-2xl shadow-black/60 backdrop-blur-xl lg:hidden"
         >
           <ul className="space-y-1">
-            {NAV_LINKS.filter((l) => l.label !== "Home").map((link) => (
+            {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
