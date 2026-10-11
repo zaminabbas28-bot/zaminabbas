@@ -4,6 +4,7 @@ import Capabilities from "@/components/Capabilities";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
+import Process from "@/components/Process";
 import Insights from "@/components/Insights";
 import Testimonials from "@/components/Testimonials";
 import Bento from "@/components/Bento";
@@ -106,6 +107,7 @@ export default function Home() {
         <About />
         <Services />
         <Projects />
+        <Process />
         <Testimonials />
         <Bento />
         <Insights />

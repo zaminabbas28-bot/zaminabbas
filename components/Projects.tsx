@@ -4,23 +4,23 @@ import Reveal from "./Reveal";
 
 const CARD_ICONS = [MapPinIcon, ShareNodesIcon, SparkleIcon];
 const CARD_GRADIENTS = [
-  "from-violet-600/50 via-purple-600/20 to-transparent",
-  "from-sky-600/50 via-blue-600/20 to-transparent",
-  "from-pink-600/50 via-rose-600/20 to-transparent",
+  "from-gold/40 via-gold/10 to-transparent",
+  "from-amber-600/40 via-gold/10 to-transparent",
+  "from-yellow-500/30 via-gold/10 to-transparent",
 ];
 
 export default function Projects() {
   return (
     <section id="work" className="relative py-24 sm:py-32">
-      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+      <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
-          <p className="label-caps">Selected work</p>
-          <h2 className="font-display mt-3 text-4xl text-white sm:text-5xl">
-            Projects that <em className="text-gradient-accent">rank</em>
+          <p className="label-caps !text-gold">Selected work</p>
+          <h2 className="display-mega mt-4 font-sans text-5xl text-white sm:text-7xl">
+            Work that <span className="text-gradient-accent">ranks.</span>
           </h2>
-          <p className="mt-4 max-w-xl leading-relaxed text-mist-500">
-            A few client builds — websites designed to convert and optimized to
-            be found.
+          <p className="mt-5 max-w-xl leading-relaxed text-mist-500">
+            A focused portfolio of client builds — websites designed to
+            convert and optimized to be found.
           </p>
         </Reveal>
 
