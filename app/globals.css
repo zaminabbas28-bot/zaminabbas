@@ -293,6 +293,19 @@ button:focus-visible {
   .spotlight-beam, .spotlight-top-glow { animation: none; }
 }
 
+/* ---------- 3D extruded gold text ---------- */
+.text-3d-gold {
+  text-shadow:
+    0 1px 0 #f0d998,
+    0 2px 0 #e2c169,
+    0 3px 0 #d4ae52,
+    0 4px 0 #c09a42,
+    0 5px 0 #a88436,
+    0 6px 0 #8f6f2c,
+    0 7px 0 #755a24,
+    0 10px 22px rgba(0, 0, 0, 0.85);
+}
+
 /* ---------- Gold glow ---------- */
 .gold-glow {
   box-shadow:

@@ -86,7 +86,7 @@ export default function Capabilities() {
   const count = CAPABILITIES.length;
 
   return (
-    <section ref={sectionRef} aria-label="Capabilities" className="relative bg-ink-950">
+    <section ref={sectionRef} id="services" aria-label="Capabilities" className="relative bg-ink-950">
       {/* header */}
       <div className="mx-auto max-w-7xl px-5 pt-24 sm:px-8 sm:pt-32">
         <Reveal>
