@@ -6,12 +6,9 @@ import { PauseIcon, PlayIcon, QuoteIcon, StarIcon } from "./icons";
 import Reveal from "./Reveal";
 
 const CARD_GRADIENTS = [
-  "from-fuchsia-600/30 via-purple-900/40 to-ink-900",
-  "from-blue-600/30 via-indigo-900/40 to-ink-900",
-  "from-teal-600/30 via-emerald-900/40 to-ink-900",
-  "from-orange-600/30 via-amber-900/40 to-ink-900",
-  "from-sky-600/30 via-cyan-900/40 to-ink-900",
-  "from-pink-600/30 via-rose-900/40 to-ink-900",
+  "from-gold/25 via-gold-deep/20 to-ink-900",
+  "from-gold-soft/20 via-gold/15 to-ink-900",
+  "from-[#f5e2ae]/20 via-gold-deep/25 to-ink-900",
 ];
 
 export default function Testimonials() {
@@ -63,13 +60,13 @@ export default function Testimonials() {
                   className={`card-surface relative flex min-h-[300px] flex-col justify-between overflow-hidden bg-gradient-to-br p-7 ${CARD_GRADIENTS[(index + k) % CARD_GRADIENTS.length]}`}
                 >
                   <div>
-                    <QuoteIcon className="h-7 w-7 text-white/25" />
+                    <QuoteIcon className="h-7 w-7 text-gold/30" />
                     <blockquote className="mt-4 text-[0.95rem] leading-relaxed text-mist-100">
                       “{review.quote}”
                     </blockquote>
                   </div>
                   <figcaption className="mt-6 flex items-center gap-3">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-white/15 font-display text-sm font-bold text-white backdrop-blur-sm">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold/20 font-display text-sm font-bold text-gold-soft backdrop-blur-sm">
                       {review.initials}
                     </span>
                     <span>
