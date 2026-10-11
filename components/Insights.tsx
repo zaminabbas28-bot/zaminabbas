@@ -4,9 +4,9 @@ import Reveal from "./Reveal";
 
 const CARD_ICONS = [MapPinIcon, TrendingUpIcon, GearCodeIcon];
 const CARD_STYLES = [
-  { gradient: "from-violet-700 via-purple-600 to-fuchsia-500", glow: "rgba(168,85,247,0.4)" },
-  { gradient: "from-sky-600 via-blue-600 to-indigo-500", glow: "rgba(56,189,248,0.4)" },
-  { gradient: "from-pink-600 via-rose-600 to-red-500", glow: "rgba(236,72,153,0.4)" },
+  { gradient: "from-gold-soft via-gold to-gold-deep", glow: "rgba(216,180,96,0.45)" },
+  { gradient: "from-gold via-gold-deep to-[#8a6a24]", glow: "rgba(180,132,48,0.45)" },
+  { gradient: "from-[#f5e2ae] via-gold-soft to-gold", glow: "rgba(240,217,152,0.4)" },
 ];
 
 export default function Insights() {
@@ -34,10 +34,10 @@ export default function Insights() {
                 >
                   <div className="flex h-full flex-col overflow-hidden rounded-[calc(1.5rem-1px)] bg-ink-950/90 backdrop-blur-sm">
                     <div
-                      className={`relative flex h-44 items-center justify-center bg-gradient-to-br ${style.gradient} opacity-90`}
+                      className="relative flex h-44 items-center justify-center bg-gradient-to-br from-gold/25 via-gold/10 to-transparent"
                     >
-                      <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/20 bg-ink-950/60 shadow-lg backdrop-blur-sm transition-transform duration-500 group-hover:scale-110">
-                        <Icon className="h-8 w-8 text-white" />
+                      <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-gold/30 bg-ink-950/60 shadow-lg backdrop-blur-sm transition-transform duration-500 group-hover:scale-110">
+                        <Icon className="h-8 w-8 text-gold" />
                       </div>
                     </div>
                     <div className="flex flex-1 flex-col p-6">
