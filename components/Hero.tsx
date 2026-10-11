@@ -68,15 +68,10 @@ export default function Hero() {
           </Reveal>
         </div>
 
-        {/* ---------- Right: hero video ---------- */}
+        {/* ---------- Right: hero video (frameless, blends into background) ---------- */}
         <Reveal delay={180} className="relative mx-auto w-full max-w-sm lg:max-w-none">
           <div className="relative">
-            {/* gold ring frame */}
-            <div
-              aria-hidden
-              className="absolute -inset-3 rounded-[2rem] bg-gradient-to-b from-gold/50 via-gold/10 to-transparent blur-[2px]"
-            />
-            <div className="gold-glow relative aspect-[4/5] overflow-hidden rounded-[1.75rem] border border-gold/25 bg-ink-900">
+            <div className="relative aspect-[3/4] overflow-hidden [mask-image:radial-gradient(ellipse_78%_78%_at_50%_42%,black_52%,transparent_76%)]">
               <video
                 src="/videos/hero-video.mp4"
                 poster="/videos/hero-video-poster.jpg"
@@ -92,10 +87,6 @@ export default function Hero() {
               <div aria-hidden className="spotlight-top-glow" />
               <div aria-hidden className="spotlight-beam" />
               <div aria-hidden className="spotlight-floor" />
-              <div
-                aria-hidden
-                className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-ink-950/70 to-transparent"
-              />
             </div>
             {/* floating badge */}
             <div className="absolute -left-4 top-6 rounded-2xl border border-gold/30 bg-ink-900/90 px-4 py-3 shadow-xl backdrop-blur sm:-left-8">
