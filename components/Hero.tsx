@@ -1,10 +1,13 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
+import SmokeCanvas from "./SmokeCanvas";
 import { SITE } from "@/lib/site";
 
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-ink-950 text-white">
+      {/* animated colorful smoke background */}
+      <SmokeCanvas />
       {/* gold ambient glows */}
       <div
         aria-hidden
