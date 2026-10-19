@@ -2,7 +2,7 @@ export const SITE = {
   name: "Zamin Abbas",
   fullName: "Zamin Abbas",
   tagline: "Local SEO Expert in Multan, Pakistan",
-  url: "https://zaminabbas28.vercel.app",
+  url: "https://zaminabbas.tech",
   email: "digitalmarketingskills46@gmail.com",
   phoneDisplay: "+92 320 958 8428",
   phoneHref: "+923209588428",
