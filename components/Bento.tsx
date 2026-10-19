@@ -163,7 +163,7 @@ export default function Bento() {
                 href={SITE.gmb}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Zeeshi Local SEO Expert on Google Maps"
+                aria-label="Zamin Abbas Local SEO Expert on Google Maps"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-mist-300 transition-colors hover:border-gold/50 hover:text-gold"
               >
                 <MapPinIcon className="h-4 w-4" />

@@ -130,7 +130,7 @@ export default function About() {
                   I&apos;m Zamin Abbas, a local SEO expert based in Multan,
                   Pakistan. I help small and medium businesses get found where it
                   matters most — on Google Maps and in local search results. My
-                  agency, <strong className="text-white">Zeeshi Local SEO Expert</strong>,
+                  agency, <strong className="text-white">Zamin Abbas Local SEO Expert</strong>,
                   is built on one belief: visibility should turn into customers,
                   not just impressions.
                 </p>
