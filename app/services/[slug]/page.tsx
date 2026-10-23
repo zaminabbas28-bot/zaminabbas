@@ -181,6 +181,11 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 Get a free consultation and a clear action plan for your business — no
                 obligations, no jargon.
               </p>
+              {service.priceLine && (
+                <p className="mx-auto mt-4 w-fit rounded-full border border-gold-400/30 bg-gold-400/10 px-5 py-2 text-sm font-semibold text-gold-300">
+                  {service.priceLine}
+                </p>
+              )}
               <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
                 <Link
                   href="/#contact"

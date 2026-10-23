@@ -196,6 +196,7 @@ export interface Service {
   h1?: string;
   metaDescription?: string;
   faqs?: Faq[];
+  priceLine?: string;
 }
 
 export const SERVICES: Service[] = [
@@ -208,6 +209,8 @@ export const SERVICES: Service[] = [
       "Dominate local search results and attract nearby customers with targeted local SEO strategies.",
     metaDescription:
       "Local SEO services in Multan, Pakistan — Google Maps ranking, Google Business Profile optimization, citations and reviews that turn nearby searches into calls.",
+    priceLine:
+      "Services start from $30 — every project is scoped and quoted after a free audit, with no hidden fees.",
     icon: "pin",
     benefits: [
       "Google Business Profile setup & optimization",
@@ -265,6 +268,8 @@ export const SERVICES: Service[] = [
       "Build brand awareness and engage your audience with strategic social media marketing campaigns.",
     metaDescription:
       "Social media marketing services — content strategy, profile optimization and campaigns that turn followers into customers, reported in plain language every month.",
+    priceLine:
+      "Packages start from $50 — scoped after a free consultation, with no hidden fees.",
     icon: "share",
     benefits: [
       "Platform-specific content strategy & calendars",
@@ -367,6 +372,8 @@ export const SERVICES: Service[] = [
       "Fast, SEO-friendly WordPress websites designed to convert visitors into customers.",
     metaDescription:
       "WordPress development services — fast, SEO-friendly business websites and WooCommerce stores built to convert. Based in Multan, working with clients worldwide.",
+    priceLine:
+      "Projects start from $80 — the final quote depends on scope and is confirmed before any work begins.",
     icon: "gear",
     benefits: [
       "Custom WordPress design & development",
@@ -472,6 +479,8 @@ export const SERVICES: Service[] = [
       "Get found on Google Maps with complete Google Business Profile optimization and ongoing management — categories, services, photos, posts and reviews handled for you.",
     metaDescription:
       "Google Business Profile optimization and management — setup, categories, services, photos, posts and review strategy that help you rank higher on Google Maps.",
+    priceLine:
+      "GBP optimization is part of my Local SEO packages, which start from $30 — scoped and quoted after a free profile audit.",
     icon: "pin",
     benefits: [
       "Complete profile setup, cleanup & optimization",
