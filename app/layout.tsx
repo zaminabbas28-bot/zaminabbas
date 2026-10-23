@@ -25,7 +25,7 @@ const mono = JetBrains_Mono({
 });
 
 const DESCRIPTION =
-  "Zamin Abbas is a Local SEO Expert in Multan, Pakistan helping businesses improve Google Maps visibility, Google Business Profile rankings, local search traffic and customer leads.";
+  "Zamin Abbas is a Local SEO Expert in Multan, Pakistan. Get found on Google Maps, rank your Business Profile and turn local searches into calls.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),

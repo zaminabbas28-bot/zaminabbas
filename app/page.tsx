@@ -47,7 +47,7 @@ const serviceSchema = {
   image: `${SITE.url}/images/zamin-abbas-local-seo-expert.jpg`,
   description:
     "Local SEO expert in Multan, Pakistan: Google Business Profile optimization, WordPress development, social media marketing and Google Ads.",
-  provider: { "@type": "Person", name: SITE.fullName, url: SITE.url },
+  founder: { "@type": "Person", name: SITE.fullName, url: SITE.url },
   areaServed: [
     { "@type": "City", name: "Multan" },
     { "@type": "Country", name: SITE.country },
@@ -65,8 +65,8 @@ const serviceSchema = {
   },
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 30.17295,
-    longitude: 71.49142,
+    latitude: 30.171584,
+    longitude: 71.4910716,
   },
   hasMap: SITE.gmb,
   openingHoursSpecification: {
