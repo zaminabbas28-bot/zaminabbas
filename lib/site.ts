@@ -179,6 +179,7 @@ export const PROJECTS: Project[] = [
 
 export type ServiceSlug =
   | "local-seo"
+  | "google-business-profile"
   | "social-media-marketing"
   | "technical-seo"
   | "wordpress-development"
@@ -193,6 +194,8 @@ export interface Service {
   benefits: string[];
   paragraphs: string[];
   h1?: string;
+  metaDescription?: string;
+  faqs?: Faq[];
 }
 
 export const SERVICES: Service[] = [
@@ -203,6 +206,8 @@ export const SERVICES: Service[] = [
     h1: "Local SEO Services in Multan, Pakistan",
     short:
       "Dominate local search results and attract nearby customers with targeted local SEO strategies.",
+    metaDescription:
+      "Local SEO services in Multan, Pakistan — Google Maps ranking, Google Business Profile optimization, citations and reviews that turn nearby searches into calls.",
     icon: "pin",
     benefits: [
       "Google Business Profile setup & optimization",
@@ -217,6 +222,39 @@ export const SERVICES: Service[] = [
       "I start with a full local audit: your Google Business Profile, existing citations, NAP consistency, reviews, and how competitors are ranking around you. From there I build a clear action plan — Google Business Profile optimization across categories, services, photos and posts, cleaning up inconsistent directory listings, and creating location-focused content that matches how real customers search.",
       "Reviews are a ranking factor and a trust factor, so I also set up a simple, repeatable system for earning genuine customer reviews without awkward asks. Combined with locally relevant on-page optimization and authoritative local citations, this compounds into durable map-pack visibility.",
       "Every month you get a plain-language report: keyword positions, map-pack rankings, profile views, calls, and direction requests. No jargon, no vanity metrics — just the numbers that show whether more local customers are finding you.",
+      "I work with businesses across Multan — Gulgasht, Cantt, Bosan Road, Nishtar Road and the Northern Bypass corridor — and with service-area businesses that cover the whole city. Wherever your customers search from, the goal is the same: your business in the map pack, with a profile that turns views into calls.",
+    ],
+    faqs: [
+      {
+        question: "How do I get my business to show up on Google Maps?",
+        answer:
+          "It starts with a complete, verified Google Business Profile: the correct primary category, accurate name, address and phone number, your services listed, and real photos of the business. Consistent citations, genuine reviews and a locally optimized website then build the prominence Google needs to place you in the map pack. That full system is what my local SEO service sets up and improves month by month.",
+      },
+      {
+        question: "How long does local SEO take to show results?",
+        answer:
+          "Most businesses see early movement within 1 to 3 months — more profile views, calls and direction requests — with stronger map-pack positions typically building over 3 to 6 months. The timeline depends on your competition, review count and starting point, which is why I begin with an audit and report progress monthly in plain language.",
+      },
+      {
+        question: "Can I pay Google to rank higher on Google Maps?",
+        answer:
+          "No. Map pack rankings are organic and cannot be bought. Google Ads can place a clearly labeled sponsored result above the map results, which is a separate service — but the map pack itself is earned through profile quality, relevance, distance and prominence.",
+      },
+      {
+        question: "Do I need a physical address for local SEO?",
+        answer:
+          "Not always. If customers visit your location, a real address helps. If you visit customers instead — like many service businesses in Multan — you can register as a service-area business, hide the address, and still rank in the areas you serve. What you cannot use is a fake or virtual address; Google suspends profiles for that.",
+      },
+      {
+        question: "Can I do local SEO myself?",
+        answer:
+          "Yes — the basics are public: claim your profile, complete every field, add photos, and ask happy customers for reviews. Where owners usually stall is consistency: weekly posts, citation cleanup, review replies and tracking what actually changed rankings. Hiring me buys that system, done every month, plus the hours it takes.",
+      },
+      {
+        question: "How is local SEO different from regular SEO?",
+        answer:
+          "Regular SEO ranks websites in the main search results. Local SEO ranks your business in Google Maps and the map pack for searches with local intent — 'near me' and city-based searches. It leans on your Google Business Profile, citations, reviews and location signals rather than only on your website's pages and backlinks.",
+      },
     ],
   },
   {
@@ -225,6 +263,8 @@ export const SERVICES: Service[] = [
     title: "Social Media Marketing",
     short:
       "Build brand awareness and engage your audience with strategic social media marketing campaigns.",
+    metaDescription:
+      "Social media marketing services — content strategy, profile optimization and campaigns that turn followers into customers, reported in plain language every month.",
     icon: "share",
     benefits: [
       "Platform-specific content strategy & calendars",
@@ -240,6 +280,33 @@ export const SERVICES: Service[] = [
       "Engagement is treated as a discipline: comments answered, messages handled, and community conversations that turn followers into customers. When paid promotion makes sense, I run tightly targeted campaigns with clear budgets and conversion tracking, so every rupee is accountable.",
       "You will know exactly what is working through monthly reports covering reach, engagement, follower growth, and — most importantly — leads and sales attributed to social. Strategy evolves from data, not guesswork.",
     ],
+    faqs: [
+      {
+        question: "Which social media platforms should my business be on?",
+        answer:
+          "The ones your customers actually use. For most local businesses that means Facebook and Instagram first; LinkedIn suits B2B services, and TikTok suits younger audiences and visual products. I help you choose based on your audience instead of opening accounts everywhere and maintaining none of them well.",
+      },
+      {
+        question: "What does social media marketing include?",
+        answer:
+          "A content strategy and monthly calendar built around your goals, profile optimization so your pages are discoverable, content designed in your brand's voice, community management for comments and messages, optional paid campaigns, and a plain-language report every month covering what was posted and what it produced.",
+      },
+      {
+        question: "How often will you post for my business?",
+        answer:
+          "Consistency matters more than volume. Your plan runs on a fixed monthly content calendar agreed with you in advance, so you always know what is going out and when — no random posting and no long silences on your pages.",
+      },
+      {
+        question: "Can social media bring me customers, not just likes?",
+        answer:
+          "Yes, when it is run as a system: content that shows your work and proof, offers with clear calls to action, fast replies to enquiries, and paid campaigns targeted at people near your business. I report enquiries and leads alongside reach and engagement, so you can judge social media on business results.",
+      },
+      {
+        question: "Do you also run paid social media ads?",
+        answer:
+          "Yes. Paid campaigns on Facebook and Instagram can be added to your plan with a defined budget, tight location and audience targeting, and conversion tracking — so every rupee of spend is accountable, the same way I run Google Ads.",
+      },
+    ],
   },
   {
     slug: "technical-seo",
@@ -247,6 +314,8 @@ export const SERVICES: Service[] = [
     title: "Technical SEO",
     short:
       "Fix technical issues that hinder your site's performance and ensure optimal crawling and indexing.",
+    metaDescription:
+      "Technical SEO services — in-depth audits, Core Web Vitals and speed fixes, crawlability, indexation and schema markup. Find what is holding your rankings back.",
     icon: "gear",
     benefits: [
       "Full technical audit with prioritized fixes",
@@ -262,6 +331,33 @@ export const SERVICES: Service[] = [
       "Implementation is hands-on: compressing and modernizing assets, eliminating render-blocking resources, fixing redirect chains and broken links, resolving duplicate content, and adding schema markup that helps you win rich results. I work directly in your stack or alongside your developers with precise, ticket-ready instructions.",
       "After fixes go live, I monitor Search Console data to confirm indexing improvements and ranking movement. Technical SEO is not a one-time project — I offer ongoing monitoring so new issues are caught before they cost you traffic.",
     ],
+    faqs: [
+      {
+        question: "What does a technical SEO audit include?",
+        answer:
+          "Crawlability and indexation, sitemap and robots directives, canonical tags and duplicate content, broken links and redirect chains, site speed and Core Web Vitals, mobile usability, structured data, and HTTPS basics. You receive the findings as a prioritized list scored by impact, so the fixes that move rankings come first.",
+      },
+      {
+        question: "How long do technical SEO fixes take?",
+        answer:
+          "Most audits are completed within days. High-impact fixes usually go live within 1 to 3 weeks, depending on your platform and access. I implement directly in your stack where I can, and provide precise, ticket-ready instructions where your developer needs to be involved.",
+      },
+      {
+        question: "Which platforms do you work on?",
+        answer:
+          "I work most deeply on WordPress and on custom-coded websites like this portfolio (Next.js). For other platforms, I provide the full audit and exact fix instructions your developer can implement, then verify the results in Search Console.",
+      },
+      {
+        question: "Will technical SEO alone make me rank number one?",
+        answer:
+          "No. Technical SEO removes the obstacles that hold good content back — rankings still need relevant content and authority. What it does ensure is that search engines can crawl, index and present your site at its best: the foundation every other SEO effort stands on.",
+      },
+      {
+        question: "How do I know the fixes worked?",
+        answer:
+          "After implementation I monitor Google Search Console for coverage and indexation changes, Core Web Vitals status, and ranking movement — and report it in plain language, including anything that still needs attention.",
+      },
+    ],
   },
   {
     slug: "wordpress-development",
@@ -269,6 +365,8 @@ export const SERVICES: Service[] = [
     title: "WordPress Development",
     short:
       "Fast, SEO-friendly WordPress websites designed to convert visitors into customers.",
+    metaDescription:
+      "WordPress development services — fast, SEO-friendly business websites and WooCommerce stores built to convert. Based in Multan, working with clients worldwide.",
     icon: "gear",
     benefits: [
       "Custom WordPress design & development",
@@ -283,6 +381,34 @@ export const SERVICES: Service[] = [
       "Every build starts with your goals: who you serve, what action visitors should take, and how they find you. From there I design a clean, conversion-focused layout and develop it on WordPress with lightweight themes and carefully chosen plugins — no bloated page builders slowing things down.",
       "For stores, I set up WooCommerce with secure payment integration, product pages optimized for search, and a checkout flow designed to reduce abandoned carts. For business sites, I build service pages, contact flows, and local SEO foundations that help you rank in your market.",
       "After launch, you are not left guessing: I provide training videos, documentation, and an optional care plan covering updates, backups, and security. Your site stays fast, safe, and working for your business long after go-live.",
+      "From my base in Multan I build websites for local businesses here — clinics, shops, restaurants and service companies across the city — and for clients abroad who hire me remotely, including website design and development delivered entirely over WhatsApp and video calls. Whether we meet in person or online, the process is the same: clear scope, honest timelines, and a website designed around the searches your customers actually make.",
+    ],
+    faqs: [
+      {
+        question: "How long does it take to build a WordPress website?",
+        answer:
+          "A typical business website takes 2 to 4 weeks from kickoff to launch, depending on the number of pages, how ready your content is, and the features involved. WooCommerce stores and custom systems take longer. You get a clear timeline before we start, and you can watch progress as the site is built.",
+      },
+      {
+        question: "Will my website be SEO-friendly from day one?",
+        answer:
+          "Yes. Every build includes a clean site structure, fast-loading pages, mobile-first design, correct heading and meta setup, and the technical foundations Google needs to crawl and rank you. If you serve a local market, I also set up the local SEO basics — service pages structured for your city and aligned with your Google Business Profile.",
+      },
+      {
+        question: "Can you redesign or fix my existing WordPress website?",
+        answer:
+          "Yes. I start with a quick audit of speed, structure and SEO issues, then either improve what you have or rebuild it cleanly if that is the better value. Your existing content and search presence are protected through the move with proper redirects.",
+      },
+      {
+        question: "Do you build online stores?",
+        answer:
+          "Yes — WooCommerce stores with secure payment integration, product pages written and structured for search, and a checkout flow designed to reduce abandoned carts. I will also show you how to manage products and orders yourself after launch.",
+      },
+      {
+        question: "What happens after my website launches?",
+        answer:
+          "You receive training and documentation so you can update the site yourself, plus an optional care plan covering updates, backups and security. Your site stays fast, safe and working for your business long after go-live — and I am one WhatsApp message away if you need changes.",
+      },
     ],
   },
   {
@@ -291,6 +417,8 @@ export const SERVICES: Service[] = [
     title: "Google Ads",
     short:
       "Tightly targeted Google Ads campaigns with conversion tracking and transparent reporting.",
+    metaDescription:
+      "Google Ads management services — tightly targeted search campaigns with conversion tracking and transparent reporting, so your ad spend turns into customers.",
     icon: "share",
     benefits: [
       "Search & Maps campaign setup",
@@ -305,6 +433,91 @@ export const SERVICES: Service[] = [
       "We start with research: the keywords your customers actually type, what competitors are bidding, and which searches deserve your budget versus your negative keyword list. Campaigns are structured around intent, so high-intent searches get priority and tire-kickers get filtered out.",
       "Tracking is non-negotiable. I set up conversion tracking for calls, form fills, WhatsApp clicks, and direction requests — so you see exactly which keywords and ads produce customers, not just clicks. Landing pages get reviewed for Quality Score factors that lower your cost per click.",
       "Management is hands-on and ongoing: weekly bid adjustments, search term reviews, ad copy testing, and budget reallocation toward what converts. Reports are in plain language — spend, conversions, cost per lead, and what changed this week.",
+      "Most of my campaigns are built for local intent: people in Multan searching for a service they need right now. Tight location targeting keeps your budget on the areas you actually serve, instead of paying for clicks from across the country.",
+    ],
+    faqs: [
+      {
+        question: "How much budget do I need for Google Ads?",
+        answer:
+          "There is no single figure that works for everyone — what matters is your cost per click and how many clicks a sale typically needs. I research your keywords first and recommend a realistic starting budget for your market, then scale only what proves it converts. You always know exactly where the money goes.",
+      },
+      {
+        question: "How fast will I see results from Google Ads?",
+        answer:
+          "Ads can start showing the day a campaign launches, and enquiries can follow within days. The first 2 to 4 weeks are a learning period — testing keywords and ad copy and cutting waste — after which cost per lead usually stabilizes as the data improves.",
+      },
+      {
+        question: "Should I choose Google Ads or SEO?",
+        answer:
+          "They do different jobs. Ads rent visibility today; SEO builds visibility you keep. Most local businesses get the best return using ads for immediate enquiries while SEO compounds in the background. Since I offer both, the advice you get is about your goals, not my service menu.",
+      },
+      {
+        question: "What does your Google Ads management include?",
+        answer:
+          "Keyword research and negative keyword sculpting, campaign setup, ad copy, conversion and call tracking, weekly bid and budget optimization, and plain-language reporting on spend, conversions and cost per lead — with no hidden fees.",
+      },
+      {
+        question: "Do you only run ads in Multan?",
+        answer:
+          "No. I am based in Multan and many of my campaigns target local searches here, but I manage campaigns for clients in other cities and countries too. Targeting is always set around your customers, wherever they are.",
+      },
+    ],
+  },
+  {
+    slug: "google-business-profile",
+    number: "06",
+    title: "Google Business Profile",
+    h1: "Google Business Profile Optimization Services in Pakistan",
+    short:
+      "Get found on Google Maps with complete Google Business Profile optimization and ongoing management — categories, services, photos, posts and reviews handled for you.",
+    metaDescription:
+      "Google Business Profile optimization and management — setup, categories, services, photos, posts and review strategy that help you rank higher on Google Maps.",
+    icon: "pin",
+    benefits: [
+      "Complete profile setup, cleanup & optimization",
+      "Category & services research that matches searches",
+      "Photos, products & weekly Google Posts managed",
+      "Review generation strategy & reply handling",
+      "Q&A monitoring and accurate business information",
+      "Suspension guidance & monthly insights reporting",
+    ],
+    paragraphs: [
+      "For most local businesses, your Google Business Profile is your real storefront on Google. It is what appears in Google Maps and the map pack — usually before a customer ever reaches your website. My Google Business Profile optimization and management service makes that storefront complete, accurate and active, so more nearby customers find you, call you and visit you.",
+      "Optimization starts with an audit of the whole profile: primary and secondary categories, services, attributes, business hours, photos, and name, address and phone consistency with your website and citations. I then write service descriptions around what customers actually search, add missing services and products, and set up a photo and post structure that keeps the profile looking alive — because Google rewards profiles that are maintained, not abandoned.",
+      "Management is where the compounding happens. Every week your profile gets fresh posts and photo updates; every customer question gets an accurate answer; every review gets a professional reply. Each month you receive a plain-language report of profile views, calls, direction requests and the searches that found you — the numbers that show whether more customers are reaching your business.",
+      "I run this exact routine on my own Multan business profile every day, and it is the same system I apply to client profiles in Pakistan and abroad. If your profile is suspended, duplicated or simply invisible on Maps, I will tell you honestly what can be fixed, what it takes, and what Google — not any freelancer — ultimately decides.",
+    ],
+    faqs: [
+      {
+        question: "How long does Google Business Profile verification take?",
+        answer:
+          "Most profiles verify within a few days, though it can take a week or more. Google chooses the method — video verification is now common, and some businesses are asked for documents or a postcard instead. I guide you through whichever method Google assigns, so the first attempt succeeds.",
+      },
+      {
+        question: "Why is my business not showing on Google Maps?",
+        answer:
+          "The usual causes are an unverified or newly created profile, a wrong primary category, inconsistent business information, a service-area address set up incorrectly, or a suspension. An audit checks each cause in order instead of guessing — most visibility problems have a specific, fixable reason.",
+      },
+      {
+        question: "Why did Google suspend my Business Profile?",
+        answer:
+          "Common triggers are keyword-stuffed business names, virtual or residential addresses that break the guidelines, duplicate profiles, or sudden suspicious edits. The fix is to correct the underlying issue first, then submit a policy-based appeal with evidence. I help prepare that appeal — but Google makes the final decision, and anyone who guarantees reinstatement is not being honest with you.",
+      },
+      {
+        question: "Can I just create a new profile instead of appealing a suspension?",
+        answer:
+          "No. A new profile for the same business usually gets flagged as a duplicate and can make the original problem worse. The suspended profile carries your reviews and history — appealing it properly is almost always the right path.",
+      },
+      {
+        question: "What is the difference between GBP optimization and GBP management?",
+        answer:
+          "Optimization is the one-time foundation: categories, services, attributes, photos, description and information accuracy. Management is the ongoing work that keeps the profile winning — weekly posts, new photos, Q&A answers, review replies and monthly insights reporting. Most businesses need optimization first, then management to compound it.",
+      },
+      {
+        question: "Do you guarantee a number one ranking on Google Maps?",
+        answer:
+          "No — and no honest specialist can. Rankings depend on competition, the searcher's distance from your business, and factors only Google controls. What I do guarantee is the work: a completely optimized profile, consistent management, and transparent monthly reporting on views, calls and direction requests.",
+      },
     ],
   },
 ];

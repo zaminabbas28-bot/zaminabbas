@@ -38,6 +38,15 @@ const personSchema = {
   ],
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE.fullName,
+  url: SITE.url,
+  inLanguage: "en",
+  publisher: { "@type": "Person", name: SITE.fullName, url: SITE.url },
+};
+
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
@@ -100,6 +109,7 @@ export default function Home() {
       <div className="relative z-10">
         <JsonLd id="person-jsonld" data={personSchema} />
         <JsonLd id="service-jsonld" data={serviceSchema} />
+        <JsonLd id="website-jsonld" data={websiteSchema} />
         <Hero />
         <Ticker />
         <Capabilities />

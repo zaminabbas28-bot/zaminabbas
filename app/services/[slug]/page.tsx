@@ -25,9 +25,12 @@ export async function generateMetadata({ params }: ServicePageProps): Promise<Me
     "wordpress-development": "WordPress Development Services | Zamin Abbas",
     "social-media-marketing": "Social Media Marketing Services | Zamin Abbas",
     "google-ads": "Google Ads Services | Zamin Abbas",
+    "google-business-profile": "Google Business Profile Optimization Services | Zamin Abbas",
   };
   const title = META_TITLES[service.slug];
-  const description = `${service.short} Work with ${SITE.name}, a local SEO expert in Multan, Pakistan offering ${service.title.toLowerCase()} that is built to rank and convert.`;
+  const description =
+    service.metaDescription ??
+    `${service.short} Work with ${SITE.name}, a local SEO expert in Multan, Pakistan offering ${service.title.toLowerCase()} that is built to rank and convert.`;
 
   return {
     title: { absolute: title },
@@ -78,12 +81,25 @@ export default async function ServicePage({ params }: ServicePageProps) {
     areaServed: { "@type": "Country", name: SITE.country },
   };
 
+  const faqSchema = service.faqs?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: service.faqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
+      }
+    : null;
+
   const others = SERVICES.filter((s) => s.slug !== service.slug);
 
   return (
     <>
       <JsonLd id="breadcrumb-jsonld" data={breadcrumbSchema} />
       <JsonLd id="service-detail-jsonld" data={serviceSchema} />
+      {faqSchema && <JsonLd id="faq-jsonld" data={faqSchema} />}
 
       <article className="pt-28 pb-20 sm:pt-36">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -183,6 +199,29 @@ export default async function ServicePage({ params }: ServicePageProps) {
               </div>
             </div>
           </Reveal>
+
+          {service.faqs && service.faqs.length > 0 && (
+            <Reveal delay={100}>
+              <h2 className="mt-14 font-display text-2xl font-bold text-white">
+                Frequently Asked <span className="text-gold-gradient">Questions</span>
+              </h2>
+              <div className="mt-6 space-y-4">
+                {service.faqs.map((faq) => (
+                  <div
+                    key={faq.question}
+                    className="rounded-2xl border border-white/10 bg-ink-800/70 p-5 sm:p-6"
+                  >
+                    <h3 className="font-display text-base font-bold text-white sm:text-lg">
+                      {faq.question}
+                    </h3>
+                    <p className="mt-2 text-sm leading-relaxed text-mist-300 sm:text-base">
+                      {faq.answer}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          )}
 
           <Reveal delay={80}>
             <h2 className="mt-14 font-display text-2xl font-bold text-white">

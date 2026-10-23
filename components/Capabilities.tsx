@@ -34,7 +34,7 @@ const CAPABILITIES = [
     tags: ["Profile Setup", "Categories", "Posts"],
     gradient: "from-teal-600 via-cyan-600 to-sky-500",
     glow: "rgba(34,211,238,0.4)",
-    slug: "local-seo",
+    slug: "google-business-profile",
   },
   {
     n: "04",
