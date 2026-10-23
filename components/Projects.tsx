@@ -46,15 +46,17 @@ export default function Projects() {
                     <p className="mt-3 flex-1 text-sm leading-relaxed text-mist-500">
                       {project.description}
                     </p>
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group mt-6 inline-flex w-fit items-center gap-2 text-sm font-semibold text-white transition-colors hover:text-accent-pink"
-                    >
-                      Visit Website
-                      <ArrowUpRightIcon className="h-4 w-4 text-mist-500 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent-pink" />
-                    </a>
+                    {project.url && (
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group mt-6 inline-flex w-fit items-center gap-2 text-sm font-semibold text-white transition-colors hover:text-accent-pink"
+                      >
+                        Visit Website
+                        <ArrowUpRightIcon className="h-4 w-4 text-mist-500 transition-all group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent-pink" />
+                      </a>
+                    )}
                   </div>
                 </article>
               </Reveal>

@@ -148,7 +148,7 @@ export interface Project {
   badge: string;
   date: string;
   description: string;
-  url: string;
+  url?: string;
 }
 
 export const PROJECTS: Project[] = [
@@ -174,7 +174,6 @@ export const PROJECTS: Project[] = [
     date: "June 2025",
     description:
       "Colorful parent-focused site with service detail pages, trust-building testimonials, and playful visual patterns.",
-    url: "https://kaprikidsdaycare.pk/",
   },
 ];
 
