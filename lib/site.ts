@@ -212,7 +212,7 @@ export const SERVICES: Service[] = [
     metaDescription:
       "Local SEO services in Multan, Pakistan — Google Maps ranking, Google Business Profile optimization, citations and reviews that turn nearby searches into calls.",
     priceLine:
-      "Services start from $30 — every project is scoped and quoted after a free audit, with no hidden fees.",
+      "Affordable SEO services from $30 — every project is scoped and quoted after a free audit, with no hidden fees.",
     icon: "pin",
     benefits: [
       "Google Business Profile setup & optimization",
@@ -259,6 +259,11 @@ export const SERVICES: Service[] = [
         question: "How is local SEO different from regular SEO?",
         answer:
           "Regular SEO ranks websites in the main search results. Local SEO ranks your business in Google Maps and the map pack for searches with local intent — 'near me' and city-based searches. It leans on your Google Business Profile, citations, reviews and location signals rather than only on your website's pages and backlinks.",
+      },
+      {
+        question: "Can I hire you as an SEO consultant?",
+        answer:
+          "Yes. If you need expert advice rather than monthly management, I offer one-off audits and a free initial consultation — for example, a local SEO audit of your profile, citations and rankings, with a prioritized action plan you can implement yourself or hand to me.",
       },
     ],
   },
@@ -388,7 +393,7 @@ export const SERVICES: Service[] = [
     paragraphs: [
       "Your website should sell while you sleep. I build WordPress websites that load fast, look professional, and are structured for search engines from the very first line of code — so you get a site that both visitors and Google love.",
       "Every build starts with your goals: who you serve, what action visitors should take, and how they find you. From there I design a clean, conversion-focused layout and develop it on WordPress with lightweight themes and carefully chosen plugins — no bloated page builders slowing things down.",
-      "For stores, I set up WooCommerce with secure payment integration, product pages optimized for search, and a checkout flow designed to reduce abandoned carts. For business sites, I build service pages, contact flows, and local SEO foundations that help you rank in your market.",
+      "For stores, I set up WooCommerce with secure payment integration, product pages optimized for search with ecommerce SEO basics, and a checkout flow designed to reduce abandoned carts. For business sites, I build service pages, contact flows, and local SEO foundations that help you rank in your market.",
       "After launch, you are not left guessing: I provide training videos, documentation, and an optional care plan covering updates, backups, and security. Your site stays fast, safe, and working for your business long after go-live.",
       "From my base in Multan I build websites for local businesses here — clinics, shops, restaurants and service companies across the city — and for clients abroad who hire me remotely, including website design and development delivered entirely over WhatsApp and video calls. Whether we meet in person or online, the process is the same: clear scope, honest timelines, and a website designed around the searches your customers actually make.",
     ],
@@ -417,6 +422,11 @@ export const SERVICES: Service[] = [
         question: "What happens after my website launches?",
         answer:
           "You receive training and documentation so you can update the site yourself, plus an optional care plan covering updates, backups and security. Your site stays fast, safe and working for your business long after go-live — and I am one WhatsApp message away if you need changes.",
+      },
+      {
+        question: "Can I hire you as a WordPress developer or web designer in Multan?",
+        answer:
+          "Yes. I am based in Multan and design and build websites for local businesses here — clinics, shops, restaurants and service companies — and I also work remotely with clients abroad over WhatsApp and video calls. Whether you need a new WordPress site or a redesign, you get a clear scope and timeline before work starts.",
       },
     ],
   },
@@ -478,7 +488,7 @@ export const SERVICES: Service[] = [
     title: "Google Business Profile",
     h1: "Google Business Profile Optimization Services in Pakistan",
     short:
-      "Get found on Google Maps with complete Google Business Profile optimization and ongoing management — categories, services, photos, posts and reviews handled for you.",
+      "Get found on Google Maps with complete Google Business Profile (GMB) optimization and ongoing management — categories, services, photos, posts and reviews handled for you.",
     metaDescription:
       "Google Business Profile optimization and management — setup, categories, services, photos, posts and review strategy that help you rank higher on Google Maps.",
     priceLine:
@@ -542,7 +552,7 @@ export const FAQS: Faq[] = [
   {
     question: "What SEO services do you offer?",
     answer:
-      "I offer a complete range of SEO services: local SEO (Google Business Profile, maps ranking, citations), technical SEO (site speed, Core Web Vitals, crawlability, schema), on-page optimization, off-page SEO and link building, full SEO audits, and keyword strategy. I also build high-performance, conversion-focused websites, so design and SEO work together from day one.",
+      "I offer a complete range of SEO and digital marketing services: local SEO (Google Business Profile, maps ranking, citations), technical SEO (site speed, Core Web Vitals, crawlability, schema), on-page optimization, off-page SEO and link building, full SEO audits, and keyword strategy. I also build high-performance, conversion-focused websites, so design and SEO work together from day one.",
   },
   {
     question: "How long does it take to see SEO results?",
@@ -557,7 +567,7 @@ export const FAQS: Faq[] = [
   {
     question: "Why should I hire you as my SEO specialist?",
     answer:
-      "Because I specialize in what actually moves the needle for local businesses: Google Business Profile optimization, Maps ranking, and websites built to convert. My process is data-driven — audits first, strategy second, execution with transparent monthly reporting — and I never use risky shortcuts that could get your site penalized. You always know what was done, why it was done, and what it achieved.",
+      "Because I specialize in what actually moves the needle for local businesses in Pakistan: Google Business Profile optimization, Maps ranking, and websites built to convert. My process is data-driven — audits first, strategy second, execution with transparent monthly reporting — and I never use risky shortcuts that could get your site penalized. You always know what was done, why it was done, and what it achieved.",
   },
   {
     question: "How do I rank my business on Google Maps in Pakistan?",
