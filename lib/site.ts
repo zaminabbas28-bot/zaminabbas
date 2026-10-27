@@ -316,7 +316,7 @@ export const SERVICES: Service[] = [
       {
         question: "Do you also run paid social media ads?",
         answer:
-          "Yes. Paid campaigns on Facebook and Instagram can be added to your plan with a defined budget, tight location and audience targeting, and conversion tracking — so every rupee of spend is accountable, the same way I run Google Ads.",
+          "Yes. Paid campaigns on Facebook and Instagram (Meta Ads) can be added to your plan with a defined budget, tight location and audience targeting, and conversion tracking — so every rupee of spend is accountable, the same way I run Google Ads.",
       },
     ],
   },
