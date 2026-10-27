@@ -235,7 +235,7 @@ export const SERVICES: Service[] = [
       "I start with a full local audit: your Google Business Profile, existing citations, NAP consistency, reviews, and how competitors are ranking around you. From there I build a clear action plan — Google Business Profile optimization across categories, services, photos and posts, cleaning up inconsistent directory listings, and creating location-focused content that matches how real customers search.",
       "Reviews are a ranking factor and a trust factor, so I also set up a simple, repeatable system for earning genuine customer reviews without awkward asks. Combined with locally relevant on-page optimization and authoritative local citations, this compounds into durable map-pack visibility.",
       "Every month you get a plain-language report: keyword positions, map-pack rankings, profile views, calls, and direction requests. No jargon, no vanity metrics — just the numbers that show whether more local customers are finding you.",
-      "I work with businesses across Multan — Gulgasht, Cantt, Bosan Road, Nishtar Road and the Northern Bypass corridor — and with service-area businesses that cover the whole city. Wherever your customers search from, the goal is the same: your business in the map pack, with a profile that turns views into calls.",
+      "As an SEO specialist in Multan, I work with businesses across the city — Gulgasht, Cantt, Bosan Road, Nishtar Road and the Northern Bypass corridor — and with service-area businesses that cover the whole city. Wherever your customers search from, the goal is the same: your business in the map pack, with a profile that turns views into calls.",
     ],
     faqs: [
       {
@@ -272,6 +272,11 @@ export const SERVICES: Service[] = [
         question: "Can I hire you as an SEO consultant?",
         answer:
           "Yes. If you need expert advice rather than monthly management, I offer one-off audits and a free initial consultation — for example, a local SEO audit of your profile, citations and rankings, with a prioritized action plan you can implement yourself or hand to me.",
+      },
+      {
+        question: "Are you an SEO specialist in Multan?",
+        answer:
+          "Yes. I'm Zamin Abbas, an SEO specialist based in Multan, Pakistan. I help local businesses get found on Google through local SEO, Google Business Profile optimization, and Google Maps ranking — with monthly reporting in plain language.",
       },
     ],
   },
