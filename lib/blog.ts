@@ -14,6 +14,8 @@ export interface BlogPost {
   intro: string[];
   checks: BlogCheck[];
   closing: string[];
+  stepsHeading?: string;
+  stepLabel?: string;
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -142,6 +144,101 @@ export const BLOG_POSTS: BlogPost[] = [
     closing: [
       "Most businesses that “disappear” from Maps are failing one of the first five checks. Work the list in order, fix what you find, and give Google a few days after each fix before judging the result — changes are not instant.",
       "If you have worked through all nine checks and the business still does not appear, the problem is usually in the details — a small mismatch, an old duplicate, or a category choice that looks right but is not. That is exactly what a proper profile audit is for.",
+    ],
+  },
+  {
+    slug: "google-business-profile-suspended-appeal",
+    title: "Google Business Profile Suspended? The Exact Appeal Process",
+    description:
+      "Your Business Profile is suspended and gone from Maps? Do not open a second profile. Find the violation, fix it first, gather your proof, then appeal — in that order.",
+    date: "2026-10-28",
+    dateDisplay: "October 28, 2026",
+    readTime: "8 min read",
+    stepsHeading: "The 7 steps",
+    stepLabel: "Step",
+    intro: [
+      "A suspended profile does not show on Google Maps at all — and the fix is not a new profile. Opening a second listing is the most common mistake, and it usually makes the original problem worse, because Google then has two profiles for one business to flag.",
+      "The order matters: find out what broke the rules, fix it, gather proof that the business is real and compliant, and only then appeal. Appealing before fixing wastes the appeal — and a denied appeal with nothing changed rarely gets a different answer the second time.",
+    ],
+    checks: [
+      {
+        title: "First, confirm it is actually a suspension",
+        paragraphs: [
+          "Open the Business Profile manager and look for a suspension notice. A profile can also disappear for other reasons — it may be unverified, under review after a major edit, or a duplicate may be splitting its signals (article 1 covers those checks in order). Do not start an appeal for a profile that is only waiting on verification or review.",
+        ],
+        actions: [
+          "Check the manager for a suspension notice and read exactly what it says",
+          "Rule out verification, review, and duplicate problems first",
+          "Screenshot the notice for your own records before changing anything",
+        ],
+      },
+      {
+        title: "Do not do these three things",
+        paragraphs: [],
+        actions: [
+          "Do not create a second profile. Duplicates get flagged and can complicate reinstatement of the original.",
+          "Do not keep editing the profile while it is suspended. Repeated name, address, or category changes look like attempts to dodge the suspension.",
+          "Do not appeal with nothing fixed. An appeal that says \"please restore it\" without a corrected profile and evidence has little for Google to approve.",
+        ],
+      },
+      {
+        title: "Find the violation — the usual suspects",
+        paragraphs: [
+          "Work through these before writing anything to Google:",
+          "Fix every violation you find. If you are unsure about one item, fix the clear ones first and be honest about the rest in the appeal — do not argue that a rule does not apply.",
+        ],
+        actions: [
+          "Business name: keywords stuffed into the name (for example, adding services or city names that are not part of the real business name). The name must be the real-world name customers see on the shopfront.",
+          "Address: a virtual office, a co-working address where the business does not operate, or a home address shown for a business customers do not visit. Service-area businesses should hide the address and list only areas they genuinely serve.",
+          "Category: a primary category that does not describe what the business actually is.",
+          "Website or phone mismatch: a website or number on the profile that does not belong to the business, or contact details that do not match the website.",
+          "Multiple profiles: an old listing from a previous address or name still live alongside the current one.",
+          "Prohibited or misleading content: photos, posts, or descriptions that misrepresent the business.",
+        ],
+      },
+      {
+        title: "Gather proof before you appeal",
+        paragraphs: [
+          "Google decides on evidence, not on how strongly the appeal is worded. Collect, as applicable:",
+          "Keep the name, address, and phone number identical across the profile, the website, and the evidence. A mismatch in the proof itself undermines the appeal.",
+        ],
+        actions: [
+          "Proof the business exists at its stated address: a utility bill, lease, or business registration showing the name and address",
+          "Photos of the real premises: shopfront with signage, interior, and the work being done — real photos, not stock images",
+          "Proof of the real business name: signage, invoices, or registration matching the profile name",
+          "The business website, showing the same name, address, and phone number as the profile",
+        ],
+      },
+      {
+        title: "Submit the appeal, in this order",
+        paragraphs: [],
+        actions: [
+          "Fix the violations on the profile (or, where the manager blocks edits during suspension, be ready to describe exactly what was wrong and what has changed)",
+          "Open the reinstatement/appeal flow from the Business Profile manager or Google Business Profile support, as shown for your account — the exact entry point varies, so follow the one Google presents for the suspended profile",
+          "State plainly: what the violation was, what you changed, and what evidence you have. Keep it short and factual",
+          "Attach the evidence from step 4",
+          "Submit once, then wait. Submitting the same appeal repeatedly does not speed up the review and can slow it down",
+        ],
+      },
+      {
+        title: "If the appeal is denied",
+        paragraphs: [
+          "Read the denial carefully — it usually points at what is still wrong. Fix that specific issue, gather any extra proof it implies, and only then appeal again with the new information. If nothing has changed since the last appeal, a repeat appeal should not be expected to change the outcome.",
+          "Timelines vary and Google does not publish a fixed reinstatement time. Judge the result only after Google replies; meanwhile, keep the website, social pages, and other directories accurate, so customers can still find the business while Maps is unavailable.",
+        ],
+        actions: [],
+      },
+      {
+        title: "Staying reinstated",
+        paragraphs: [
+          "Once restored, keep the profile boring and consistent: one profile, the real name, the real address or honest service area, accurate categories, and no keyword additions to the name. Every major edit after reinstatement should be made once, deliberately — not in a burst.",
+        ],
+        actions: [],
+      },
+    ],
+    closing: [
+      "Suspension feels sudden, but it is almost always traceable to one of the violations in section 3. Fix first, prove it, appeal once with evidence — and do not let impatience create a second problem in the form of a duplicate profile.",
+      "If you have worked through every section and the profile is still suspended, the remaining problem is usually in the details — a small mismatch between the profile, the website, and the proof. That is exactly what a proper profile audit checks.",
     ],
   },
 ];

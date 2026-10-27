@@ -123,7 +123,8 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
 
           <Reveal delay={100}>
             <h2 className="mt-12 font-display text-2xl font-bold text-white">
-              The 9 checks, <span className="text-gold-gradient">in order</span>
+              {post.stepsHeading ?? `The ${post.checks.length} checks`},{" "}
+              <span className="text-gold-gradient">in order</span>
             </h2>
             <ol className="mt-6 space-y-2">
               {post.checks.map((check, i) => (
@@ -146,7 +147,7 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
             <Reveal key={check.title} delay={80}>
               <section id={`check-${i + 1}`} className="mt-14 scroll-mt-28">
                 <p className="text-xs font-bold tracking-[0.3em] text-gold-400 uppercase">
-                  Check {i + 1} of {post.checks.length}
+                  {post.stepLabel ?? "Check"} {i + 1} of {post.checks.length}
                 </p>
                 <h2 className="mt-3 font-display text-2xl font-bold text-white sm:text-3xl">
                   {check.title}
