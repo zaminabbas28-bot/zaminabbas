@@ -177,6 +177,14 @@ export const PROJECTS: Project[] = [
     description:
       "Colorful parent-focused site with service detail pages, trust-building testimonials, and playful visual patterns.",
   },
+  {
+    title: "Ali Super Tools – Free Online Tools Platform",
+    badge: "WEB + SEO",
+    date: "October 2026",
+    description:
+      "Designed, developed and optimized a free online tools platform — word counters, text tools and YouTube tools, built for speed and search visibility.",
+    url: "https://hausamusics.com/",
+  },
 ];
 
 export type ServiceSlug =
