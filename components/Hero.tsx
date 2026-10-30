@@ -29,9 +29,9 @@ export default function Hero() {
               <span className="text-gradient-accent">Pakistan.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-mist-300 sm:text-xl">
-              I get local businesses found on Google — map-pack rankings,
-              optimized profiles, and WordPress websites built to turn
-              searches into calls.
+              I build fast, mobile-friendly websites for restaurants, salons
+              and clinics in Multan — designed to turn Google searches into
+              bookings, calls and walk-ins.
             </p>
           </Reveal>
 
@@ -53,6 +53,12 @@ export default function Hero() {
                 className="inline-flex items-center gap-2 rounded-full border border-black/20 px-8 py-4 text-sm font-bold text-mist-100 transition hover:border-gold hover:text-gold"
               >
                 See My Work
+              </Link>
+              <Link
+                href="#demos"
+                className="inline-flex items-center gap-2 rounded-full border border-black/20 px-8 py-4 text-sm font-bold text-mist-100 transition hover:border-gold hover:text-gold"
+              >
+                See Live Demos
               </Link>
             </div>
             <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-mist-500">
