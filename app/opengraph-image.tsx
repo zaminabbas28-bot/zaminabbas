@@ -18,7 +18,7 @@ export default function OgImage() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "#070b18",
+          background: "#ffffff",
           fontFamily: "sans-serif",
           position: "relative",
         }}
@@ -32,7 +32,7 @@ export default function OgImage() {
             width: 440,
             height: 440,
             borderRadius: "50%",
-            background: "rgba(245, 158, 11, 0.18)",
+            background: "rgba(255, 106, 0, 0.18)",
           }}
         />
         <div
@@ -43,10 +43,10 @@ export default function OgImage() {
             width: 130,
             height: 130,
             borderRadius: 32,
-            background: "linear-gradient(135deg, #ffd97a, #f59e0b)",
+            background: "linear-gradient(135deg, #FF8C3B, #FF6A00)",
             fontSize: 56,
             fontWeight: 800,
-            color: "#070b18",
+            color: "#111111",
             marginBottom: 32,
           }}
         >
@@ -56,7 +56,7 @@ export default function OgImage() {
           style={{
             fontSize: 84,
             fontWeight: 800,
-            color: "#ffffff",
+            color: "#111111",
             letterSpacing: -2,
           }}
         >
@@ -66,17 +66,17 @@ export default function OgImage() {
           style={{
             fontSize: 34,
             fontWeight: 600,
-            color: "#fbbf24",
+            color: "#FF6A00",
             marginTop: 16,
             letterSpacing: 4,
           }}
         >
-          TOP RANKED SEO SPECIALIST
+          LOCAL SEO EXPERT
         </div>
         <div
           style={{
             fontSize: 26,
-            color: "#8b94b3",
+            color: "#71717a",
             marginTop: 24,
           }}
         >

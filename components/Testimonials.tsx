@@ -8,7 +8,7 @@ import Reveal from "./Reveal";
 const CARD_GRADIENTS = [
   "from-gold/25 via-gold-deep/20 to-ink-900",
   "from-gold-soft/20 via-gold/15 to-ink-900",
-  "from-[#f5e2ae]/20 via-gold-deep/25 to-ink-900",
+  "from-[#FFEDD5]/20 via-gold-deep/25 to-ink-900",
 ];
 
 export default function Testimonials() {
@@ -36,11 +36,11 @@ export default function Testimonials() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>
           <p className="label-caps">Testimonials</p>
-          <h2 className="font-display mt-3 text-4xl text-white sm:text-5xl">
+          <h2 className="font-display mt-3 text-4xl text-mist-100 sm:text-5xl">
             Word on the <em className="text-gradient-accent">street</em>
           </h2>
           <p className="mt-4 flex items-center gap-2 text-sm text-mist-500">
-            <span className="flex text-amber-400">
+            <span className="flex text-accent">
               {Array.from({ length: 5 }).map((_, i) => (
                 <StarIcon key={i} className="h-4 w-4" />
               ))}
@@ -66,15 +66,15 @@ export default function Testimonials() {
                     </blockquote>
                   </div>
                   <figcaption className="mt-6 flex items-center gap-3">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold/20 font-display text-sm font-bold text-gold-soft backdrop-blur-sm">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold/20 font-display text-sm font-bold text-accent-deep backdrop-blur-sm">
                       {review.initials}
                     </span>
                     <span>
-                      <span className="block text-sm font-semibold text-white">
+                      <span className="block text-sm font-semibold text-mist-100">
                         {review.name}
                       </span>
                       <span className="flex items-center gap-1 text-xs text-mist-500">
-                        <StarIcon className="h-3 w-3 text-amber-400" /> Client testimonial
+                        <StarIcon className="h-3 w-3 text-accent" /> Client testimonial
                       </span>
                     </span>
                   </figcaption>
@@ -84,7 +84,7 @@ export default function Testimonials() {
 
             {/* controls */}
             <div className="mt-8 flex items-center justify-center gap-4">
-              <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2.5">
+              <div className="flex items-center gap-2 rounded-full border border-black/10 bg-black/5 px-4 py-2.5">
                 {REVIEWS.map((_, i) => (
                   <button
                     key={i}
@@ -92,7 +92,7 @@ export default function Testimonials() {
                     onClick={() => setIndex(i)}
                     aria-label={`Go to testimonial ${i + 1}`}
                     className={`h-1.5 rounded-full transition-all ${
-                      i === index ? "w-6 bg-white" : "w-1.5 bg-white/30 hover:bg-white/50"
+                      i === index ? "w-6 bg-mist-100" : "w-1.5 bg-black/30 hover:bg-black/50"
                     }`}
                   />
                 ))}
@@ -101,7 +101,7 @@ export default function Testimonials() {
                 type="button"
                 onClick={() => setPaused((p) => !p)}
                 aria-label={paused ? "Play testimonials" : "Pause testimonials"}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition-colors hover:bg-white/10"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-black/5 text-mist-100 transition-colors hover:bg-black/10"
               >
                 {paused ? <PlayIcon className="h-4 w-4" /> : <PauseIcon className="h-4 w-4" />}
               </button>

@@ -17,7 +17,7 @@ export default function Bento() {
         {/* ---------- Mega closer ---------- */}
         <Reveal>
           <div className="text-center">
-            <h2 className="display-mega font-sans text-5xl text-white sm:text-7xl lg:text-8xl">
+            <h2 className="display-mega font-sans text-5xl text-mist-100 sm:text-7xl lg:text-8xl">
               Have a business?
               <br />
               <span className="text-gradient-accent">Let&rsquo;s get it found.</span>
@@ -31,7 +31,7 @@ export default function Bento() {
                 href={SITE.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 rounded-full bg-gold px-8 py-4 text-sm font-bold text-ink-950 transition hover:bg-gold-soft"
+                className="group inline-flex items-center gap-2 rounded-full bg-gold px-8 py-4 text-sm font-bold text-ink-950 transition hover:bg-accent-deep"
               >
                 Start a Conversation
                 <span aria-hidden className="transition-transform group-hover:translate-x-1">
@@ -40,7 +40,7 @@ export default function Bento() {
               </Link>
               <Link
                 href="#top"
-                className="inline-flex items-center gap-2 text-sm font-medium text-mist-500 transition-colors hover:text-white"
+                className="inline-flex items-center gap-2 text-sm font-medium text-mist-500 transition-colors hover:text-mist-100"
               >
                 Back to top <span aria-hidden>&uarr;</span>
               </Link>
@@ -52,7 +52,7 @@ export default function Bento() {
         <Reveal delay={80}>
           <div className="mx-auto mt-16 flex max-w-3xl flex-col items-center gap-4 rounded-3xl border border-gold/25 bg-gold/5 p-6 text-center sm:flex-row sm:justify-between sm:p-7 sm:text-left">
             <div>
-              <p className="text-lg font-bold text-white">Get a free Local SEO audit</p>
+              <p className="text-lg font-bold text-mist-100">Get a free Local SEO audit</p>
               <p className="mt-1 text-sm text-mist-300">
                 I&rsquo;ll check your Google Business Profile, rankings &amp; site health — no charge.
               </p>
@@ -61,7 +61,7 @@ export default function Bento() {
               href={`${SITE.whatsapp}?text=${encodeURIComponent("Hi! I want a free SEO audit for my business.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 rounded-full bg-gold px-6 py-3 text-sm font-bold text-ink-950 transition hover:bg-gold-soft"
+              className="shrink-0 rounded-full bg-gold px-6 py-3 text-sm font-bold text-ink-950 transition hover:bg-accent-deep"
             >
               Claim free audit
             </Link>
@@ -82,7 +82,7 @@ export default function Bento() {
               </div>
               <div className="mt-8">
                 <p className="label-caps !text-gold">Toolkit</p>
-                <p className="mt-2 text-lg font-medium text-white">My SEO arsenal</p>
+                <p className="mt-2 text-lg font-medium text-mist-100">My SEO arsenal</p>
               </div>
             </div>
           </Reveal>
@@ -92,7 +92,7 @@ export default function Bento() {
             <div className="card-surface card-hover relative flex h-full min-h-[300px] flex-col justify-between overflow-hidden p-7">
               <div>
                 <p className="label-caps !text-gold">Behind the rankings</p>
-                <p className="mt-2 text-lg font-medium text-white">Journey &amp; experience</p>
+                <p className="mt-2 text-lg font-medium text-mist-100">Journey &amp; experience</p>
                 <p className="mt-3 text-sm leading-relaxed text-mist-500">
                   From Multan to the map pack — honest work, one clear report at a
                   time.
@@ -122,7 +122,7 @@ export default function Bento() {
             >
               <div className="relative">
                 <p className="label-caps !text-gold">Say hello</p>
-                <p className="mt-2 text-lg font-medium text-white">Start a conversation</p>
+                <p className="mt-2 text-lg font-medium text-mist-100">Start a conversation</p>
                 <p className="mt-3 text-sm leading-relaxed text-mist-500">
                   WhatsApp me at {SITE.phoneDisplay} — I reply fast, and the first
                   audit is free.
@@ -141,10 +141,10 @@ export default function Bento() {
               href={SITE.fiverr}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 text-sm font-medium text-mist-300 transition-colors hover:text-white"
+              className="group inline-flex items-center gap-3 text-sm font-medium text-mist-300 transition-colors hover:text-mist-100"
             >
               <span className="label-caps">Prefer Fiverr?</span>
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-white/15 px-4 py-2 transition-colors group-hover:border-gold/50">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-black/15 px-4 py-2 transition-colors group-hover:border-gold/50">
                 Order a gig <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>
             </Link>
@@ -155,7 +155,7 @@ export default function Bento() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Zamin Abbas on LinkedIn"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-mist-300 transition-colors hover:border-gold/50 hover:text-gold"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-black/15 text-mist-300 transition-colors hover:border-gold/50 hover:text-gold"
               >
                 <LinkedInIcon className="h-4 w-4" />
               </a>
@@ -164,7 +164,7 @@ export default function Bento() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Zamin Abbas Local SEO Expert on Google Maps"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-mist-300 transition-colors hover:border-gold/50 hover:text-gold"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-black/15 text-mist-300 transition-colors hover:border-gold/50 hover:text-gold"
               >
                 <MapPinIcon className="h-4 w-4" />
               </a>

@@ -12,8 +12,8 @@ const CAPABILITIES = [
     title: "Local SEO & Google Maps Ranking",
     text: "Get your business into the Google Map 3-pack. Complete profile optimization, local citations, review strategy and map-pack ranking systems that bring calls from nearby customers.",
     tags: ["Google Maps", "3-Pack Ranking", "Reviews"],
-    gradient: "from-violet-700 via-purple-600 to-fuchsia-500",
-    glow: "rgba(168,85,247,0.45)",
+    gradient: "from-accent via-accent-deep to-mist-100",
+    glow: "rgba(255,106,0,0.45)",
     slug: "local-seo",
   },
   {
@@ -22,8 +22,8 @@ const CAPABILITIES = [
     title: "WordPress Development",
     text: "Fast, SEO-ready WordPress websites — business sites, e-commerce stores and custom builds like restaurant management systems with online ordering, reservations and billing.",
     tags: ["Business Websites", "WooCommerce", "Speed"],
-    gradient: "from-fuchsia-700 via-pink-600 to-rose-500",
-    glow: "rgba(236,72,153,0.45)",
+    gradient: "from-accent via-accent-deep to-mist-100",
+    glow: "rgba(255,106,0,0.45)",
     slug: "wordpress-development",
   },
   {
@@ -32,8 +32,8 @@ const CAPABILITIES = [
     title: "Google Business Profile Optimization",
     text: "Fully optimized GBP: correct categories, services, products, posts, photos and Q&A — everything Google needs to show your business more often and build customer trust.",
     tags: ["Profile Setup", "Categories", "Posts"],
-    gradient: "from-teal-600 via-cyan-600 to-sky-500",
-    glow: "rgba(34,211,238,0.4)",
+    gradient: "from-accent via-accent-deep to-mist-100",
+    glow: "rgba(255,106,0,0.4)",
     slug: "google-business-profile",
   },
   {
@@ -42,8 +42,8 @@ const CAPABILITIES = [
     title: "Social Media Marketing",
     text: "Content and campaigns that keep your brand visible where your customers spend time — profile optimization, monthly content and growth-focused posting.",
     tags: ["Content", "Profiles", "Growth"],
-    gradient: "from-amber-600 via-orange-500 to-yellow-500",
-    glow: "rgba(251,146,60,0.45)",
+    gradient: "from-accent via-accent-deep to-mist-100",
+    glow: "rgba(255,106,0,0.45)",
     slug: "social-media-marketing",
   },
   {
@@ -52,8 +52,8 @@ const CAPABILITIES = [
     title: "Google Ads",
     text: "High-intent search campaigns for local businesses — keyword targeting, ad copy and conversion tracking set up to turn ad spend into booked jobs and sales.",
     tags: ["Search Ads", "Targeting", "ROI"],
-    gradient: "from-blue-700 via-indigo-600 to-violet-500",
-    glow: "rgba(99,102,241,0.45)",
+    gradient: "from-accent via-accent-deep to-mist-100",
+    glow: "rgba(255,106,0,0.45)",
     slug: "google-ads",
   },
 ];
@@ -96,7 +96,7 @@ export default function Capabilities() {
       <div className="mx-auto max-w-7xl px-5 pt-24 sm:px-8 sm:pt-32">
         <Reveal>
           <p className="label-caps !text-gold">Capabilities — scroll to explore</p>
-          <h2 className="display-mega mt-4 max-w-3xl font-sans text-4xl text-white sm:text-6xl">
+          <h2 className="display-mega mt-4 max-w-3xl font-sans text-4xl text-mist-100 sm:text-6xl">
             Scroll through <span className="text-gradient-accent">what I do.</span>
           </h2>
         </Reveal>
@@ -140,13 +140,13 @@ export default function Capabilities() {
                 >
                   <div className="flex h-full flex-col justify-between rounded-[calc(1.75rem-1px)] bg-ink-950/88 p-7 backdrop-blur-sm sm:p-8">
                     <div>
-                      <p className="font-mono text-[0.65rem] tracking-[0.25em] text-white/60">
+                      <p className="font-mono text-[0.65rem] tracking-[0.25em] text-mist-100/60">
                         {cap.n} / {cap.kicker}
                       </p>
-                      <h3 className="mt-3 font-sans text-2xl font-extrabold leading-tight text-white sm:text-[1.7rem]">
+                      <h3 className="mt-3 font-sans text-2xl font-extrabold leading-tight text-mist-100 sm:text-[1.7rem]">
                         {cap.title}
                       </h3>
-                      <p className="mt-4 text-[0.95rem] leading-relaxed text-white/70">
+                      <p className="mt-4 text-[0.95rem] leading-relaxed text-mist-100/70">
                         {cap.text}
                       </p>
                     </div>
@@ -155,7 +155,7 @@ export default function Capabilities() {
                         {cap.tags.map((t) => (
                           <span
                             key={t}
-                            className="rounded-full border border-white/20 bg-white/10 px-3 py-1 font-mono text-[0.62rem] tracking-[0.08em] text-white/85"
+                            className="rounded-full border border-black/20 bg-black/10 px-3 py-1 font-mono text-[0.62rem] tracking-[0.08em] text-mist-100/85"
                           >
                             {t}
                           </span>
@@ -165,7 +165,7 @@ export default function Capabilities() {
                         <Link
                           href={`/services/${cap.slug}`}
                           aria-label={`Learn more about ${cap.title}`}
-                          className="inline-flex items-center gap-2 rounded-full border border-white/25 px-5 py-3 text-sm font-semibold text-white/90 transition hover:border-white/60 hover:text-white"
+                          className="inline-flex items-center gap-2 rounded-full border border-black/25 px-5 py-3 text-sm font-semibold text-mist-100/90 transition hover:border-black/60 hover:text-mist-100"
                         >
                           Learn More <span aria-hidden>&rarr;</span>
                         </Link>
@@ -174,7 +174,7 @@ export default function Capabilities() {
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label={`Discuss ${cap.title} on WhatsApp`}
-                          className="inline-flex items-center gap-2 rounded-full bg-white/95 px-6 py-3 text-sm font-bold text-ink-950 transition hover:bg-white"
+                          className="inline-flex items-center gap-2 rounded-full bg-mist-100 px-6 py-3 text-sm font-bold text-ink-950 transition hover:bg-mist-300"
                         >
                           Start Project <span aria-hidden>&rarr;</span>
                         </Link>
@@ -188,7 +188,7 @@ export default function Capabilities() {
 
           {/* progress hint */}
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-            <div className="h-1 w-40 overflow-hidden rounded-full bg-white/10">
+            <div className="h-1 w-40 overflow-hidden rounded-full bg-black/10">
               <div
                 className="h-full rounded-full bg-gradient-to-r from-gold-deep via-gold to-gold-soft transition-[width] duration-150"
                 style={{ width: `${8 + progress * 92}%` }}

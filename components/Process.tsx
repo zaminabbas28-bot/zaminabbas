@@ -35,7 +35,7 @@ export default function Process() {
         <div className="lg:sticky lg:top-28 lg:self-start">
           <Reveal>
             <p className="label-caps !text-gold">How I work</p>
-            <h2 className="display-mega mt-4 font-sans text-5xl text-white sm:text-7xl">
+            <h2 className="display-mega mt-4 font-sans text-5xl text-mist-100 sm:text-7xl">
               Precision
               <br />
               <span className="text-gradient-accent">applied.</span>
@@ -61,7 +61,7 @@ export default function Process() {
                     <p className="font-mono text-[0.65rem] tracking-[0.25em] text-gold">
                       {step.n} &mdash; {step.tag}
                     </p>
-                    <h3 className="mt-2 font-sans text-2xl font-bold text-white sm:text-3xl">
+                    <h3 className="mt-2 font-sans text-2xl font-bold text-mist-100 sm:text-3xl">
                       {step.title}
                     </h3>
                     <p className="mt-3 max-w-lg leading-relaxed text-mist-500">

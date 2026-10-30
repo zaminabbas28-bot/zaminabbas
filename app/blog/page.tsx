@@ -33,7 +33,7 @@ export default function BlogPage() {
           <p className="text-xs font-bold tracking-[0.3em] text-gold-400 uppercase">
             Blog
           </p>
-          <h1 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+          <h1 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-mist-100 sm:text-5xl">
             Guides that <span className="text-gold-gradient">rank businesses</span>
           </h1>
           <p className="mt-5 text-xl leading-relaxed text-mist-300">
@@ -47,12 +47,12 @@ export default function BlogPage() {
             <Reveal key={post.slug}>
               <Link
                 href={`/blog/${post.slug}`}
-                className="card-glow group block rounded-2xl border border-white/10 bg-ink-800/70 p-6 sm:p-8"
+                className="card-glow group block rounded-2xl border border-black/10 bg-ink-800/70 p-6 sm:p-8"
               >
                 <p className="text-xs font-bold tracking-widest text-gold-500">
                   {post.dateDisplay} · {post.readTime}
                 </p>
-                <h2 className="mt-2 font-display text-2xl font-bold text-white transition-colors group-hover:text-gold-300">
+                <h2 className="mt-2 font-display text-2xl font-bold text-mist-100 transition-colors group-hover:text-gold-300">
                   {post.title}
                 </h2>
                 <p className="mt-3 leading-relaxed text-mist-300">{post.description}</p>

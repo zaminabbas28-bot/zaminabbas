@@ -4,9 +4,9 @@ import Reveal from "./Reveal";
 
 const CARD_ICONS = [MapPinIcon, TrendingUpIcon, GearCodeIcon];
 const CARD_STYLES = [
-  { gradient: "from-gold-soft via-gold to-gold-deep", glow: "rgba(216,180,96,0.45)" },
-  { gradient: "from-gold via-gold-deep to-[#8a6a24]", glow: "rgba(180,132,48,0.45)" },
-  { gradient: "from-[#f5e2ae] via-gold-soft to-gold", glow: "rgba(240,217,152,0.4)" },
+  { gradient: "from-gold-soft via-gold to-gold-deep", glow: "rgba(255,106,0,0.45)" },
+  { gradient: "from-gold via-gold-deep to-[#C2410C]", glow: "rgba(255,106,0,0.45)" },
+  { gradient: "from-[#FFEDD5] via-gold-soft to-gold", glow: "rgba(255,106,0,0.4)" },
 ];
 
 export default function Insights() {
@@ -15,7 +15,7 @@ export default function Insights() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>
           <p className="label-caps">From the desk</p>
-          <h2 className="font-display mt-3 text-4xl text-white sm:text-5xl">
+          <h2 className="font-display mt-3 text-4xl text-mist-100 sm:text-5xl">
             Notes on <em className="text-gradient-accent">ranking</em>
           </h2>
         </Reveal>
@@ -41,17 +41,17 @@ export default function Insights() {
                       </div>
                     </div>
                     <div className="flex flex-1 flex-col p-6">
-                      <h3 className="text-lg font-semibold leading-snug text-white">
+                      <h3 className="text-lg font-semibold leading-snug text-mist-100">
                         {post.title}
                       </h3>
                       <p className="mt-3 flex-1 text-sm leading-relaxed text-mist-500">
                         {post.excerpt}
                       </p>
-                      <div className="mt-6 flex items-center justify-between border-t border-white/10 pt-4">
+                      <div className="mt-6 flex items-center justify-between border-t border-black/10 pt-4">
                         <p className="label-caps">
                           {post.readTime} · {post.date}
                         </p>
-                        <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 text-mist-300 transition-all duration-300 group-hover:border-gold group-hover:text-gold">
+                        <span className="flex h-8 w-8 items-center justify-center rounded-full border border-black/15 text-mist-300 transition-all duration-300 group-hover:border-gold group-hover:text-gold">
                           <ArrowRightIcon className="h-4 w-4" />
                         </span>
                       </div>
@@ -67,7 +67,7 @@ export default function Insights() {
           <div className="mt-10 text-center">
             <span className="inline-flex items-center gap-2 text-sm font-medium tracking-wide text-mist-300">
               <span className="label-caps">More playbooks soon</span>
-              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-black/15">
                 <ArrowRightIcon className="h-4 w-4" />
               </span>
             </span>

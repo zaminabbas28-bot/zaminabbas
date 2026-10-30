@@ -133,7 +133,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
             <p className="mt-8 text-xs font-bold tracking-[0.3em] text-gold-400 uppercase">
               Service {service.number}
             </p>
-            <h1 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+            <h1 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-mist-100 sm:text-5xl">
               {service.h1 ?? (
                 <>
                   {service.title} <span className="text-gold-gradient">Services</span>
@@ -154,14 +154,14 @@ export default async function ServicePage({ params }: ServicePageProps) {
           </Reveal>
 
           <Reveal delay={120}>
-            <h2 className="mt-12 font-display text-2xl font-bold text-white">
+            <h2 className="mt-12 font-display text-2xl font-bold text-mist-100">
               What&apos;s <span className="text-gold-gradient">Included</span>
             </h2>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2" aria-label={`${service.title} benefits`}>
               {service.benefits.map((benefit) => (
                 <li
                   key={benefit}
-                  className="flex items-start gap-3 rounded-2xl border border-white/10 bg-ink-800/70 p-4"
+                  className="flex items-start gap-3 rounded-2xl border border-black/10 bg-ink-800/70 p-4"
                 >
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold-400/15 text-gold-400">
                     <CheckIcon className="h-4 w-4" />
@@ -174,7 +174,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
           <Reveal delay={100}>
             <div className="mt-12 rounded-3xl border border-gold-400/25 bg-gradient-to-br from-ink-800 to-ink-900 p-8 text-center sm:p-10">
-              <h2 className="font-display text-2xl font-extrabold text-white sm:text-3xl">
+              <h2 className="font-display text-2xl font-extrabold text-mist-100 sm:text-3xl">
                 Ready to grow with <span className="text-gold-gradient">{service.title}</span>?
               </h2>
               <p className="mx-auto mt-3 max-w-xl text-mist-300">
@@ -189,7 +189,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
                 <Link
                   href="/#contact"
-                  className="inline-flex items-center gap-2 rounded-full bg-gold-400 px-8 py-3.5 text-base font-bold text-ink-950 transition-all hover:bg-gold-300 hover:shadow-xl hover:shadow-gold-500/25"
+                  className="inline-flex items-center gap-2 rounded-full bg-gold-400 px-8 py-3.5 text-base font-bold text-ink-950 transition-all hover:bg-accent-deep hover:shadow-xl hover:shadow-gold-500/25"
                 >
                   Start a Project <ArrowRightIcon className="h-5 w-5" />
                 </Link>
@@ -197,7 +197,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                   href={SITE.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/20 px-8 py-3.5 text-base font-semibold text-white transition-colors hover:border-gold-400/60 hover:text-gold-300"
+                  className="inline-flex items-center gap-2 rounded-full border border-black/20 px-8 py-3.5 text-base font-semibold text-mist-100 transition-colors hover:border-gold-400/60 hover:text-gold-300"
                 >
                   WhatsApp Me
                 </Link>
@@ -207,16 +207,16 @@ export default async function ServicePage({ params }: ServicePageProps) {
 
           {service.faqs && service.faqs.length > 0 && (
             <Reveal delay={100}>
-              <h2 className="mt-14 font-display text-2xl font-bold text-white">
+              <h2 className="mt-14 font-display text-2xl font-bold text-mist-100">
                 Frequently Asked <span className="text-gold-gradient">Questions</span>
               </h2>
               <div className="mt-6 space-y-4">
                 {service.faqs.map((faq) => (
                   <div
                     key={faq.question}
-                    className="rounded-2xl border border-white/10 bg-ink-800/70 p-5 sm:p-6"
+                    className="rounded-2xl border border-black/10 bg-ink-800/70 p-5 sm:p-6"
                   >
-                    <h3 className="font-display text-base font-bold text-white sm:text-lg">
+                    <h3 className="font-display text-base font-bold text-mist-100 sm:text-lg">
                       {faq.question}
                     </h3>
                     <p className="mt-2 text-sm leading-relaxed text-mist-300 sm:text-base">
@@ -229,7 +229,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
           )}
 
           <Reveal delay={80}>
-            <h2 className="mt-14 font-display text-2xl font-bold text-white">
+            <h2 className="mt-14 font-display text-2xl font-bold text-mist-100">
               Explore Other <span className="text-gold-gradient">Services</span>
             </h2>
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -237,12 +237,12 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 <Link
                   key={other.slug}
                   href={`/services/${other.slug}`}
-                  className="card-glow group rounded-2xl border border-white/10 bg-ink-800/70 p-6"
+                  className="card-glow group rounded-2xl border border-black/10 bg-ink-800/70 p-6"
                 >
                   <p className="text-xs font-bold tracking-widest text-gold-500">
                     {other.number}
                   </p>
-                  <h3 className="mt-2 font-display text-lg font-bold text-white transition-colors group-hover:text-gold-300">
+                  <h3 className="mt-2 font-display text-lg font-bold text-mist-100 transition-colors group-hover:text-gold-300">
                     {other.title}
                   </h3>
                   <p className="mt-2 text-sm text-mist-300">{other.short}</p>

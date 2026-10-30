@@ -105,7 +105,7 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
             <p className="mt-8 text-xs font-bold tracking-[0.3em] text-gold-400 uppercase">
               {post.dateDisplay} · {post.readTime}
             </p>
-            <h1 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+            <h1 className="mt-4 font-display text-4xl font-extrabold tracking-tight text-mist-100 sm:text-5xl">
               {post.title}
             </h1>
             <p className="mt-5 text-xl leading-relaxed text-mist-300">{post.description}</p>
@@ -122,7 +122,7 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
           </Reveal>
 
           <Reveal delay={100}>
-            <h2 className="mt-12 font-display text-2xl font-bold text-white">
+            <h2 className="mt-12 font-display text-2xl font-bold text-mist-100">
               {post.stepsHeading ?? `The ${post.checks.length} checks`},{" "}
               <span className="text-gold-gradient">in order</span>
             </h2>
@@ -131,7 +131,7 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
                 <li key={check.title}>
                   <a
                     href={`#check-${i + 1}`}
-                    className="flex items-baseline gap-3 rounded-xl border border-white/10 bg-ink-800/70 px-5 py-3.5 text-mist-100 transition-colors hover:border-gold-400/40 hover:text-gold-300"
+                    className="flex items-baseline gap-3 rounded-xl border border-black/10 bg-ink-800/70 px-5 py-3.5 text-mist-100 transition-colors hover:border-gold-400/40 hover:text-gold-300"
                   >
                     <span className="font-display text-sm font-bold text-gold-400">
                       {String(i + 1).padStart(2, "0")}
@@ -149,7 +149,7 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
                 <p className="text-xs font-bold tracking-[0.3em] text-gold-400 uppercase">
                   {post.stepLabel ?? "Check"} {i + 1} of {post.checks.length}
                 </p>
-                <h2 className="mt-3 font-display text-2xl font-bold text-white sm:text-3xl">
+                <h2 className="mt-3 font-display text-2xl font-bold text-mist-100 sm:text-3xl">
                   {check.title}
                 </h2>
                 <div className="mt-5 space-y-5">
@@ -185,7 +185,7 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
 
           <Reveal delay={100}>
             <div className="mt-12 rounded-3xl border border-gold-400/25 bg-gradient-to-br from-ink-800 to-ink-900 p-8 text-center sm:p-10">
-              <h2 className="font-display text-2xl font-extrabold text-white sm:text-3xl">
+              <h2 className="font-display text-2xl font-extrabold text-mist-100 sm:text-3xl">
                 Still not showing on <span className="text-gold-gradient">Google Maps</span>?
               </h2>
               <p className="mx-auto mt-3 max-w-xl text-mist-300">
@@ -202,7 +202,7 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
               <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
                 <Link
                   href="/#contact"
-                  className="inline-flex items-center gap-2 rounded-full bg-gold-400 px-8 py-3.5 text-base font-bold text-ink-950 transition-all hover:bg-gold-300 hover:shadow-xl hover:shadow-gold-500/25"
+                  className="inline-flex items-center gap-2 rounded-full bg-gold-400 px-8 py-3.5 text-base font-bold text-ink-950 transition-all hover:bg-accent-deep hover:shadow-xl hover:shadow-gold-500/25"
                 >
                   Start a Project <ArrowRightIcon className="h-5 w-5" />
                 </Link>
@@ -210,7 +210,7 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
                   href={SITE.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/20 px-8 py-3.5 text-base font-semibold text-white transition-colors hover:border-gold-400/60 hover:text-gold-300"
+                  className="inline-flex items-center gap-2 rounded-full border border-black/20 px-8 py-3.5 text-base font-semibold text-mist-100 transition-colors hover:border-gold-400/60 hover:text-gold-300"
                 >
                   WhatsApp 0320 9588428
                 </Link>
@@ -220,7 +220,7 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
 
           {others.length > 0 && (
             <Reveal delay={80}>
-              <h2 className="mt-14 font-display text-2xl font-bold text-white">
+              <h2 className="mt-14 font-display text-2xl font-bold text-mist-100">
                 More from the <span className="text-gold-gradient">Blog</span>
               </h2>
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -228,12 +228,12 @@ export default async function BlogArticlePage({ params }: BlogArticleProps) {
                   <Link
                     key={other.slug}
                     href={`/blog/${other.slug}`}
-                    className="card-glow group rounded-2xl border border-white/10 bg-ink-800/70 p-6"
+                    className="card-glow group rounded-2xl border border-black/10 bg-ink-800/70 p-6"
                   >
                     <p className="text-xs font-bold tracking-widest text-gold-500">
                       {other.dateDisplay} · {other.readTime}
                     </p>
-                    <h3 className="mt-2 font-display text-lg font-bold text-white transition-colors group-hover:text-gold-300">
+                    <h3 className="mt-2 font-display text-lg font-bold text-mist-100 transition-colors group-hover:text-gold-300">
                       {other.title}
                     </h3>
                     <p className="mt-2 text-sm text-mist-300">{other.description}</p>

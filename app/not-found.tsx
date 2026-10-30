@@ -18,7 +18,7 @@ export default function NotFound() {
         <p aria-hidden className="font-display text-8xl font-extrabold text-gold-gradient sm:text-9xl">
           404
         </p>
-        <h1 id="notfound-heading" className="mt-6 font-display text-3xl font-bold text-white sm:text-4xl">
+        <h1 id="notfound-heading" className="mt-6 font-display text-3xl font-bold text-mist-100 sm:text-4xl">
           Page Not Found
         </h1>
         <p className="mx-auto mt-4 max-w-md text-lg text-mist-300">
@@ -28,13 +28,13 @@ export default function NotFound() {
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 rounded-full bg-gold-400 px-8 py-3.5 text-base font-bold text-ink-950 transition-all hover:bg-gold-300"
+            className="inline-flex items-center gap-2 rounded-full bg-gold-400 px-8 py-3.5 text-base font-bold text-ink-950 transition-all hover:bg-accent-deep"
           >
             Back to Home <ArrowRightIcon className="h-5 w-5" />
           </Link>
           <Link
             href="/#services"
-            className="inline-flex items-center gap-2 rounded-full border border-white/20 px-8 py-3.5 text-base font-semibold text-white transition-colors hover:border-gold-400/60 hover:text-gold-300"
+            className="inline-flex items-center gap-2 rounded-full border border-black/20 px-8 py-3.5 text-base font-semibold text-mist-100 transition-colors hover:border-gold-400/60 hover:text-gold-300"
           >
             View Services
           </Link>

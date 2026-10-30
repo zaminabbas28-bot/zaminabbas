@@ -20,7 +20,7 @@ export default function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "border-b border-white/10 bg-ink-950/90 backdrop-blur-xl"
+          ? "border-b border-black/10 bg-ink-950/90 backdrop-blur-xl"
           : "border-b border-transparent bg-transparent"
       }`}
     >
@@ -34,10 +34,10 @@ export default function Header() {
           aria-label={`${SITE.name} — home`}
           className="flex items-center gap-2.5"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-gold-soft via-gold to-gold-deep font-sans text-base font-extrabold text-ink-950">
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-gold-soft via-gold to-gold-deep font-sans text-base font-extrabold text-mist-100">
             Z
           </span>
-          <span className="font-sans text-sm font-extrabold tracking-[0.18em] text-white">
+          <span className="font-sans text-sm font-extrabold tracking-[0.18em] text-mist-100">
             ZAMIN&nbsp;ABBAS
           </span>
         </Link>
@@ -48,7 +48,7 @@ export default function Header() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="rounded-full px-4 py-2 text-sm font-medium text-mist-300 transition-colors hover:bg-white/5 hover:text-white"
+                className="rounded-full px-4 py-2 text-sm font-medium text-mist-300 transition-colors hover:bg-black/5 hover:text-mist-100"
               >
                 {link.label}
               </Link>
@@ -61,7 +61,7 @@ export default function Header() {
             href={SITE.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full bg-gold px-6 py-2.5 text-sm font-bold text-ink-950 transition hover:bg-gold-soft"
+            className="inline-flex items-center gap-1.5 rounded-full bg-gold px-6 py-2.5 text-sm font-bold text-ink-950 transition hover:bg-accent-deep"
           >
             Let&rsquo;s Work Together
             <ArrowUpRightIcon className="h-4 w-4" />
@@ -71,7 +71,7 @@ export default function Header() {
         {/* Mobile toggle */}
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 text-white lg:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-black/10 text-mist-100 lg:hidden"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label={open ? "Close menu" : "Open menu"}
@@ -84,7 +84,7 @@ export default function Header() {
       {open && (
         <div
           id="mobile-menu"
-          className="mx-4 mb-4 rounded-3xl border border-white/10 bg-ink-900/95 p-3 shadow-2xl shadow-black/60 backdrop-blur-xl lg:hidden"
+          className="mx-4 mb-4 rounded-3xl border border-black/10 bg-ink-900/95 p-3 shadow-2xl shadow-black/60 backdrop-blur-xl lg:hidden"
         >
           <ul className="space-y-1">
             {NAV_LINKS.map((link) => (
@@ -92,7 +92,7 @@ export default function Header() {
                 <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block rounded-2xl px-4 py-3 text-base font-medium text-mist-100 hover:bg-white/5"
+                  className="block rounded-2xl px-4 py-3 text-base font-medium text-mist-100 hover:bg-black/5"
                 >
                   {link.label}
                 </Link>

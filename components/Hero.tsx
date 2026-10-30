@@ -4,7 +4,7 @@ import { SITE } from "@/lib/site";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative overflow-hidden bg-ink-950 text-white">
+    <section id="home" className="relative overflow-hidden bg-ink-950 text-mist-100">
       {/* gold ambient glows */}
       <div
         aria-hidden
@@ -41,7 +41,7 @@ export default function Hero() {
                 href={SITE.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 rounded-full bg-gold px-8 py-4 text-sm font-bold text-ink-950 transition hover:bg-gold-soft"
+                className="group inline-flex items-center gap-2 rounded-full bg-gold px-8 py-4 text-sm font-bold text-ink-950 transition hover:bg-accent-deep"
               >
                 Let&rsquo;s Work Together
                 <span aria-hidden className="transition-transform group-hover:translate-x-1">
@@ -50,7 +50,7 @@ export default function Hero() {
               </Link>
               <Link
                 href="#work"
-                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-8 py-4 text-sm font-bold text-white transition hover:border-gold hover:text-gold"
+                className="inline-flex items-center gap-2 rounded-full border border-black/20 px-8 py-4 text-sm font-bold text-mist-100 transition hover:border-gold hover:text-gold"
               >
                 See My Work
               </Link>
@@ -89,7 +89,7 @@ export default function Hero() {
               <div aria-hidden className="spotlight-floor" />
             </div>
             {/* floating badge */}
-            <div className="absolute -left-4 top-6 rounded-2xl border border-gold/30 bg-ink-900/90 px-4 py-3 shadow-xl backdrop-blur sm:-left-8">
+            <div className="absolute -left-4 top-6 rounded-2xl border border-gold/30 bg-black/90 px-4 py-3 shadow-xl backdrop-blur sm:-left-8">
               <p className="font-mono text-[0.65rem] tracking-[0.2em] text-gold">
                 GOOGLE MAPS
               </p>

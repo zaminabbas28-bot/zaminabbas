@@ -17,7 +17,7 @@ export default function CtaSection() {
           </p>
           <h2
             id="contact-heading"
-            className="mt-4 font-display text-3xl font-extrabold tracking-tight text-white sm:text-5xl"
+            className="mt-4 font-display text-3xl font-extrabold tracking-tight text-mist-100 sm:text-5xl"
           >
             I&apos;m Here to Help You <span className="text-gold-gradient">Grow Smarter</span>
           </h2>
@@ -41,7 +41,7 @@ export default function CtaSection() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
               href={`mailto:${SITE.email}?subject=Project%20Inquiry%20—%20zaminabbas.me`}
-              className="inline-flex items-center gap-2 rounded-full bg-gold-400 px-8 py-3.5 text-base font-bold text-ink-950 transition-all hover:bg-gold-300 hover:shadow-xl hover:shadow-gold-500/25"
+              className="inline-flex items-center gap-2 rounded-full bg-gold-400 px-8 py-3.5 text-base font-bold text-ink-950 transition-all hover:bg-accent-deep hover:shadow-xl hover:shadow-gold-500/25"
             >
               Start a Project <ArrowRightIcon className="h-5 w-5" />
             </Link>
@@ -49,7 +49,7 @@ export default function CtaSection() {
               href={SITE.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 px-8 py-3.5 text-base font-semibold text-white transition-colors hover:border-gold-400/60 hover:text-gold-300"
+              className="inline-flex items-center gap-2 rounded-full border border-black/20 px-8 py-3.5 text-base font-semibold text-mist-100 transition-colors hover:border-gold-400/60 hover:text-gold-300"
             >
               <ChatIcon className="h-5 w-5" /> WhatsApp Me
             </Link>

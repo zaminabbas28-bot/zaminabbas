@@ -34,7 +34,7 @@ function PhotoCarousel() {
         className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-gold/60 via-gold/15 to-transparent p-[1px]"
         style={{
           boxShadow:
-            "0 40px 80px -30px rgba(216,180,96,0.35), 0 25px 60px -20px rgba(0,0,0,0.8)",
+            "0 40px 80px -30px rgba(255,106,0,0.35), 0 25px 60px -20px rgba(0,0,0,0.8)",
         }}
       >
         <div className="relative overflow-hidden rounded-[calc(1.75rem-1px)] bg-ink-900">
@@ -58,7 +58,7 @@ function PhotoCarousel() {
           </div>
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-ink-950/80 to-transparent"
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/80 to-transparent"
           />
           {/* slide dots */}
           <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
@@ -75,7 +75,7 @@ function PhotoCarousel() {
             ))}
           </div>
           {/* counter */}
-          <span className="absolute right-4 top-4 rounded-full border border-white/15 bg-ink-950/60 px-3 py-1 font-mono text-[0.65rem] tracking-[0.15em] text-white/80 backdrop-blur-sm">
+          <span className="absolute right-4 top-4 rounded-full border border-white/15 bg-black/60 px-3 py-1 font-mono text-[0.65rem] tracking-[0.15em] text-white/80 backdrop-blur-sm">
             {index + 1} / {HERO_PHOTOS.length}
           </span>
           {/* prev/next arrows */}
@@ -83,7 +83,7 @@ function PhotoCarousel() {
             type="button"
             onClick={() => setIndex((index - 1 + HERO_PHOTOS.length) % HERO_PHOTOS.length)}
             aria-label="Previous photo"
-            className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-ink-950/60 text-white/80 backdrop-blur-sm transition hover:bg-ink-950/90 hover:text-white"
+            className="absolute left-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/60 text-white/80 backdrop-blur-sm transition hover:bg-black/90 hover:text-white"
           >
             <span aria-hidden>&larr;</span>
           </button>
@@ -91,14 +91,14 @@ function PhotoCarousel() {
             type="button"
             onClick={() => setIndex((index + 1) % HERO_PHOTOS.length)}
             aria-label="Next photo"
-            className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-ink-950/60 text-white/80 backdrop-blur-sm transition hover:bg-ink-950/90 hover:text-white"
+            className="absolute right-3 top-1/2 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full border border-white/15 bg-black/60 text-white/80 backdrop-blur-sm transition hover:bg-black/90 hover:text-white"
           >
             <span aria-hidden>&rarr;</span>
           </button>
         </div>
         <div className="flex items-center justify-between bg-ink-950/95 px-4 py-4">
           <div>
-            <p className="font-medium text-white">{SITE.fullName}</p>
+            <p className="font-medium text-mist-100">{SITE.fullName}</p>
             <p className="text-sm text-mist-500">
               {SITE.locality}, {SITE.country}
             </p>
@@ -118,7 +118,7 @@ export default function About() {
           <div>
             <Reveal>
               <p className="label-caps">Know about me</p>
-              <h2 className="font-display mt-3 text-4xl leading-tight text-white sm:text-5xl">
+              <h2 className="font-display mt-3 text-4xl leading-tight text-mist-100 sm:text-5xl">
                 Local SEO specialist,
                 <br />
                 with a marketer&apos;s <em className="text-gradient-accent">instinct</em>
@@ -130,7 +130,7 @@ export default function About() {
                   I&apos;m Zamin Abbas, a local SEO expert based in Multan,
                   Pakistan, working in SEO since 2022. I help small and medium businesses get found where it
                   matters most — on Google Maps and in local search results. My
-                  agency, <strong className="text-white">Zamin Abbas Local SEO Expert</strong>,
+                  agency, <strong className="text-mist-100">Zamin Abbas Local SEO Expert</strong>,
                   is built on one belief: visibility should turn into customers,
                   not just impressions.
                 </p>
@@ -152,7 +152,7 @@ export default function About() {
                 {STATS.map((stat) => (
                   <div key={stat.label}>
                     <dt className="label-caps">{stat.label}</dt>
-                    <dd className="font-display mt-2 text-3xl text-white">{stat.value}</dd>
+                    <dd className="font-display mt-2 text-3xl text-mist-100">{stat.value}</dd>
                   </div>
                 ))}
               </dl>
