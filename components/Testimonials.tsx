@@ -73,8 +73,10 @@ export default function Testimonials() {
                       <span className="block text-sm font-semibold text-mist-100">
                         {review.name}
                       </span>
-                      <span className="flex items-center gap-1 text-xs text-mist-500">
-                        <StarIcon className="h-3 w-3 text-accent" /> Client testimonial
+                      <span className="mt-1 flex items-center gap-0.5 text-accent">
+                        {Array.from({ length: 5 }).map((_, i) => (
+                          <StarIcon key={i} className="h-3 w-3" />
+                        ))}
                       </span>
                     </span>
                   </figcaption>

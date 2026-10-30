@@ -612,40 +612,69 @@ export interface Review {
 
 export const REVIEWS: Review[] = [
   {
-    name: "Ahmed Feroz",
-    initials: "AF",
+    name: "Mahnoor Fatima",
+    initials: "MF",
     quote:
-      "Zamin took our business to the first page of Google within a few months. Phone calls and walk-in customers have grown noticeably since.",
+      "Excellent service from Zamin Abbas! Very professional, knowledgeable, and hardworking. He did a great job with my business website. I'm 100% satisfied with his work. Highly recommended for Local SEO services!",
   },
   {
-    name: "Qazi Emad",
-    initials: "QE",
+    name: "Shahmeer Ali Shahmeer",
+    initials: "SS",
     quote:
-      "Professional, transparent, and completely data-driven. He explained every step clearly and our rankings improved month after month.",
+      "I am very happy because best website design and project handover in3 days thanks 👍👍 I recommend for seo and development",
   },
   {
-    name: "Aun Abbas",
+    name: "Muhammad Ali",
+    initials: "MA",
+    quote: "Best seo service provider iam very glad for the local seo service ،",
+  },
+  {
+    name: "Muse Muse",
+    initials: "MM",
+    quote:
+      "I am very amazing and wonderful because I hire zeeshi local SEO Expert for my business profile and I get best local SEO service Thanks 👍",
+  },
+  {
+    name: "Aeo Aeo",
     initials: "AA",
     quote:
-      "His technical SEO audit uncovered issues we never knew existed. Site speed improved dramatically and our pages started ranking better.",
+      "Great experience with Zeeshi Local SEO Expert. Very professional local SEO service that helped improve my Google rankings and bring more local customers. Highly recommended!",
   },
   {
-    name: "Jhanzaib Moiz",
-    initials: "JM",
+    name: "Developer",
+    initials: "DE",
     quote:
-      "His local SEO strategy put us on the map — literally. Our Google Maps visibility brought in double the leads we had before.",
+      "I got my web development work done from Zamin Digital Marketing, and they did an excellent job. The website is fast, clean, and fully responsive. I’m very satisfied with their work and highly recommend them!",
   },
   {
-    name: "Sarah Mitchell",
-    initials: "SM",
+    name: "Rana Ahmad",
+    initials: "RA",
     quote:
-      "Excellent communication and genuine results. Our organic traffic grew steadily every single month under his management.",
+      "I hired Zeeshi for Local SEO services, and I am extremely satisfied with the results. He optimized my Google Business Profile professionally, improved my local rankings, and I started receiving more customer calls. Zeeshi communicates clearly, delivers work on time, and explains everything in detail. If you want to boost your business visibility locally, I highly recommend Zeeshi!",
   },
   {
-    name: "Rizwan Hassan",
-    initials: "RH",
+    name: "CH. Irfan Liaqat",
+    initials: "CI",
     quote:
-      "A highly recommended SEO expert. Honest advice, clear monthly reporting, and rankings that actually held their position.",
+      "I worked with Zeeshi, a Local SEO Expert, and I’m really happy with the results! He handled everything professionally and delivered excellent work. My business visibility in Google search and maps has improved a lot. Communication was smooth, and he kept me updated throughout the process. Highly recommended for anyone looking for real local SEO results. Thank you, Zeeshi, for your great work!",
+  },
+  {
+    name: "Muhammad Javed Muhammad Javed",
+    initials: "MJ",
+    quote:
+      "I hired Zeeshi for my local SEO project, and I’m really impressed with his work! He understood my business goals perfectly and delivered great results in a short time. My local rankings improved noticeably, and I started getting more inquiries from nearby customers. Zeeshi is professional, responsive, and easy to work with. Totally satisfied and highly recommend him!",
+  },
+  {
+    name: "Seo seo",
+    initials: "SS",
+    quote:
+      "I worked with Zeeshi Local SEO Expert in multan and I’m super happy with the results! My business started showing up higher on Google within weeks. He’s friendly, professional, and really knows his work. Definitely recommend him!",
+  },
+  {
+    name: "Texas Liam",
+    initials: "TL",
+    quote:
+      "Zeeshi Local SEO Expert has delivered excellent work. Their professionalism, attention to detail, and understanding of local SEO strategies have significantly improved our online visibility. Highly recommended for anyone looking to enhance their local business presence.",
   },
 ];
 
