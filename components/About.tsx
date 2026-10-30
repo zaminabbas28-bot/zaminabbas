@@ -127,8 +127,8 @@ export default function About() {
             <Reveal delay={120}>
               <div className="mt-6 space-y-5 leading-relaxed text-mist-300">
                 <p>
-                  I&apos;m Zamin Abbas, a local SEO expert based in Multan,
-                  Pakistan, working in SEO since 2022. I help small and medium businesses get found where it
+                  I&apos;m Zamin Abbas, an SEO expert in Multan, Pakistan,
+                  and local SEO specialist in Multan, working in SEO since 2022. I help small and medium businesses get found where it
                   matters most — on Google Maps and in local search results. My
                   agency, <strong className="text-mist-100">Zamin Abbas Local SEO Expert</strong>,
                   is built on one belief: visibility should turn into customers,
@@ -139,6 +139,8 @@ export default function About() {
                   run social media marketing that actually grows brands. Every
                   project gets the same treatment — data first, honest reporting,
                   and white-hat work that holds its rankings.
+                  If you are searching for the best local SEO expert in Multan, that is the standard to judge by.
+                  Businesses looking for the best digital marketing agency in Multan usually want one place for SEO, websites and social — that is exactly what this agency covers.
                 </p>
                 <p>
                   When I&apos;m not optimizing profiles or auditing sites, I&apos;m

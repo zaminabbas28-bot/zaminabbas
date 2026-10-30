@@ -231,17 +231,17 @@ export const SERVICES: Service[] = [
       "Location pages optimized for nearby areas",
     ],
     paragraphs: [
-      "Local SEO is the fastest way for a neighborhood business to turn nearby searches into paying customers. When someone in Multan searches for what you offer, your business should be the first name they see — on Google Maps, in the map pack, in organic results, and on your Google Business Profile. My local SEO services in Multan are built around exactly that outcome: stronger Google Maps visibility through complete local search optimization.",
-      "I start with a full local audit: your Google Business Profile, existing citations, NAP consistency, reviews, and how competitors are ranking around you. From there I build a clear action plan — Google Business Profile optimization across categories, services, photos and posts, cleaning up inconsistent directory listings, and creating location-focused content that matches how real customers search.",
-      "Reviews are a ranking factor and a trust factor, so I also set up a simple, repeatable system for earning genuine customer reviews without awkward asks. Combined with locally relevant on-page optimization and authoritative local citations, this compounds into durable map-pack visibility.",
-      "Every month you get a plain-language report: keyword positions, map-pack rankings, profile views, calls, and direction requests. No jargon, no vanity metrics — just the numbers that show whether more local customers are finding you.",
-      "As an SEO specialist in Multan, I work with businesses across the city — Gulgasht, Cantt, Bosan Road, Nishtar Road and the Northern Bypass corridor — and with service-area businesses that cover the whole city. Wherever your customers search from, the goal is the same: your business in the map pack, with a profile that turns views into calls.",
+      "Local SEO is the fastest way for a neighborhood business to turn nearby searches into paying customers. When someone in Multan searches for what you offer, your business should be the first name they see — on Google Maps, in the map pack, in organic results, and on your Google Business Profile. My local SEO services in Multan are built around exactly that outcome: stronger Google Maps visibility through complete local search optimization and Google Maps ranking services in Multan.",
+      "I start with a full local audit: your Google Business Profile, existing citations, NAP consistency, reviews, and how competitors are ranking around you. From there I build a clear action plan — Google Business Profile optimization across categories, services, photos and posts, cleaning up inconsistent directory listings, and creating location-focused content that matches how real customers search. Businesses looking for the best digital marketing agency in Multan often need the same three things: local visibility, a website that converts, and social proof — all covered here. Whether you search for the top SEO company in Multan or ask a client for a referral, you get the same audit-first approach.",
+      "Reviews are a ranking factor and a trust factor — searches for a top rated SEO expert in Multan usually lead to profiles with strong, genuine reviews. That is why I set up a simple, repeatable system for earning genuine customer reviews without awkward asks. Combined with locally relevant on-page optimization and authoritative local citations, this compounds into durable map-pack visibility. That is the standard I hold my work to when businesses compare the best SEO services in Multan: reviews you can read, rankings you can check, and reports in plain language.",
+      "Every month you get a plain-language report: keyword positions, map-pack rankings, profile views, calls, and direction requests. No jargon, no vanity metrics — just the numbers that show whether more local customers are finding you. Businesses comparing the best SEO agency in Multan can judge by those same reports. When you compare any top SEO expert in Multan, ask for those same monthly numbers before you sign.",
+      "As an SEO specialist in Multan based in Gulzaib Colony, near Chowk B.C.G., I work with businesses across the city — Gulgasht, Cantt, Bosan Road, Nishtar Road and the Northern Bypass corridor — and with service-area businesses that cover the whole city. Wherever your customers search from, the goal is the same: your business in the map pack, with a profile that turns views into calls. Whether you search for the top SEO agency in Multan or ask a client for a referral, you get the same local service.",
     ],
     faqs: [
       {
         question: "How do I get my business to show up on Google Maps?",
         answer:
-          "It starts with a complete, verified Google Business Profile: the correct primary category, accurate name, address and phone number, your services listed, and real photos of the business. Consistent citations, genuine reviews and a locally optimized website then build the prominence Google needs to place you in the map pack. That full system is what my local SEO service sets up and improves month by month.",
+          "It starts with a complete, verified Google Business Profile: the correct primary category, accurate name, address and phone number, your services listed, and real photos of the business. Consistent citations, genuine reviews and a locally optimized website then build the prominence Google needs to place you in the map pack. That full system is what my local SEO service sets up and improves month by month. Businesses searching for the best Google Maps SEO expert in Multan should check the same things: a complete profile, real reviews and consistent citations.",
       },
       {
         question: "How long does local SEO take to show results?",
@@ -261,7 +261,7 @@ export const SERVICES: Service[] = [
       {
         question: "Can I do local SEO myself?",
         answer:
-          "Yes — the basics are public: claim your profile, complete every field, add photos, and ask happy customers for reviews. Where owners usually stall is consistency: weekly posts, citation cleanup, review replies and tracking what actually changed rankings. Hiring me buys that system, done every month, plus the hours it takes.",
+          "Yes — the basics are public: claim your profile, complete every field, add photos, and ask happy customers for reviews. Where owners usually stall is consistency: weekly posts, citation cleanup, review replies and tracking what actually changed rankings. Hiring me — an SEO consultant in Multan — buys that system, done every month, plus the hours it takes.",
       },
       {
         question: "How is local SEO different from regular SEO?",
@@ -271,12 +271,22 @@ export const SERVICES: Service[] = [
       {
         question: "Can I hire you as an SEO consultant?",
         answer:
-          "Yes. If you need expert advice rather than monthly management, I offer one-off audits and a free initial consultation — for example, a local SEO audit of your profile, citations and rankings, with a prioritized action plan you can implement yourself or hand to me.",
+          "Yes. As a local SEO consultant in Multan, I offer one-off audits and a free initial consultation — for example, a local SEO audit of your profile, citations and rankings, with a prioritized action plan you can implement yourself or hand to me.",
       },
       {
         question: "Are you an SEO specialist in Multan?",
         answer:
-          "Yes. I'm Zamin Abbas, an SEO specialist based in Multan, Pakistan. I help local businesses get found on Google through local SEO, Google Business Profile optimization, and Google Maps ranking — with monthly reporting in plain language.",
+          "Yes. I'm Zamin Abbas, an SEO expert in Multan, Pakistan. I help local businesses get found on Google through local SEO, Google Business Profile optimization, and Google Maps ranking — with monthly reporting in plain language. If you are searching for the top local SEO expert in Multan, that free audit is the best place to start.",
+      },
+      {
+        question: "Who is the best local SEO expert in Multan?",
+        answer:
+          "There is no official ranking that names one winner, so judge by the work: a full local audit, a profile you can inspect, genuine reviews, and monthly reporting in plain language. That is the service I provide in Multan — starting with a free audit, so you can see the standard before you commit.",
+      },
+      {
+        question: "Who is the best SEO expert in Multan?",
+        answer:
+          "The honest answer is that 'best' depends on your business: a restaurant, a clinic and a service-area business each need a different local strategy. I offer a free initial consultation and a prioritized action plan, so you can judge the advice before you pay for anything.",
       },
     ],
   },
@@ -300,7 +310,7 @@ export const SERVICES: Service[] = [
       "Monthly performance reports in plain language",
     ],
     paragraphs: [
-      "Social media works when it is strategic, not random. Posting without a plan burns time and rarely moves the needle. My social media marketing service gives your brand a consistent voice, a content system, and campaigns designed around one thing: measurable business results.",
+      "Social media works when it is strategic, not random. Posting without a plan burns time and rarely moves the needle. My social media marketing in Multan gives your brand a consistent voice, a content system, and campaigns designed around one thing: measurable business results.",
       "We begin by defining your audience and choosing the platforms where they actually spend time — there is no point being everywhere and effective nowhere. I then build a content calendar mixing educational posts, proof of work, behind-the-scenes content, and offers, all written in a tone that sounds like you on your best day.",
       "Engagement is treated as a discipline: comments answered, messages handled, and community conversations that turn followers into customers. When paid promotion makes sense, I run tightly targeted campaigns with clear budgets and conversion tracking, so every rupee is accountable.",
       "You will know exactly what is working through monthly reports covering reach, engagement, follower growth, and — most importantly — leads and sales attributed to social. Strategy evolves from data, not guesswork.",
@@ -351,16 +361,16 @@ export const SERVICES: Service[] = [
       "Fixing broken links, redirects & duplicate content",
     ],
     paragraphs: [
-      "Great content cannot rank on a broken foundation. Technical SEO is the behind-the-scenes work that makes sure search engines can crawl, understand, and trust your website — and that visitors get a fast, smooth experience on every device.",
-      "My process starts with a deep technical audit covering site speed, Core Web Vitals, mobile usability, crawl errors, indexation, sitemaps, robots directives, canonicalization, and structured data. Every issue is scored by impact, so we fix what moves rankings first instead of chasing minor tweaks.",
-      "Implementation is hands-on: compressing and modernizing assets, eliminating render-blocking resources, fixing redirect chains and broken links, resolving duplicate content, and adding schema markup that helps you win rich results. I work directly in your stack or alongside your developers with precise, ticket-ready instructions.",
+      "Great content cannot rank on a broken foundation. My technical SEO services in Multan do the behind-the-scenes work that makes sure search engines can crawl, understand, and trust your website — and that visitors get a fast, smooth experience on every device.",
+      "My process starts with a deep technical audit — my SEO audit service in Multan covers site speed, Core Web Vitals, mobile usability, crawl errors, indexation, sitemaps, robots directives, canonicalization, and structured data. Every issue is scored by impact, so we fix what moves rankings first instead of chasing minor tweaks.",
+      "Implementation is hands-on: compressing and modernizing assets, eliminating render-blocking resources, fixing redirect chains and broken links, resolving duplicate content, and adding schema markup that helps you win rich results. On-page SEO services in Multan are part of the same implementation: correct headings, meta setup and internal links on every key page. I work directly in your stack or alongside your developers with precise, ticket-ready instructions.",
       "After fixes go live, I monitor Search Console data to confirm indexing improvements and ranking movement. Technical SEO is not a one-time project — I offer ongoing monitoring so new issues are caught before they cost you traffic.",
     ],
     faqs: [
       {
         question: "What does a technical SEO audit include?",
         answer:
-          "Crawlability and indexation, sitemap and robots directives, canonical tags and duplicate content, broken links and redirect chains, site speed and Core Web Vitals, mobile usability, structured data, and HTTPS basics. You receive the findings as a prioritized list scored by impact, so the fixes that move rankings come first.",
+          "Crawlability and indexation, sitemap and robots directives, canonical tags and duplicate content, broken links and redirect chains, site speed and Core Web Vitals, mobile usability, structured data, and HTTPS basics. Keyword research services in Multan are covered alongside the technical findings, so fixes target the terms your customers actually search. You receive the findings as a prioritized list scored by impact, so the fixes that move rankings come first.",
       },
       {
         question: "How long do technical SEO fixes take?",
@@ -380,7 +390,7 @@ export const SERVICES: Service[] = [
       {
         question: "How do I know the fixes worked?",
         answer:
-          "After implementation I monitor Google Search Console for coverage and indexation changes, Core Web Vitals status, and ranking movement — and report it in plain language, including anything that still needs attention.",
+          "As a technical SEO specialist in Multan, I monitor Google Search Console after implementation for coverage and indexation changes, Core Web Vitals status, and ranking movement — and report it in plain language, including anything that still needs attention.",
       },
     ],
   },
@@ -408,7 +418,7 @@ export const SERVICES: Service[] = [
       "Every build starts with your goals: who you serve, what action visitors should take, and how they find you. From there I design a clean, conversion-focused layout and develop it on WordPress with lightweight themes and carefully chosen plugins — no bloated page builders slowing things down.",
       "For stores, I set up WooCommerce with secure payment integration, product pages optimized for search with ecommerce SEO basics, and a checkout flow designed to reduce abandoned carts. For business sites, I build service pages, contact flows, and local SEO foundations that help you rank in your market.",
       "After launch, you are not left guessing: I provide training videos, documentation, and an optional care plan covering updates, backups, and security. Your site stays fast, safe, and working for your business long after go-live.",
-      "From my base in Multan I build websites for local businesses here — clinics, shops, restaurants and service companies across the city — and for clients abroad who hire me remotely, including website design and development delivered entirely over WhatsApp and video calls. Whether we meet in person or online, the process is the same: clear scope, honest timelines, and a website designed around the searches your customers actually make.",
+      "From my base in Multan, my WordPress website development in Multan covers local businesses here — clinics, shops, restaurants and service companies across the city — and clients abroad who hire me remotely, including website design and development delivered entirely over WhatsApp and video calls. Whether we meet in person or online, the process is the same: clear scope, honest timelines, and a website designed around the searches your customers actually make.",
     ],
     faqs: [
       {
@@ -419,7 +429,7 @@ export const SERVICES: Service[] = [
       {
         question: "Will my website be SEO-friendly from day one?",
         answer:
-          "Yes. Every build includes a clean site structure, fast-loading pages, mobile-first design, correct heading and meta setup, and the technical foundations Google needs to crawl and rank you. If you serve a local market, I also set up the local SEO basics — service pages structured for your city and aligned with your Google Business Profile.",
+          "Yes. As a WordPress SEO specialist in Multan, I build every site with a clean site structure, fast-loading pages, mobile-first design, correct heading and meta setup, and the technical foundations Google needs to crawl and rank you. If you serve a local market, I also set up the local SEO basics — service pages structured for your city and aligned with your Google Business Profile.",
       },
       {
         question: "Can you redesign or fix my existing WordPress website?",
@@ -465,7 +475,7 @@ export const SERVICES: Service[] = [
       "We start with research: the keywords your customers actually type, what competitors are bidding, and which searches deserve your budget versus your negative keyword list. Campaigns are structured around intent, so high-intent searches get priority and tire-kickers get filtered out.",
       "Tracking is non-negotiable. I set up conversion tracking for calls, form fills, WhatsApp clicks, and direction requests — so you see exactly which keywords and ads produce customers, not just clicks. Landing pages get reviewed for Quality Score factors that lower your cost per click.",
       "Management is hands-on and ongoing: weekly bid adjustments, search term reviews, ad copy testing, and budget reallocation toward what converts. Reports are in plain language — spend, conversions, cost per lead, and what changed this week.",
-      "Most of my campaigns are built for local intent: people in Multan searching for a service they need right now. Tight location targeting keeps your budget on the areas you actually serve, instead of paying for clicks from across the country.",
+      "My Google Ads services in Multan are built for local intent: people in Multan searching for a service they need right now. Tight location targeting keeps your budget on the areas you actually serve, instead of paying for clicks from across the country.",
     ],
     faqs: [
       {
@@ -516,26 +526,26 @@ export const SERVICES: Service[] = [
       "Suspension guidance & monthly insights reporting",
     ],
     paragraphs: [
-      "For most local businesses, your Google Business Profile is your real storefront on Google. It is what appears in Google Maps and the map pack — usually before a customer ever reaches your website. My Google Business Profile optimization and management service makes that storefront complete, accurate and active, so more nearby customers find you, call you and visit you.",
-      "Optimization starts with an audit of the whole profile: primary and secondary categories, services, attributes, business hours, photos, and name, address and phone consistency with your website and citations. I then write service descriptions around what customers actually search, add missing services and products, and set up a photo and post structure that keeps the profile looking alive — because Google rewards profiles that are maintained, not abandoned.",
-      "Management is where the compounding happens. Every week your profile gets fresh posts and photo updates; every customer question gets an accurate answer; every review gets a professional reply. Each month you receive a plain-language report of profile views, calls, direction requests and the searches that found you — the numbers that show whether more customers are reaching your business.",
-      "I run this exact routine on my own Multan business profile every day, and it is the same system I apply to client profiles in Pakistan and abroad. If your profile is suspended, duplicated or simply invisible on Maps, I will tell you honestly what can be fixed, what it takes, and what Google — not any freelancer — ultimately decides.",
+      "For most local businesses, your Google Business Profile is your real storefront on Google. It is what appears in Google Maps and the map pack — usually before a customer ever reaches your website. As a GMB expert in Multan, I run a Google Business Profile optimization and management service that makes that storefront complete, accurate and active, so more nearby customers find you, call you and visit you.",
+      "As a GMB optimization expert in Multan, I start with an audit of the whole profile: primary and secondary categories, services, attributes, business hours, photos, and name, address and phone consistency with your website and citations. I then write service descriptions around what customers actually search, add missing services and products, and set up a photo and post structure — part of my GMB optimization services in Multan — that keeps the profile looking alive, because Google rewards profiles that are maintained, not abandoned.",
+      "Management is where the compounding happens. As a GMB SEO expert in Multan, I keep the weekly rhythm: fresh posts and photo updates, accurate answers to every customer question, and a professional reply to every review. Each month you receive a plain-language report of profile views, calls, direction requests and the searches that found you — the numbers that show whether more customers are reaching your business.",
+      "I run this exact routine on my own Multan business profile every day, and as a Google Business Profile expert in Multan I apply the same system to client profiles in Pakistan and abroad. That is also why businesses searching for a GMB expert in Multan Pakistan use this service: a profile maintained week after week, not abandoned. If your profile is suspended, duplicated or simply invisible on Maps, I will tell you honestly what can be fixed, what it takes, and what Google — not any freelancer — ultimately decides.",
     ],
     faqs: [
       {
         question: "How long does Google Business Profile verification take?",
         answer:
-          "Most profiles verify within a few days, though it can take a week or more. Google chooses the method — video verification is now common, and some businesses are asked for documents or a postcard instead. I guide you through whichever method Google assigns, so the first attempt succeeds.",
+          "Most profiles verify within a few days, though it can take a week or more. Google chooses the method — video verification is now common, and some businesses are asked for documents or a postcard instead. As a GBP specialist in Multan, I guide you through whichever method Google assigns, so the first attempt succeeds.",
       },
       {
         question: "Why is my business not showing on Google Maps?",
         answer:
-          "The usual causes are an unverified or newly created profile, a wrong primary category, inconsistent business information, a service-area address set up incorrectly, or a suspension. An audit checks each cause in order instead of guessing — most visibility problems have a specific, fixable reason.",
+          "The usual causes are an unverified or newly created profile, a wrong primary category, inconsistent business information, a service-area address set up incorrectly, or a suspension. A Google My Business expert in Multan checks each cause in order instead of guessing — most visibility problems have a specific, fixable reason.",
       },
       {
         question: "Why did Google suspend my Business Profile?",
         answer:
-          "Common triggers are keyword-stuffed business names, virtual or residential addresses that break the guidelines, duplicate profiles, or sudden suspicious edits. The fix is to correct the underlying issue first, then submit a policy-based appeal with evidence. I help prepare that appeal — but Google makes the final decision, and anyone who guarantees reinstatement is not being honest with you.",
+          "Common triggers are keyword-stuffed business names, virtual or residential addresses that break the guidelines, duplicate profiles, or sudden suspicious edits. The fix is to correct the underlying issue first, then submit a policy-based appeal with evidence. As a GBP expert in Multan, I help prepare that appeal — but Google makes the final decision, and anyone who guarantees reinstatement is not being honest with you.",
       },
       {
         question: "Can I just create a new profile instead of appealing a suspension?",
@@ -545,7 +555,7 @@ export const SERVICES: Service[] = [
       {
         question: "What is the difference between GBP optimization and GBP management?",
         answer:
-          "Optimization is the one-time foundation: categories, services, attributes, photos, description and information accuracy. Management is the ongoing work that keeps the profile winning — weekly posts, new photos, Q&A answers, review replies and monthly insights reporting. Most businesses need optimization first, then management to compound it.",
+          "Google Business Profile optimization services in Multan cover that one-time foundation: categories, services, attributes, photos, description and information accuracy. Management is the ongoing work that keeps the profile winning — weekly posts, new photos, Q&A answers, review replies and monthly insights reporting — and a GMB specialist in Multan handles both, foundation first, then the weekly work that compounds it. Most businesses need optimization first, then management to compound it.",
       },
       {
         question: "Do you guarantee a number one ranking on Google Maps?",

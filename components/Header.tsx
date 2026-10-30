@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { NAV_LINKS, SITE } from "@/lib/site";
 import { ArrowUpRightIcon, CloseIcon, MenuIcon } from "./icons";
 
@@ -34,9 +35,13 @@ export default function Header() {
           aria-label={`${SITE.name} — home`}
           className="flex items-center gap-2.5"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-gold-soft via-gold to-gold-deep font-sans text-base font-extrabold text-mist-100">
-            Z
-          </span>
+          <Image
+            src="/images/za-logo.jpg"
+            alt="Zamin Abbas logo"
+            width={40}
+            height={40}
+            className="h-10 w-10 rounded-lg object-cover"
+          />
           <span className="font-sans text-sm font-extrabold tracking-[0.18em] text-mist-100">
             ZAMIN&nbsp;ABBAS
           </span>
