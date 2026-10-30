@@ -105,6 +105,11 @@ export default function Capabilities() {
       {/* 3D fan stage */}
       <div className="relative h-[320vh]">
         <div className="sticky top-0 flex h-screen items-center justify-center overflow-hidden">
+          {/* subtle warm wash behind the fan only, so the glass translucency reads on the flat white section */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(50%_45%_at_50%_50%,rgba(255,106,0,0.09),rgba(255,106,0,0)_70%)]"
+          />
           <div
             className="relative h-[560px] w-full max-w-6xl"
             style={{ perspective: "1400px" }}
@@ -134,11 +139,11 @@ export default function Capabilities() {
                     zIndex: z,
                     opacity,
                     filter: `${blur} ${dim}`,
-                    boxShadow: `0 40px 90px -30px ${cap.glow}, 0 25px 60px -20px rgba(0,0,0,0.7)`,
+                    boxShadow: `0 40px 90px -30px ${cap.glow}, 0 16px 40px -16px rgba(0,0,0,0.18)`,
                     willChange: "transform",
                   }}
                 >
-                  <div className="flex h-full flex-col justify-between rounded-[calc(1.75rem-1px)] bg-ink-950/88 p-7 backdrop-blur-sm sm:p-8">
+                  <div className="flex h-full flex-col justify-between rounded-[calc(1.75rem-1px)] bg-white/65 p-7 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.8)] ring-1 ring-inset ring-white/70 backdrop-blur-md sm:p-8">
                     <div>
                       <p className="font-mono text-[0.65rem] tracking-[0.25em] text-mist-100/60">
                         {cap.n} / {cap.kicker}
