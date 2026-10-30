@@ -125,8 +125,6 @@ export default function Capabilities() {
               const scale = Math.max(1 - abs * 0.14, 0.55);
               const z = 100 - Math.round(abs * 10);
               const opacity = abs > 2.4 ? 0 : 1;
-              const blur = abs > 1.6 ? `blur(${(abs - 1.6) * 1}px)` : "none";
-              const dim = abs > 0.6 ? `brightness(${Math.max(1 - (abs - 0.6) * 0.15, 0.75)})` : "none";
 
               return (
                 <article
@@ -138,7 +136,7 @@ export default function Capabilities() {
                     transformStyle: "preserve-3d",
                     zIndex: z,
                     opacity,
-                    filter: `${blur} ${dim}`,
+                    filter: "none",
                     boxShadow: `0 40px 90px -30px ${cap.glow}, 0 16px 40px -16px rgba(0,0,0,0.18)`,
                     willChange: "transform",
                   }}
