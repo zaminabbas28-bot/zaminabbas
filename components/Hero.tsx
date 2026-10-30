@@ -1,13 +1,10 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
-import SmokeLazy from "./SmokeLazy";
 import { SITE } from "@/lib/site";
 
 export default function Hero() {
   return (
     <section id="home" className="relative overflow-hidden bg-ink-950 text-white">
-      {/* animated colorful smoke background (desktop only, after idle) */}
-      <SmokeLazy />
       {/* gold ambient glows */}
       <div
         aria-hidden
