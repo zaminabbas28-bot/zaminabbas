@@ -125,8 +125,8 @@ export default function Capabilities() {
               const scale = Math.max(1 - abs * 0.14, 0.55);
               const z = 100 - Math.round(abs * 10);
               const opacity = abs > 2.4 ? 0 : 1;
-              const blur = abs > 1.6 ? `blur(${(abs - 1.6) * 3}px)` : "none";
-              const dim = abs > 0.6 ? `brightness(${Math.max(1 - (abs - 0.6) * 0.35, 0.45)})` : "none";
+              const blur = abs > 1.6 ? `blur(${(abs - 1.6) * 1}px)` : "none";
+              const dim = abs > 0.6 ? `brightness(${Math.max(1 - (abs - 0.6) * 0.15, 0.75)})` : "none";
 
               return (
                 <article
@@ -143,7 +143,7 @@ export default function Capabilities() {
                     willChange: "transform",
                   }}
                 >
-                  <div className="flex h-full flex-col justify-between rounded-[calc(1.75rem-1px)] bg-white/65 p-7 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.8)] ring-1 ring-inset ring-white/70 backdrop-blur-md sm:p-8">
+                  <div className="flex h-full flex-col justify-between rounded-[calc(1.75rem-1px)] bg-white/65 p-7 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.8)] ring-1 ring-inset ring-white/70 backdrop-blur-sm sm:p-8">
                     <div>
                       <p className="font-mono text-[0.65rem] tracking-[0.25em] text-mist-100/60">
                         {cap.n} / {cap.kicker}
