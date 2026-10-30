@@ -141,7 +141,7 @@ export default function Capabilities() {
                     willChange: "transform",
                   }}
                 >
-                  <div className="flex h-full flex-col justify-between rounded-[calc(1.75rem-1px)] bg-white/65 p-7 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.8)] ring-1 ring-inset ring-white/70 backdrop-blur-sm sm:p-8">
+                  <div className="flex h-full flex-col justify-between rounded-[calc(1.75rem-1px)] bg-white/65 dark:bg-black/45 p-7 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.8)] ring-1 ring-inset ring-white/70 dark:ring-white/20 backdrop-blur-sm sm:p-8">
                     <div>
                       <p className="font-mono text-[0.65rem] tracking-[0.25em] text-mist-100/60">
                         {cap.n} / {cap.kicker}
@@ -158,7 +158,7 @@ export default function Capabilities() {
                         {cap.tags.map((t) => (
                           <span
                             key={t}
-                            className="rounded-full border border-black/20 bg-black/10 px-3 py-1 font-mono text-[0.62rem] tracking-[0.08em] text-mist-100/85"
+                            className="rounded-full border border-black/20 dark:border-white/20 bg-black/10 dark:bg-white/10 px-3 py-1 font-mono text-[0.62rem] tracking-[0.08em] text-mist-100/85"
                           >
                             {t}
                           </span>
@@ -168,7 +168,7 @@ export default function Capabilities() {
                         <Link
                           href={`/services/${cap.slug}`}
                           aria-label={`Learn more about ${cap.title}`}
-                          className="inline-flex items-center gap-2 rounded-full border border-black/25 px-5 py-3 text-sm font-semibold text-mist-100/90 transition hover:border-black/60 hover:text-mist-100"
+                          className="inline-flex items-center gap-2 rounded-full border border-black/25 dark:border-white/25 px-5 py-3 text-sm font-semibold text-mist-100/90 transition hover:border-black/60 dark:border-white/40 hover:text-mist-100"
                         >
                           Learn More <span aria-hidden>&rarr;</span>
                         </Link>
@@ -191,7 +191,7 @@ export default function Capabilities() {
 
           {/* progress hint */}
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-            <div className="h-1 w-40 overflow-hidden rounded-full bg-black/10">
+            <div className="h-1 w-40 overflow-hidden rounded-full bg-black/10 dark:bg-white/10">
               <div
                 className="h-full rounded-full bg-gradient-to-r from-gold-deep via-gold to-gold-soft transition-[width] duration-150"
                 style={{ width: `${8 + progress * 92}%` }}

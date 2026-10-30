@@ -34,7 +34,7 @@ export default function Projects() {
                     className={`relative flex h-40 items-center justify-between bg-gradient-to-br p-6 ${CARD_GRADIENTS[i % CARD_GRADIENTS.length]}`}
                   >
                     <span className="tag-pill bg-ink-950/50">{project.badge}</span>
-                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-black/15 bg-black/60 backdrop-blur-sm">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-black/15 dark:border-white/15 bg-black/60 backdrop-blur-sm">
                       <Icon className="h-7 w-7 text-white" />
                     </div>
                   </div>

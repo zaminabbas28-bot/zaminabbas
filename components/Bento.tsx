@@ -144,7 +144,7 @@ export default function Bento() {
               className="group inline-flex items-center gap-3 text-sm font-medium text-mist-300 transition-colors hover:text-mist-100"
             >
               <span className="label-caps">Prefer Fiverr?</span>
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-black/15 px-4 py-2 transition-colors group-hover:border-gold/50">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-black/15 dark:border-white/15 px-4 py-2 transition-colors group-hover:border-gold/50">
                 Order a gig <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </span>
             </Link>
@@ -155,7 +155,7 @@ export default function Bento() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Zamin Abbas on LinkedIn"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-black/15 text-mist-300 transition-colors hover:border-gold/50 hover:text-gold"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-black/15 dark:border-white/15 text-mist-300 transition-colors hover:border-gold/50 hover:text-gold"
               >
                 <LinkedInIcon className="h-4 w-4" />
               </a>
@@ -164,7 +164,7 @@ export default function Bento() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Zamin Abbas Local SEO Expert on Google Maps"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-black/15 text-mist-300 transition-colors hover:border-gold/50 hover:text-gold"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-black/15 dark:border-white/15 text-mist-300 transition-colors hover:border-gold/50 hover:text-gold"
               >
                 <MapPinIcon className="h-4 w-4" />
               </a>

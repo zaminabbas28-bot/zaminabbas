@@ -47,11 +47,11 @@ export default function Insights() {
                       <p className="mt-3 flex-1 text-sm leading-relaxed text-mist-500">
                         {post.excerpt}
                       </p>
-                      <div className="mt-6 flex items-center justify-between border-t border-black/10 pt-4">
+                      <div className="mt-6 flex items-center justify-between border-t border-black/10 dark:border-white/15 pt-4">
                         <p className="label-caps">
                           {post.readTime} · {post.date}
                         </p>
-                        <span className="flex h-8 w-8 items-center justify-center rounded-full border border-black/15 text-mist-300 transition-all duration-300 group-hover:border-gold group-hover:text-gold">
+                        <span className="flex h-8 w-8 items-center justify-center rounded-full border border-black/15 dark:border-white/15 text-mist-300 transition-all duration-300 group-hover:border-gold group-hover:text-gold">
                           <ArrowRightIcon className="h-4 w-4" />
                         </span>
                       </div>
@@ -67,7 +67,7 @@ export default function Insights() {
           <div className="mt-10 text-center">
             <span className="inline-flex items-center gap-2 text-sm font-medium tracking-wide text-mist-300">
               <span className="label-caps">More playbooks soon</span>
-              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-black/15">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-black/15 dark:border-white/15">
                 <ArrowRightIcon className="h-4 w-4" />
               </span>
             </span>

@@ -42,7 +42,7 @@ export default function Faq() {
               <Reveal key={faq.question} delay={i * 80}>
                 <div
                   className={`overflow-hidden rounded-2xl border transition-colors ${
-                    open ? "border-gold-400/40 bg-ink-800" : "border-black/10 bg-ink-900/60"
+                    open ? "border-gold-400/40 bg-ink-800" : "border-black/10 dark:border-white/15 bg-ink-900/60"
                   }`}
                 >
                   <h3>
@@ -59,7 +59,7 @@ export default function Faq() {
                       </span>
                       <span
                         className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full transition-all ${
-                          open ? "rotate-180 bg-gold-400 text-ink-950" : "bg-black/10 text-gold-400"
+                          open ? "rotate-180 bg-gold-400 text-ink-950" : "bg-black/10 dark:bg-white/10 text-gold-400"
                         }`}
                       >
                         <ChevronDownIcon className="h-4 w-4" />

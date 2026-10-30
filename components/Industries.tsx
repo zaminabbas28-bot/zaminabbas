@@ -58,7 +58,7 @@ export default function Industries() {
                   {industry.features.map((feature) => (
                     <li
                       key={feature}
-                      className="rounded-full border border-black/10 bg-black/5 px-3 py-1 text-xs font-medium text-mist-100"
+                      className="rounded-full border border-black/10 dark:border-white/15 bg-black/5 dark:bg-white/10 px-3 py-1 text-xs font-medium text-mist-100"
                     >
                       {feature}
                     </li>
@@ -78,7 +78,7 @@ export default function Industries() {
                     href={SITE.whatsapp}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full border border-black/15 px-5 py-3 text-sm font-semibold text-mist-100 transition hover:border-accent hover:text-accent"
+                    className="inline-flex items-center gap-2 rounded-full border border-black/15 dark:border-white/15 px-5 py-3 text-sm font-semibold text-mist-100 transition hover:border-accent hover:text-accent"
                   >
                     Chat on WhatsApp
                   </Link>

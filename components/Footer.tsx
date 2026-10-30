@@ -38,7 +38,7 @@ export default function Footer() {
         </Reveal>
 
         {/* ---------- Link columns ---------- */}
-        <div className="mt-14 grid gap-10 border-t border-black/10 pt-12 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-10 border-t border-black/10 dark:border-white/15 pt-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="label-caps !text-gold">Navigate</p>
             <ul className="mt-4 space-y-2.5">
@@ -117,7 +117,7 @@ export default function Footer() {
         </div>
 
         {/* ---------- Bottom bar ---------- */}
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-black/10 py-8 text-sm text-mist-600 md:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-black/10 dark:border-white/15 py-8 text-sm text-mist-600 md:flex-row">
           <p>© {new Date().getFullYear()} {SITE.fullName}. All rights reserved.</p>
           <p className="font-mono text-[0.65rem] tracking-[0.25em]">
             LOCAL SEO &middot; WORDPRESS &middot; GOOGLE ADS

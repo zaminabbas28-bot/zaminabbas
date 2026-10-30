@@ -86,7 +86,7 @@ export default function Testimonials() {
 
             {/* controls */}
             <div className="mt-8 flex items-center justify-center gap-4">
-              <div className="flex items-center gap-2 rounded-full border border-black/10 bg-black/5 px-4 py-2.5">
+              <div className="flex items-center gap-2 rounded-full border border-black/10 dark:border-white/15 bg-black/5 dark:bg-white/10 px-4 py-2.5">
                 {REVIEWS.map((_, i) => (
                   <button
                     key={i}
@@ -94,7 +94,7 @@ export default function Testimonials() {
                     onClick={() => setIndex(i)}
                     aria-label={`Go to testimonial ${i + 1}`}
                     className={`h-1.5 rounded-full transition-all ${
-                      i === index ? "w-6 bg-mist-100" : "w-1.5 bg-black/30 hover:bg-black/50"
+                      i === index ? "w-6 bg-mist-100" : "w-1.5 bg-black/30 dark:bg-white/30 hover:bg-black/5 dark:bg-white/10 dark:hover:bg-white/100"
                     }`}
                   />
                 ))}
@@ -103,7 +103,7 @@ export default function Testimonials() {
                 type="button"
                 onClick={() => setPaused((p) => !p)}
                 aria-label={paused ? "Play testimonials" : "Pause testimonials"}
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 bg-black/5 text-mist-100 transition-colors hover:bg-black/10"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-black/10 dark:border-white/15 bg-black/5 dark:bg-white/10 text-mist-100 transition-colors hover:bg-black/10 dark:bg-white/10 dark:hover:bg-white/10"
               >
                 {paused ? <PlayIcon className="h-4 w-4" /> : <PauseIcon className="h-4 w-4" />}
               </button>

@@ -92,6 +92,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${display.variable} ${inter.variable} ${mono.variable} h-full antialiased`}
     >
+      {/* Apply the saved theme before first paint so the page never flashes. */}
+      <Script id="theme-init" strategy="beforeInteractive">
+        {`try{var t=localStorage.getItem('zamin-theme');if(t==='dark'){document.documentElement.classList.add('dark')}}catch(e){}`}
+      </Script>
       <body className="flex min-h-full flex-col bg-ink-950 text-mist-100">
         <a href="#main-content" className="skip-link">
           Skip to main content

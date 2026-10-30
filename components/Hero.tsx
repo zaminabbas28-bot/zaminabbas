@@ -50,13 +50,13 @@ export default function Hero() {
               </Link>
               <Link
                 href="#work"
-                className="inline-flex items-center gap-2 rounded-full border border-black/20 px-8 py-4 text-sm font-bold text-mist-100 transition hover:border-gold hover:text-gold"
+                className="inline-flex items-center gap-2 rounded-full border border-black/20 dark:border-white/20 px-8 py-4 text-sm font-bold text-mist-100 transition hover:border-gold hover:text-gold"
               >
                 See My Work
               </Link>
               <Link
                 href="#demos"
-                className="inline-flex items-center gap-2 rounded-full border border-black/20 px-8 py-4 text-sm font-bold text-mist-100 transition hover:border-gold hover:text-gold"
+                className="inline-flex items-center gap-2 rounded-full border border-black/20 dark:border-white/20 px-8 py-4 text-sm font-bold text-mist-100 transition hover:border-gold hover:text-gold"
               >
                 See Live Demos
               </Link>

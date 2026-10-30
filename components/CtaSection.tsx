@@ -49,7 +49,7 @@ export default function CtaSection() {
               href={SITE.whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-black/20 px-8 py-3.5 text-base font-semibold text-mist-100 transition-colors hover:border-gold-400/60 hover:text-gold-300"
+              className="inline-flex items-center gap-2 rounded-full border border-black/20 dark:border-white/20 px-8 py-3.5 text-base font-semibold text-mist-100 transition-colors hover:border-gold-400/60 hover:text-gold-300"
             >
               <ChatIcon className="h-5 w-5" /> WhatsApp Me
             </Link>

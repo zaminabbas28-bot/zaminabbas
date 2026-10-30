@@ -161,7 +161,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               {service.benefits.map((benefit) => (
                 <li
                   key={benefit}
-                  className="flex items-start gap-3 rounded-2xl border border-black/10 bg-ink-800/70 p-4"
+                  className="flex items-start gap-3 rounded-2xl border border-black/10 dark:border-white/15 bg-ink-800/70 p-4"
                 >
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold-400/15 text-gold-400">
                     <CheckIcon className="h-4 w-4" />
@@ -197,7 +197,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                   href={SITE.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-black/20 px-8 py-3.5 text-base font-semibold text-mist-100 transition-colors hover:border-gold-400/60 hover:text-gold-300"
+                  className="inline-flex items-center gap-2 rounded-full border border-black/20 dark:border-white/20 px-8 py-3.5 text-base font-semibold text-mist-100 transition-colors hover:border-gold-400/60 hover:text-gold-300"
                 >
                   WhatsApp Me
                 </Link>
@@ -214,7 +214,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 {service.faqs.map((faq) => (
                   <div
                     key={faq.question}
-                    className="rounded-2xl border border-black/10 bg-ink-800/70 p-5 sm:p-6"
+                    className="rounded-2xl border border-black/10 dark:border-white/15 bg-ink-800/70 p-5 sm:p-6"
                   >
                     <h3 className="font-display text-base font-bold text-mist-100 sm:text-lg">
                       {faq.question}
@@ -237,7 +237,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 <Link
                   key={other.slug}
                   href={`/services/${other.slug}`}
-                  className="card-glow group rounded-2xl border border-black/10 bg-ink-800/70 p-6"
+                  className="card-glow group rounded-2xl border border-black/10 dark:border-white/15 bg-ink-800/70 p-6"
                 >
                   <p className="text-xs font-bold tracking-widest text-gold-500">
                     {other.number}

@@ -47,7 +47,7 @@ export default function BlogPage() {
             <Reveal key={post.slug}>
               <Link
                 href={`/blog/${post.slug}`}
-                className="card-glow group block rounded-2xl border border-black/10 bg-ink-800/70 p-6 sm:p-8"
+                className="card-glow group block rounded-2xl border border-black/10 dark:border-white/15 bg-ink-800/70 p-6 sm:p-8"
               >
                 <p className="text-xs font-bold tracking-widest text-gold-500">
                   {post.dateDisplay} · {post.readTime}
