@@ -19,8 +19,9 @@ export default function Hero() {
         {/* ---------- Left: copy ---------- */}
         <div>
           <Reveal>
-            <p className="label-caps !text-gold">
-              Zamin Abbas &mdash; Local SEO Expert &amp; Web Developer
+            <p className="label-caps !text-gold !text-sm sm:!text-base">
+              Zamin Abbas &mdash; Local SEO Expert &amp; WordPress Developer
+              in Multan
             </p>
             <h1 className="display-mega mt-6 font-sans text-[2.9rem] sm:text-7xl lg:text-[5.2rem]">
               Local SEO Expert
@@ -28,9 +29,10 @@ export default function Hero() {
               in Multan,{" "}
               <span className="text-gradient-accent">Pakistan.</span>
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-mist-300 sm:text-xl">
-              I build fast, mobile-friendly websites for restaurants, salons
-              and clinics in Multan — designed to turn Google searches into
+            <p className="mt-6 max-w-xl text-xl leading-relaxed text-mist-300 sm:text-2xl">
+              I help restaurants, salons and clinics in Multan get found on
+              Google Maps &mdash; with fully optimized Business Profiles and
+              fast, mobile-friendly websites that turn nearby searches into
               bookings, calls and walk-ins.
             </p>
           </Reveal>
