@@ -185,6 +185,14 @@ export const PROJECTS: Project[] = [
       "Designed, developed and optimized a free online tools platform — word counters, text tools and YouTube tools, built for speed and search visibility.",
     url: "https://hausamusics.com/",
   },
+  {
+    title: "RanaFreeTools – Free Online Tools Platform",
+    badge: "WEB + SEO",
+    date: "November 2026",
+    description:
+      "Designed, developed and optimized a free tools platform with 16+ browser-based utilities — word counter, YouTube thumbnail downloader, BMI calculator, scientific calculator and more. No sign-up, instant results, privacy-friendly.",
+    url: "https://www.ranafreetools.online/",
+  },
 ];
 
 export type ServiceSlug =
