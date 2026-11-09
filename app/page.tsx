@@ -37,6 +37,7 @@ const personSchema = {
     "WordPress Development",
     "Social Media Marketing",
     "Google Ads",
+    "AI Search Optimization (GEO)",
   ],
 };
 

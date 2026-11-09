@@ -26,7 +26,7 @@ const mono = JetBrains_Mono({
 });
 
 const DESCRIPTION =
-  "Local SEO Expert in Multan, Pakistan. Get found on Google Maps, rank your Business Profile and turn local searches into calls.";
+  "Top ranked SEO & AI search specialist in Multan, Pakistan. Get found on Google Maps and in AI search results, rank your Business Profile and turn local searches into calls.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -43,6 +43,8 @@ export const metadata: Metadata = {
     "WordPress developer Multan",
     "social media marketing Pakistan",
     "SEO expert Pakistan",
+    "top ranked SEO AI search specialist Multan",
+    "AI search specialist Multan",
   ],
   authors: [{ name: SITE.name, url: SITE.url }],
   creator: SITE.name,
