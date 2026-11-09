@@ -128,7 +128,7 @@ export default function About() {
               <div className="mt-6 space-y-5 leading-relaxed text-mist-300">
                 <p>
                   I&apos;m Zamin Abbas, an SEO expert in Multan, Pakistan,
-                  and local SEO specialist in Multan, working in SEO since 2022. I help small and medium businesses get found where it
+                  and local SEO specialist in Multan, working in SEO since 2018. I help small and medium businesses get found where it
                   matters most — on Google Maps and in local search results. My
                   agency, <strong className="text-mist-100">Zamin Abbas Local SEO Expert</strong>,
                   is built on one belief: visibility should turn into customers,
