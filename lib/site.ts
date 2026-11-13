@@ -228,7 +228,7 @@ export const SERVICES: Service[] = [
     metaDescription:
       "Local SEO services in Multan, Pakistan — Google Maps ranking, Google Business Profile optimization, citations and reviews that turn nearby searches into calls.",
     priceLine:
-      "Affordable SEO services from $30 — every project is scoped and quoted after a free audit, with no hidden fees.",
+      "Affordable local SEO services from $30 — every project is scoped and quoted after a free audit, with no hidden fees.",
     icon: "pin",
     benefits: [
       "Google Business Profile setup & optimization",
@@ -285,6 +285,11 @@ export const SERVICES: Service[] = [
         question: "Are you an SEO specialist in Multan?",
         answer:
           "Yes. I'm Zamin Abbas, an SEO expert in Multan, Pakistan. I help local businesses get found on Google through local SEO, Google Business Profile optimization, and Google Maps ranking — with monthly reporting in plain language. If you are searching for the top local SEO expert in Multan, that free audit is the best place to start.",
+      },
+      {
+        question: "Do you offer small business SEO packages?",
+        answer:
+          "Yes. My small business SEO packages are scoped to what a small business actually needs — Google Business Profile optimization, local keyword targeting, citations and review setup — starting from $30, quoted after a free audit. No long contracts, no hidden fees.",
       },
       {
         question: "Who is the best local SEO expert in Multan?",
@@ -369,7 +374,7 @@ export const SERVICES: Service[] = [
       "Fixing broken links, redirects & duplicate content",
     ],
     paragraphs: [
-      "Great content cannot rank on a broken foundation. My technical SEO services in Multan do the behind-the-scenes work that makes sure search engines can crawl, understand, and trust your website — and that visitors get a fast, smooth experience on every device.",
+      "Great content cannot rank on a broken foundation. Search engine optimization is only as strong as the technical base underneath it — my technical SEO services in Multan do the behind-the-scenes work that makes sure search engines can crawl, understand, and trust your website — and that visitors get a fast, smooth experience on every device.",
       "My process starts with a deep technical audit — my SEO audit service in Multan covers site speed, Core Web Vitals, mobile usability, crawl errors, indexation, sitemaps, robots directives, canonicalization, and structured data. Every issue is scored by impact, so we fix what moves rankings first instead of chasing minor tweaks.",
       "Implementation is hands-on: compressing and modernizing assets, eliminating render-blocking resources, fixing redirect chains and broken links, resolving duplicate content, and adding schema markup that helps you win rich results. On-page SEO services in Multan are part of the same implementation: correct headings, meta setup and internal links on every key page. I work directly in your stack or alongside your developers with precise, ticket-ready instructions.",
       "After fixes go live, I monitor Search Console data to confirm indexing improvements and ranking movement. Technical SEO is not a one-time project — I offer ongoing monitoring so new issues are caught before they cost you traffic.",
@@ -409,7 +414,7 @@ export const SERVICES: Service[] = [
     short:
       "Fast, SEO-friendly WordPress websites designed to convert visitors into customers.",
     metaDescription:
-      "WordPress development services — fast, SEO-friendly business websites and WooCommerce stores built to convert. Based in Multan, working with clients worldwide.",
+      "Website design services and WordPress development — fast, SEO-friendly business websites and WooCommerce stores built to convert. Based in Multan, working with clients worldwide.",
     priceLine:
       "Projects start from $80 — the final quote depends on scope and is confirmed before any work begins.",
     icon: "gear",
@@ -426,7 +431,7 @@ export const SERVICES: Service[] = [
       "Every build starts with your goals: who you serve, what action visitors should take, and how they find you. From there I design a clean, conversion-focused layout and develop it on WordPress with lightweight themes and carefully chosen plugins — no bloated page builders slowing things down.",
       "For stores, I set up WooCommerce with secure payment integration, product pages optimized for search with ecommerce SEO basics, and a checkout flow designed to reduce abandoned carts. For business sites, I build service pages, contact flows, and local SEO foundations that help you rank in your market.",
       "After launch, you are not left guessing: I provide training videos, documentation, and an optional care plan covering updates, backups, and security. Your site stays fast, safe, and working for your business long after go-live.",
-      "From my base in Multan, my WordPress website development in Multan covers local businesses here — clinics, shops, restaurants and service companies across the city — and clients abroad who hire me remotely, including website design and development delivered entirely over WhatsApp and video calls. Whether we meet in person or online, the process is the same: clear scope, honest timelines, and a website designed around the searches your customers actually make.",
+      "From my base in Multan, my WordPress website development in Multan covers local businesses here — clinics, shops, restaurants and service companies across the city — and clients abroad who hire me remotely, including website design services delivered entirely over WhatsApp and video calls. Whether we meet in person or online, the process is the same: clear scope, honest timelines, and a website designed around the searches your customers actually make.",
     ],
     faqs: [
       {
@@ -458,6 +463,11 @@ export const SERVICES: Service[] = [
         question: "Can I hire you as a WordPress developer or web designer in Multan?",
         answer:
           "Yes. I am based in Multan and design and build websites for local businesses here — clinics, shops, restaurants and service companies — and I also work remotely with clients abroad over WhatsApp and video calls. Whether you need a new WordPress site or a redesign, you get a clear scope and timeline before work starts.",
+      },
+      {
+        question: "Do you offer web design services in Multan?",
+        answer:
+          "Yes — my web design services in Multan cover business websites, landing pages and WooCommerce stores, designed and built on WordPress with speed and SEO built in from day one. Local businesses get the same process as remote clients: clear scope, honest timelines, and a site built around the searches your customers actually make.",
       },
     ],
   },
