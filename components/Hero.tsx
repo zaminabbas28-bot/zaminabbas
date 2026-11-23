@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
-import HeroVideoCycler from "./HeroVideoCycler";
 import TypingRoles from "./TypingRoles";
 import { SITE } from "@/lib/site";
 
@@ -17,9 +16,9 @@ export default function Hero() {
         className="pointer-events-none absolute bottom-[-20%] left-[-10%] h-[420px] w-[420px] rounded-full bg-cyan/10 blur-[140px]"
       />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-24 pt-32 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:pt-40">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-5 pb-24 pt-32 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch lg:gap-14 lg:pb-0 lg:pt-40">
         {/* ---------- Left: copy ---------- */}
-        <div>
+        <div className="lg:pb-24">
           <Reveal>
             <span className="hero-badge">
               <span className="dot" aria-hidden="true" />
@@ -105,9 +104,19 @@ export default function Hero() {
           </Reveal>
         </div>
 
-        {/* ---------- Right: hero video cycler ---------- */}
-        <Reveal delay={180} className="relative mx-auto w-full max-w-md lg:max-w-none">
-          <HeroVideoCycler />
+        {/* ---------- Right: hero video only (Salman-style, no images) ---------- */}
+        <Reveal delay={180} className="relative h-full w-full">
+          <div className="hero-video-solo">
+            <video
+              src="/videos/hero-video-salman-walk.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              aria-label="Rana Zamin — spotlight walk"
+            />
+          </div>
         </Reveal>
       </div>
     </section>

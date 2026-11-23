@@ -307,88 +307,35 @@ body {
   50% { opacity: 0; }
 }
 
-/* ---------- Hero video cycler (approved portrait video card) ---------- */
-.hero-media {
+/* ---------- Hero video only (Salman-style): full-height video, no images ----------
+   The 9:16 clip fills the whole hero height, right-aligned, edge to edge —
+   the same framing as the reference: head just under the header, feet at
+   the hero's bottom edge. No card, no border, no thumbnails, no poster. */
+.hero-video-solo {
   position: relative;
-}
-.hero-media::before {
-  content: "";
-  position: absolute;
-  inset: 8% -6% -4% -6%;
-  background: radial-gradient(closest-side, rgba(139, 92, 246, 0.35), rgba(34, 211, 238, 0.12), transparent);
-  filter: blur(10px);
-  z-index: 0;
-}
-.hero-video-card {
-  position: relative;
-  z-index: 1;
-  aspect-ratio: 4 / 5;
-  border-radius: 26px;
-  overflow: hidden;
-  border: 1px solid rgba(148, 163, 184, 0.28);
-  background: #0a1122;
-  box-shadow: 0 24px 70px rgba(124, 92, 246, 0.28);
-}
-.hero-video-card video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
   height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.45s ease;
-}
-.hero-video-card video.active {
-  opacity: 1;
-}
-.hero-video-card .video-chip {
-  position: absolute;
-  z-index: 2;
-  left: 16px;
-  bottom: 16px;
-  padding: 7px 14px;
-  border-radius: 999px;
-  background: rgba(5, 9, 20, 0.66);
-  backdrop-filter: blur(6px);
-  color: #fff;
-  font-size: 0.82rem;
-  font-weight: 600;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-}
-.hero-thumbs {
-  position: relative;
-  z-index: 1;
-  margin-top: 16px;
+  min-height: 480px;
   display: flex;
-  gap: 12px;
   justify-content: center;
 }
-.hero-thumb {
-  width: 62px;
-  height: 78px;
-  padding: 0;
-  border-radius: 12px;
-  overflow: hidden;
-  border: 2px solid transparent;
-  background: var(--color-ink-850);
-  opacity: 0.6;
-  transition: opacity 0.2s, border-color 0.2s, transform 0.2s;
-  cursor: pointer;
-}
-.hero-thumb img {
-  width: 100%;
+.hero-video-solo video {
+  display: block;
   height: 100%;
+  width: auto;
+  aspect-ratio: 9 / 16;
   object-fit: cover;
-  object-position: top center;
 }
-.hero-thumb:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
+@media (min-width: 1024px) {
+  .hero-video-solo {
+    justify-content: flex-end;
+    min-height: 0;
+  }
 }
-.hero-thumb.active {
-  opacity: 1;
-  border-color: var(--color-cyan);
-  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.25);
+@media (max-width: 1023px) {
+  .hero-video-solo {
+    height: 72vh;
+    max-height: 660px;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-badge .dot,
