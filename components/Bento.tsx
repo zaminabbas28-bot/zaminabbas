@@ -10,7 +10,7 @@ export default function Bento() {
       {/* gold ambient glow */}
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-1/3 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-gold/8 blur-[160px]"
+        className="anim-breathe pointer-events-none absolute left-1/2 top-1/3 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-gold/8 blur-[160px]"
       />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
@@ -40,9 +40,12 @@ export default function Bento() {
               </Link>
               <Link
                 href="#top"
-                className="inline-flex items-center gap-2 text-sm font-medium text-mist-500 transition-colors hover:text-mist-100"
+                className="group inline-flex items-center gap-2 text-sm font-medium text-mist-500 transition-colors hover:text-mist-100"
               >
-                Back to top <span aria-hidden>&uarr;</span>
+                Back to top{" "}
+                <span aria-hidden className="transition-transform group-hover:-translate-y-0.5">
+                  &uarr;
+                </span>
               </Link>
             </div>
           </div>

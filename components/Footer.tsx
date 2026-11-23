@@ -22,7 +22,7 @@ export default function Footer() {
       {/* ambient violet glow */}
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 top-10 h-[300px] w-[700px] -translate-x-1/2 rounded-full bg-gold/8 blur-[130px]"
+        className="anim-breathe pointer-events-none absolute left-1/2 top-10 h-[300px] w-[700px] -translate-x-1/2 rounded-full bg-gold/8 blur-[130px]"
       />
 
       <div className="relative mx-auto max-w-7xl px-5 pt-16 sm:px-8 sm:pt-20">
@@ -48,6 +48,7 @@ export default function Footer() {
         </Reveal>
 
         {/* ---------- Link columns ---------- */}
+        <Reveal delay={80}>
         <div className="mt-14 grid gap-10 border-t border-black/10 dark:border-white/15 pt-12 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="label-caps">Navigate</p>
@@ -125,8 +126,10 @@ export default function Footer() {
             </Link>
           </div>
         </div>
+        </Reveal>
 
         {/* ---------- Skills pills ---------- */}
+        <Reveal delay={120}>
         <div className="mt-12 border-t border-black/10 pt-10 dark:border-white/15">
           <p className="label-caps">Skills</p>
           <div className="mt-4 flex flex-wrap gap-2">
@@ -137,8 +140,10 @@ export default function Footer() {
             ))}
           </div>
         </div>
+        </Reveal>
 
         {/* ---------- Bottom bar ---------- */}
+        <Reveal delay={160}>
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-black/10 dark:border-white/15 py-8 text-sm text-mist-600 md:flex-row">
           <p>© {new Date().getFullYear()} {SITE.fullName}. All rights reserved.</p>
           <p className="font-mono text-[0.65rem] tracking-[0.25em]">
@@ -151,6 +156,7 @@ export default function Footer() {
             Back to top <span aria-hidden>&uarr;</span>
           </Link>
         </div>
+        </Reveal>
       </div>
     </footer>
 

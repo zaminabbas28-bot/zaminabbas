@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Reveal from "../Reveal";
 import { SITE } from "@/lib/site";
 
 type Product = { name: string; desc: string; price: number; unit: string };
@@ -77,6 +78,7 @@ export default function SuperStoreDemo() {
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+      <Reveal>
       <header className="max-w-2xl">
         <p className="label-caps !text-gold">Sample Super Store — Multan</p>
         <h1 className="display-mega mt-4 font-sans text-4xl text-mist-100 sm:text-6xl">
@@ -88,9 +90,11 @@ export default function SuperStoreDemo() {
           one place.
         </p>
       </header>
+      </Reveal>
 
       {/* Products + cart */}
       <section aria-label="Sample products" className="mt-12 grid gap-8 lg:grid-cols-[1.6fr_1fr]">
+        <Reveal>
         <div>
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
@@ -112,7 +116,7 @@ export default function SuperStoreDemo() {
             {PRODUCTS[category].map((item) => (
               <li
                 key={item.name}
-                className="card-surface flex items-center justify-between gap-4 p-5"
+                className="card-surface card-hover flex items-center justify-between gap-4 p-5"
               >
                 <div>
                   <p className="font-semibold text-mist-100">{item.name}</p>
@@ -134,6 +138,7 @@ export default function SuperStoreDemo() {
             ))}
           </ul>
         </div>
+        </Reveal>
 
         <aside className="card-surface h-fit p-6 lg:sticky lg:top-24">
           <h2 className="text-lg font-bold text-mist-100">Your cart</h2>
@@ -209,6 +214,7 @@ export default function SuperStoreDemo() {
       </section>
 
       {/* Weekly offers */}
+      <Reveal delay={100}>
       <section aria-label="Weekly offers" className="mt-14">
         <h2 className="text-2xl font-bold text-mist-100">Weekly offers</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-mist-500">
@@ -217,7 +223,7 @@ export default function SuperStoreDemo() {
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-3">
           {OFFERS.map((offer) => (
-            <article key={offer.title} className="card-surface flex flex-col p-5">
+            <article key={offer.title} className="card-surface card-hover flex flex-col p-5">
               <span className="w-fit rounded-full bg-accent px-2.5 py-0.5 text-xs font-bold text-white">
                 SAVE PKR {(offer.oldPrice - offer.price).toLocaleString()}
               </span>
@@ -235,8 +241,10 @@ export default function SuperStoreDemo() {
           ))}
         </div>
       </section>
+      </Reveal>
 
       {/* Delivery form */}
+      <Reveal delay={100}>
       <section aria-label="Delivery details" className="mt-14">
         <div className="card-surface mx-auto max-w-2xl p-6 sm:p-8">
           <h2 className="text-2xl font-bold text-mist-100">Book a delivery slot</h2>
@@ -296,12 +304,15 @@ export default function SuperStoreDemo() {
           )}
         </div>
       </section>
+      </Reveal>
 
+      <Reveal delay={80}>
       <p className="mx-auto mt-12 max-w-2xl text-center text-sm leading-relaxed text-mist-500">
         Built as an example of super store website development in Multan.
         Looking for an SEO expert for super store in Multan? This demo shows
         the website side of that work.
       </p>
+      </Reveal>
     </div>
   );
 }

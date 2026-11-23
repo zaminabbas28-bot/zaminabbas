@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Reveal from "../Reveal";
 
 const SERVICES = [
   { name: "Haircut", desc: "Wash, cut and style", price: 1500 },
@@ -25,6 +26,7 @@ export default function SalonDemo() {
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+      <Reveal>
       <header className="max-w-2xl">
         <p className="label-caps !text-gold">Sample Salon — Multan</p>
         <h1 className="display-mega mt-4 font-sans text-4xl text-mist-100 sm:text-6xl">
@@ -35,8 +37,10 @@ export default function SalonDemo() {
           prices, stylists and an appointment booking form.
         </p>
       </header>
+      </Reveal>
 
       {/* Services */}
+      <Reveal delay={100}>
       <section aria-label="Salon services" className="mt-12">
         <h2 className="text-2xl font-bold text-mist-100">Services & prices</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-mist-500">
@@ -45,7 +49,7 @@ export default function SalonDemo() {
         </p>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => (
-            <li key={service.name} className="card-surface flex flex-col p-5">
+            <li key={service.name} className="card-surface card-hover flex flex-col p-5">
               <p className="font-semibold text-mist-100">{service.name}</p>
               <p className="mt-1 flex-1 text-sm text-mist-500">{service.desc}</p>
               <p className="mt-3 text-sm font-bold text-accent-deep">
@@ -55,8 +59,10 @@ export default function SalonDemo() {
           ))}
         </ul>
       </section>
+      </Reveal>
 
       {/* Stylists */}
+      <Reveal delay={100}>
       <section aria-label="Stylists" className="mt-14">
         <h2 className="text-2xl font-bold text-mist-100">Meet the stylists</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-mist-500">
@@ -64,7 +70,7 @@ export default function SalonDemo() {
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-3">
           {STYLISTS.map((stylist) => (
-            <article key={stylist.name} className="card-surface flex items-center gap-4 p-5">
+            <article key={stylist.name} className="card-surface card-hover flex items-center gap-4 p-5">
               <span
                 aria-hidden
                 className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-accent text-lg font-bold text-white"
@@ -79,8 +85,10 @@ export default function SalonDemo() {
           ))}
         </div>
       </section>
+      </Reveal>
 
       {/* Booking */}
+      <Reveal delay={100}>
       <section aria-label="Appointment booking" className="mt-14">
         <div className="card-surface mx-auto max-w-2xl p-6 sm:p-8">
           <h2 className="text-2xl font-bold text-mist-100">Book an appointment</h2>
@@ -151,11 +159,14 @@ export default function SalonDemo() {
           )}
         </div>
       </section>
+      </Reveal>
 
+      <Reveal delay={80}>
       <p className="mx-auto mt-12 max-w-2xl text-center text-sm leading-relaxed text-mist-500">
         Built as an example of salon website design in Multan, with local SEO
         for salons in Multan available alongside a real build.
       </p>
+      </Reveal>
     </div>
   );
 }

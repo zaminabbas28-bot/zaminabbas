@@ -30,11 +30,11 @@ export default function Projects() {
             const Icon = CARD_ICONS[i % CARD_ICONS.length];
             return (
               <Reveal key={project.title} delay={(i % 3) * 100} className="h-full">
-                <article className="card-surface card-hover flex h-full flex-col overflow-hidden">
+                <article className="card-surface card-hover group flex h-full flex-col overflow-hidden">
                   <div
                     className={`relative flex h-44 items-center justify-center bg-gradient-to-br ${CARD_GRADIENTS[i % CARD_GRADIENTS.length]}`}
                   >
-                    <span className="salman-glass-tile">
+                    <span className="salman-glass-tile transition-transform duration-500 group-hover:scale-110">
                       <Icon className="h-7 w-7" />
                     </span>
                   </div>

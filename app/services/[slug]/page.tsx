@@ -161,7 +161,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               {service.benefits.map((benefit) => (
                 <li
                   key={benefit}
-                  className="flex items-start gap-3 rounded-2xl border border-black/10 dark:border-white/15 bg-ink-800/70 p-4"
+                  className="flex items-start gap-3 rounded-2xl border border-black/10 dark:border-white/15 bg-ink-800/70 p-4 transition-colors hover:border-gold-400/40"
                 >
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gold-400/15 text-gold-400">
                     <CheckIcon className="h-4 w-4" />

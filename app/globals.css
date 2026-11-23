@@ -93,6 +93,11 @@
 html {
   scroll-behavior: smooth;
 }
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 
 body {
   background-color: var(--color-ink-950);
@@ -209,6 +214,39 @@ body {
   box-shadow: 0 24px 60px -24px rgba(139, 92, 246, 0.35);
 }
 
+/* ---------- Flat glow cards (service "other services", blog lists) ----------
+   Same hover language as .card-hover: lift + violet border + soft glow. */
+.card-glow {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+.card-glow:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 20px 50px -22px rgba(139, 92, 246, 0.4);
+}
+
+/* ---------- FAQ accordion: smooth expand / collapse ---------- */
+.faq-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.faq-answer[data-open="true"] {
+  grid-template-rows: 1fr;
+}
+.faq-answer-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-answer {
+    transition: none;
+  }
+}
+
 /* ---------- Tag pills ---------- */
 .tag-pill {
   display: inline-flex;
@@ -270,6 +308,11 @@ body {
   background: color-mix(in srgb, var(--color-violet) 14%, transparent);
   color: var(--color-violet);
   flex-shrink: 0;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* Icon tiles grow slightly when their card is hovered. */
+.card-hover:hover .salman-icon-tile {
+  transform: scale(1.08);
 }
 .salman-icon-tile-cyan {
   background: color-mix(in srgb, var(--color-cyan) 12%, transparent);
@@ -556,6 +599,17 @@ body {
 }
 @media (prefers-reduced-motion: reduce) {
   .animate-floaty {
+    animation: none;
+  }
+}
+
+/* Opacity-only breathing for ambient glows (safe on translated elements,
+   unlike floaty which would override their translate). */
+.anim-breathe {
+  animation: spotlight-breathe 7s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .anim-breathe {
     animation: none;
   }
 }

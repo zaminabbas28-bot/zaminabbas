@@ -1,9 +1,11 @@
 import Link from "next/link";
+import Reveal from "../Reveal";
 import { SITE } from "@/lib/site";
 
 export default function DemoCta() {
   return (
     <section className="mx-auto max-w-7xl px-5 pb-24 sm:px-8">
+      <Reveal>
       <div className="card-surface flex flex-col items-start gap-5 p-8 sm:p-10">
         <h2 className="font-sans text-3xl font-bold leading-tight text-mist-100 sm:text-4xl">
           Want a website like this for your business?{" "}
@@ -22,6 +24,7 @@ export default function DemoCta() {
           Chat on WhatsApp <span aria-hidden>&rarr;</span>
         </Link>
       </div>
+      </Reveal>
     </section>
   );
 }

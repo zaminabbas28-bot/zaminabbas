@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
+import CountUp from "./CountUp";
 import TypingRoles from "./TypingRoles";
 import { SITE } from "@/lib/site";
 
@@ -9,11 +10,12 @@ export default function Hero() {
       {/* violet / cyan ambient glows (approved hero) */}
       <div
         aria-hidden
-        className="pointer-events-none absolute -top-40 right-[-10%] h-[560px] w-[560px] rounded-full bg-violet/20 blur-[160px]"
+        className="animate-floaty pointer-events-none absolute -top-40 right-[-10%] h-[560px] w-[560px] rounded-full bg-violet/20 blur-[160px]"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute bottom-[-20%] left-[-10%] h-[420px] w-[420px] rounded-full bg-cyan/10 blur-[140px]"
+        className="animate-floaty pointer-events-none absolute bottom-[-20%] left-[-10%] h-[420px] w-[420px] rounded-full bg-cyan/10 blur-[140px]"
+        style={{ animationDuration: "9s", animationDelay: "-3s" }}
       />
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-24 pt-32 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch lg:gap-14 lg:pb-20 lg:pt-40">
@@ -84,19 +86,19 @@ export default function Hero() {
             <div className="mt-10 flex flex-wrap">
               <div className="border-l border-black/15 pr-7 pl-0 first:border-l-0 first:pl-0 dark:border-white/15">
                 <strong className="grad-text block font-display text-3xl font-extrabold">
-                  19+
+                  <CountUp value={19} suffix="+" />
                 </strong>
                 <span className="text-sm text-mist-500">Free Tools</span>
               </div>
               <div className="border-l border-black/15 px-7 dark:border-white/15">
                 <strong className="grad-text block font-display text-3xl font-extrabold">
-                  580+
+                  <CountUp value={580} suffix="+" />
                 </strong>
                 <span className="text-sm text-mist-500">Keywords Researched</span>
               </div>
               <div className="border-l border-black/15 px-7 dark:border-white/15">
                 <strong className="grad-text block font-display text-3xl font-extrabold">
-                  96%
+                  <CountUp value={96} suffix="%" />
                 </strong>
                 <span className="text-sm text-mist-500">Site Health</span>
               </div>

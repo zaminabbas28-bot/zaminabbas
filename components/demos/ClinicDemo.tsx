@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Reveal from "../Reveal";
 
 const DOCTORS = [
   { initials: "AR", name: "Dr. A. Raza", role: "General Dentistry" },
@@ -29,6 +30,7 @@ export default function ClinicDemo() {
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+      <Reveal>
       <header className="max-w-2xl">
         <p className="label-caps !text-gold">Sample Dental Clinic — Multan</p>
         <h1 className="display-mega mt-4 font-sans text-4xl text-mist-100 sm:text-6xl">
@@ -39,8 +41,10 @@ export default function ClinicDemo() {
           timings, location and a patient appointment form.
         </p>
       </header>
+      </Reveal>
 
       {/* Doctors */}
+      <Reveal delay={100}>
       <section aria-label="Doctors" className="mt-12">
         <h2 className="text-2xl font-bold text-mist-100">Our doctors</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-mist-500">
@@ -48,7 +52,7 @@ export default function ClinicDemo() {
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-3">
           {DOCTORS.map((doctor) => (
-            <article key={doctor.name} className="card-surface flex items-center gap-4 p-5">
+            <article key={doctor.name} className="card-surface card-hover flex items-center gap-4 p-5">
               <span
                 aria-hidden
                 className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-accent text-lg font-bold text-white"
@@ -63,14 +67,16 @@ export default function ClinicDemo() {
           ))}
         </div>
       </section>
+      </Reveal>
 
       {/* Treatments, timings, location */}
+      <Reveal delay={100}>
       <section className="mt-14 grid gap-8 lg:grid-cols-[1.5fr_1fr]">
         <div>
           <h2 className="text-2xl font-bold text-mist-100">Treatments & sample fees</h2>
           <ul className="mt-6 space-y-4">
             {TREATMENTS.map((treatment) => (
-              <li key={treatment.name} className="card-surface flex items-center justify-between gap-4 p-5">
+              <li key={treatment.name} className="card-surface card-hover flex items-center justify-between gap-4 p-5">
                 <div>
                   <p className="font-semibold text-mist-100">{treatment.name}</p>
                   <p className="mt-1 text-sm text-mist-500">{treatment.desc}</p>
@@ -83,7 +89,7 @@ export default function ClinicDemo() {
           </ul>
         </div>
         <div className="space-y-8">
-          <div className="card-surface p-6">
+          <div className="card-surface card-hover p-6">
             <h2 className="text-lg font-bold text-mist-100">Clinic timings</h2>
             <ul className="mt-4 space-y-2 text-sm">
               {TIMINGS.map((row) => (
@@ -94,7 +100,7 @@ export default function ClinicDemo() {
               ))}
             </ul>
           </div>
-          <div className="card-surface p-6">
+          <div className="card-surface card-hover p-6">
             <h2 className="text-lg font-bold text-mist-100">Location</h2>
             <p className="mt-3 text-sm leading-relaxed text-mist-500">
               Multan <span className="text-mist-500">(sample listing)</span>
@@ -106,8 +112,10 @@ export default function ClinicDemo() {
           </div>
         </div>
       </section>
+      </Reveal>
 
       {/* Appointment */}
+      <Reveal delay={100}>
       <section aria-label="Patient appointment" className="mt-14">
         <div className="card-surface mx-auto max-w-2xl p-6 sm:p-8">
           <h2 className="text-2xl font-bold text-mist-100">Request an appointment</h2>
@@ -172,12 +180,15 @@ export default function ClinicDemo() {
           )}
         </div>
       </section>
+      </Reveal>
 
+      <Reveal delay={80}>
       <p className="mx-auto mt-12 max-w-2xl text-center text-sm leading-relaxed text-mist-500">
         If you searched for an SEO expert for clinic in Multan, this demo
         shows the website side of that work — doctors, timings, location and
         a patient booking form.
       </p>
+      </Reveal>
     </div>
   );
 }

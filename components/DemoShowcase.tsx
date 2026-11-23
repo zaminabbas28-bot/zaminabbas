@@ -72,9 +72,9 @@ export default function DemoShowcase() {
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {DEMOS.map((demo, i) => (
             <Reveal key={demo.title} delay={i * 100} className="h-full">
-              <article className="card-surface card-hover flex h-full flex-col overflow-hidden">
+              <article className="card-surface card-hover group flex h-full flex-col overflow-hidden">
                 <div className="relative flex h-40 items-center justify-center bg-gradient-to-br from-violet/25 via-violet/10 to-cyan/20">
-                  <span className="salman-glass-tile">
+                  <span className="salman-glass-tile transition-transform duration-500 group-hover:scale-110">
                     <demo.Icon className="h-7 w-7" />
                   </span>
                 </div>

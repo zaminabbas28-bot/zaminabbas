@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Reveal from "../Reveal";
 import { StarIcon } from "../icons";
 import { SITE } from "@/lib/site";
 
@@ -45,6 +46,7 @@ export default function DoctorDemo() {
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+      <Reveal>
       <header className="max-w-2xl">
         <p className="label-caps !text-gold">Sample Doctor Portfolio — Multan</p>
         <h1 className="display-mega mt-4 font-sans text-4xl text-mist-100 sm:text-6xl">
@@ -57,10 +59,12 @@ export default function DoctorDemo() {
           examples.
         </p>
       </header>
+      </Reveal>
 
       {/* About + qualifications */}
+      <Reveal delay={100}>
       <section aria-label="About the doctor" className="mt-12 grid gap-8 lg:grid-cols-[1.5fr_1fr]">
-        <div className="card-surface flex items-start gap-5 p-6 sm:p-8">
+        <div className="card-surface card-hover flex items-start gap-5 p-6 sm:p-8">
           <span
             aria-hidden
             className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-accent text-2xl font-bold text-white"
@@ -79,7 +83,7 @@ export default function DoctorDemo() {
             </p>
           </div>
         </div>
-        <div className="card-surface p-6">
+        <div className="card-surface card-hover p-6">
           <h2 className="text-lg font-bold text-mist-100">Qualifications</h2>
           <ul className="mt-4 space-y-3">
             {QUALIFICATIONS.map((q) => (
@@ -91,8 +95,10 @@ export default function DoctorDemo() {
           </ul>
         </div>
       </section>
+      </Reveal>
 
       {/* Services */}
+      <Reveal delay={100}>
       <section aria-label="Services and fees" className="mt-14">
         <h2 className="text-2xl font-bold text-mist-100">Services & consultation fees</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-mist-500">
@@ -101,7 +107,7 @@ export default function DoctorDemo() {
         </p>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => (
-            <li key={service.name} className="card-surface flex flex-col p-5">
+            <li key={service.name} className="card-surface card-hover flex flex-col p-5">
               <p className="font-semibold text-mist-100">{service.name}</p>
               <p className="mt-1 flex-1 text-sm text-mist-500">{service.desc}</p>
               <p className="mt-3 text-sm font-bold text-accent-deep">
@@ -111,14 +117,16 @@ export default function DoctorDemo() {
           ))}
         </ul>
       </section>
+      </Reveal>
 
       {/* Experience + timings */}
+      <Reveal delay={100}>
       <section className="mt-14 grid gap-8 lg:grid-cols-[1.5fr_1fr]">
         <div>
           <h2 className="text-2xl font-bold text-mist-100">Experience</h2>
           <ul className="mt-6 space-y-4">
             {EXPERIENCE.map((job) => (
-              <li key={job.role} className="card-surface flex flex-col gap-1 p-5 sm:flex-row sm:items-center sm:justify-between">
+              <li key={job.role} className="card-surface card-hover flex flex-col gap-1 p-5 sm:flex-row sm:items-center sm:justify-between">
                 <div>
                   <p className="font-semibold text-mist-100">{job.role}</p>
                   <p className="text-sm text-mist-500">{job.place}</p>
@@ -128,7 +136,7 @@ export default function DoctorDemo() {
             ))}
           </ul>
         </div>
-        <div className="card-surface h-fit p-6">
+        <div className="card-surface card-hover h-fit p-6">
           <h2 className="text-lg font-bold text-mist-100">Clinic timings</h2>
           <ul className="mt-4 space-y-2 text-sm">
             {TIMINGS.map((row) => (
@@ -143,8 +151,10 @@ export default function DoctorDemo() {
           </p>
         </div>
       </section>
+      </Reveal>
 
       {/* Patient reviews */}
+      <Reveal delay={100}>
       <section aria-label="Patient reviews" className="mt-14">
         <h2 className="text-2xl font-bold text-mist-100">What patients say</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-mist-500">
@@ -152,7 +162,7 @@ export default function DoctorDemo() {
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-3">
           {REVIEWS.map((review) => (
-            <article key={review.name} className="card-surface flex flex-col p-5">
+            <article key={review.name} className="card-surface card-hover flex flex-col p-5">
               <span className="flex gap-0.5" aria-label={`${review.stars} out of 5 stars`}>
                 {Array.from({ length: 5 }).map((_, i) => (
                   <StarIcon
@@ -169,8 +179,10 @@ export default function DoctorDemo() {
           ))}
         </div>
       </section>
+      </Reveal>
 
       {/* Appointment */}
+      <Reveal delay={100}>
       <section aria-label="Appointment booking" className="mt-14">
         <div className="card-surface mx-auto max-w-2xl p-6 sm:p-8">
           <h2 className="text-2xl font-bold text-mist-100">Book an appointment</h2>
@@ -246,12 +258,15 @@ export default function DoctorDemo() {
           )}
         </div>
       </section>
+      </Reveal>
 
+      <Reveal delay={80}>
       <p className="mx-auto mt-12 max-w-2xl text-center text-sm leading-relaxed text-mist-500">
         Built as an example of doctor portfolio website development in Multan.
         Looking for an SEO expert for doctor in Multan? This demo shows the
         website side of that work.
       </p>
+      </Reveal>
     </div>
   );
 }

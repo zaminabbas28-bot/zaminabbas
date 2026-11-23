@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Reveal from "../Reveal";
 import { SITE } from "@/lib/site";
 
 const SERVICES = [
@@ -35,6 +36,7 @@ export default function SoftwareDemo() {
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-16 sm:px-8">
+      <Reveal>
       <header className="max-w-2xl">
         <p className="label-caps !text-gold">Sample Software Company — Multan</p>
         <h1 className="display-mega mt-4 font-sans text-4xl text-mist-100 sm:text-6xl">
@@ -46,8 +48,10 @@ export default function SoftwareDemo() {
           company and projects here are fictional examples.
         </p>
       </header>
+      </Reveal>
 
       {/* Services */}
+      <Reveal delay={100}>
       <section aria-label="Software services" className="mt-12">
         <h2 className="text-2xl font-bold text-mist-100">What we build</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-mist-500">
@@ -56,7 +60,7 @@ export default function SoftwareDemo() {
         </p>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((service) => (
-            <li key={service.name} className="card-surface flex flex-col p-5">
+            <li key={service.name} className="card-surface card-hover flex flex-col p-5">
               <p className="font-semibold text-mist-100">{service.name}</p>
               <p className="mt-1 flex-1 text-sm text-mist-500">{service.desc}</p>
               <p className="mt-3 text-sm font-bold text-accent-deep">
@@ -66,8 +70,10 @@ export default function SoftwareDemo() {
           ))}
         </ul>
       </section>
+      </Reveal>
 
       {/* Process */}
+      <Reveal delay={100}>
       <section aria-label="How we work" className="mt-14">
         <h2 className="text-2xl font-bold text-mist-100">How we work</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-mist-500">
@@ -76,7 +82,7 @@ export default function SoftwareDemo() {
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {PROCESS.map((item) => (
-            <article key={item.step} className="card-surface p-5">
+            <article key={item.step} className="card-surface card-hover p-5">
               <p className="text-gradient-accent font-display text-3xl font-extrabold">
                 {item.step}
               </p>
@@ -86,8 +92,10 @@ export default function SoftwareDemo() {
           ))}
         </div>
       </section>
+      </Reveal>
 
       {/* Project highlights */}
+      <Reveal delay={100}>
       <section aria-label="Sample projects" className="mt-14">
         <h2 className="text-2xl font-bold text-mist-100">Sample project highlights</h2>
         <p className="mt-2 max-w-xl text-sm leading-relaxed text-mist-500">
@@ -95,7 +103,7 @@ export default function SoftwareDemo() {
         </p>
         <div className="mt-6 grid gap-4 sm:grid-cols-3">
           {PROJECTS.map((project) => (
-            <article key={project.name} className="card-surface flex flex-col p-5">
+            <article key={project.name} className="card-surface card-hover flex flex-col p-5">
               <p className="font-semibold text-mist-100">{project.name}</p>
               <p className="mt-1 flex-1 text-sm text-mist-500">{project.desc}</p>
               <p className="mt-3 text-xs font-semibold text-accent-deep">{project.stack}</p>
@@ -103,8 +111,10 @@ export default function SoftwareDemo() {
           ))}
         </div>
       </section>
+      </Reveal>
 
       {/* Quote form */}
+      <Reveal delay={100}>
       <section aria-label="Get a quote" className="mt-14">
         <div className="card-surface mx-auto max-w-2xl p-6 sm:p-8">
           <h2 className="text-2xl font-bold text-mist-100">Get a quote</h2>
@@ -187,12 +197,15 @@ export default function SoftwareDemo() {
           )}
         </div>
       </section>
+      </Reveal>
 
+      <Reveal delay={80}>
       <p className="mx-auto mt-12 max-w-2xl text-center text-sm leading-relaxed text-mist-500">
         Built as an example of software services website development in
         Multan. Looking for an SEO expert for software company in Multan? This
         demo shows the website side of that work.
       </p>
+      </Reveal>
     </div>
   );
 }
