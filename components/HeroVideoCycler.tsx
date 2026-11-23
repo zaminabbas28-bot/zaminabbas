@@ -3,29 +3,40 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 /**
- * Hero video cycler (approved design): three portrait clips auto-change
- * every 1 second; tapping a thumbnail jumps to that clip and restarts
- * the cycle. Posters are the site's existing photos (videos decode at
- * build time from public/videos/*.mp4.b64).
+ * Hero video cycler (approved design): portrait clips auto-change;
+ * the Flow spotlight-walk clip plays its full ~4 seconds, the other
+ * clips change every 1 second; tapping a thumbnail jumps to that clip
+ * and restarts the cycle. Posters are the site's photos (videos decode
+ * at build time from public/videos/*.mp4.b64).
  */
 const VIDEOS = [
+  {
+    src: "/videos/hero-video-salman-walk.mp4",
+    poster: "/images/rana-suit-gray-sunglasses.jpg",
+    alt: "Rana Zamin — spotlight walk clip",
+    label: "Spotlight walk",
+    duration: 4000,
+  },
   {
     src: "/videos/hero-video-navy.mp4",
     poster: "/images/zamin-abbas-local-seo-expert.jpg",
     alt: "Rana Zamin — navy suit clip",
     label: "Navy suit",
+    duration: 1000,
   },
   {
     src: "/videos/hero-video-gray-side.mp4",
     poster: "/images/rana-2.jpg",
     alt: "Rana Zamin — gray suit, side view clip",
     label: "Gray suit, side view",
+    duration: 1000,
   },
   {
     src: "/videos/hero-video-gray-front.mp4",
     poster: "/images/rana-3.jpg",
     alt: "Rana Zamin — gray suit, facing the camera clip",
     label: "Gray suit, front view",
+    duration: 1000,
   },
 ];
 
@@ -64,15 +75,22 @@ export default function HeroVideoCycler() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Auto-change every 1 second; pause while the tab is hidden.
+  // Auto-change; each clip plays for its own duration. Pause while the
+  // tab is hidden.
   useEffect(() => {
     if (reducedMotion.current) return undefined;
-    const id = setInterval(() => {
-      if (document.hidden) return;
-      const next = (activeRef.current + 1) % VIDEOS.length;
-      showVideo(next);
-    }, 1000);
-    return () => clearInterval(id);
+    let timer: ReturnType<typeof setTimeout>;
+    const schedule = () => {
+      timer = setTimeout(() => {
+        if (!document.hidden) {
+          const next = (activeRef.current + 1) % VIDEOS.length;
+          showVideo(next);
+        }
+        schedule();
+      }, VIDEOS[activeRef.current].duration);
+    };
+    schedule();
+    return () => clearTimeout(timer);
   }, [cycleKey, showVideo]);
 
   const jumpTo = (i: number) => {
