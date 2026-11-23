@@ -70,7 +70,7 @@ export default function Industries() {
                 <div className="mt-6 flex flex-wrap items-center gap-3">
                   <Link
                     href={industry.demoHref}
-                    className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-bold text-white transition hover:bg-accent-deep"
+                    className="btn-gradient inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-bold"
                   >
                     See demo <span aria-hidden>&rarr;</span>
                   </Link>

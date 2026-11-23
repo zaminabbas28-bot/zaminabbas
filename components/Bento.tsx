@@ -31,7 +31,7 @@ export default function Bento() {
                 href={SITE.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center gap-2 rounded-full bg-gold px-8 py-4 text-sm font-bold text-ink-950 transition hover:bg-accent-deep"
+                className="btn-gradient group inline-flex items-center gap-2 rounded-full px-8 py-4 text-sm font-bold"
               >
                 Start a Conversation
                 <span aria-hidden className="transition-transform group-hover:translate-x-1">
@@ -61,7 +61,7 @@ export default function Bento() {
               href={`${SITE.whatsapp}?text=${encodeURIComponent("Hi! I want a free SEO audit for my business.")}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 rounded-full bg-gold px-6 py-3 text-sm font-bold text-ink-950 transition hover:bg-accent-deep"
+              className="btn-gradient shrink-0 rounded-full px-6 py-3 text-sm font-bold"
             >
               Claim free audit
             </Link>
@@ -128,7 +128,7 @@ export default function Bento() {
                   audit is free.
                 </p>
               </div>
-              <span className="relative mt-8 inline-flex w-fit items-center gap-2 rounded-full bg-gold px-5 py-3 text-sm font-bold text-ink-950 transition-transform group-hover:translate-x-1">
+              <span className="btn-gradient relative mt-8 inline-flex w-fit items-center gap-2 rounded-full px-5 py-3 text-sm font-bold transition-transform group-hover:translate-x-1">
                 Chat now <ArrowUpRightIcon className="h-4 w-4" />
               </span>
             </Link>

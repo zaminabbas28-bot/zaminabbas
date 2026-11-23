@@ -18,12 +18,12 @@ export default function OgImage() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "#ffffff",
+          background: "#050914",
           fontFamily: "sans-serif",
           position: "relative",
         }}
       >
-        {/* gold glow accents */}
+        {/* violet glow accents */}
         <div
           style={{
             position: "absolute",
@@ -32,7 +32,7 @@ export default function OgImage() {
             width: 440,
             height: 440,
             borderRadius: "50%",
-            background: "rgba(255, 106, 0, 0.18)",
+            background: "rgba(139, 92, 246, 0.28)",
           }}
         />
         <div
@@ -43,10 +43,10 @@ export default function OgImage() {
             width: 130,
             height: 130,
             borderRadius: 32,
-            background: "linear-gradient(135deg, #FF8C3B, #FF6A00)",
+            background: "linear-gradient(135deg, #8b5cf6, #22d3ee)",
             fontSize: 56,
             fontWeight: 800,
-            color: "#111111",
+            color: "#ffffff",
             marginBottom: 32,
           }}
         >
@@ -56,7 +56,7 @@ export default function OgImage() {
           style={{
             fontSize: 84,
             fontWeight: 800,
-            color: "#111111",
+            color: "#e8eefb",
             letterSpacing: -2,
           }}
         >
@@ -66,7 +66,7 @@ export default function OgImage() {
           style={{
             fontSize: 34,
             fontWeight: 600,
-            color: "#FF6A00",
+            color: "#22d3ee",
             marginTop: 16,
             letterSpacing: 4,
           }}
@@ -76,7 +76,7 @@ export default function OgImage() {
         <div
           style={{
             fontSize: 26,
-            color: "#71717a",
+            color: "#9aa8c3",
             marginTop: 24,
           }}
         >

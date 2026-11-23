@@ -50,7 +50,7 @@ export default function DemoShowcase() {
                 </p>
                 <Link
                   href={demo.href}
-                  className="mt-6 inline-flex w-fit items-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-bold text-white transition hover:bg-accent-deep"
+                  className="btn-gradient mt-6 inline-flex w-fit items-center gap-2 rounded-full px-5 py-3 text-sm font-bold"
                 >
                   Preview demo <span aria-hidden>&rarr;</span>
                 </Link>

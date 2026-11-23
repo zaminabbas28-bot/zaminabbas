@@ -2,10 +2,10 @@
  * Decodes base64-encoded media stored in the repo back to binary files.
  *
  * Why this exists: the GitHub file API used to publish this repo only
- * accepts text content, so binary photos/video are committed as
- * `.jpg.b64` / `.mp4.b64` text files. This script restores the real
- * binary files into `public/images/` and `public/videos/` before
- * `next dev` / `next build` run.
+ * accepts text content, so binary photos/video/PDF are committed as
+ * `.jpg.b64` / `.mp4.b64` / `.pdf.b64` text files. This script restores the
+ * real binary files into `public/images/`, `public/videos/` and `public/`
+ * before `next dev` / `next build` run.
  */
 import { readdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -17,6 +17,7 @@ const jobs = [
   { dir: join(root, "images"), ext: ".jpg.b64" },
   { dir: join(root, "videos"), ext: ".jpg.b64" },
   { dir: join(root, "videos"), ext: ".mp4.b64" },
+  { dir: root, ext: ".pdf.b64" },
 ];
 
 let restored = 0;

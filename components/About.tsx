@@ -31,10 +31,10 @@ function PhotoCarousel() {
         className="pointer-events-none absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-gold/25 via-accent-pink/10 to-transparent blur-2xl"
       />
       <div
-        className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-gold/60 via-gold/15 to-transparent p-[1px]"
+        className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-violet/60 via-violet/15 to-transparent p-[1px]"
         style={{
           boxShadow:
-            "0 40px 80px -30px rgba(255,106,0,0.35), 0 25px 60px -20px rgba(0,0,0,0.8)",
+            "0 40px 80px -30px rgba(139,92,246,0.35), 0 25px 60px -20px rgba(0,0,0,0.8)",
         }}
       >
         <div className="relative overflow-hidden rounded-[calc(1.75rem-1px)] bg-ink-900">

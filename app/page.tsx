@@ -105,10 +105,6 @@ const serviceSchema = {
 export default function Home() {
   return (
     <div className="relative">
-      {/* striped page edges */}
-      <div aria-hidden className="edge-stripes pointer-events-none fixed inset-y-0 left-0 z-0 hidden w-10 lg:block" />
-      <div aria-hidden className="edge-stripes pointer-events-none fixed inset-y-0 right-0 z-0 hidden w-10 lg:block" />
-
       <div className="relative z-10">
         <JsonLd id="person-jsonld" data={personSchema} />
         <JsonLd id="service-jsonld" data={serviceSchema} />

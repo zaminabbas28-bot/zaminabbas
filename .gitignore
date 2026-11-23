@@ -43,3 +43,11 @@ next-env.d.ts
 # decoded binary photos (stored as .b64 text, restored at build time)
 public/images/*.jpg
 !public/images/*.jpg.b64
+
+# decoded binary videos + CV (stored as .b64 text, restored at build time)
+public/videos/*.mp4
+!public/videos/*.mp4.b64
+public/videos/*.jpg
+!public/videos/*.jpg.b64
+public/Rana-Zamin-CV.pdf
+!public/Rana-Zamin-CV.pdf.b64

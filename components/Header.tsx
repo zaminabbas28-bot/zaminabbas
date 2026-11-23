@@ -65,10 +65,17 @@ export default function Header() {
         <div className="hidden items-center gap-3 lg:flex">
           <ThemeToggle />
           <Link
+            href="/Rana-Zamin-CV.pdf"
+            download
+            className="inline-flex items-center gap-1.5 rounded-full border border-black/20 px-6 py-2.5 text-sm font-bold text-mist-100 transition hover:border-violet hover:text-violet dark:border-white/20"
+          >
+            Resume
+          </Link>
+          <Link
             href={SITE.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full bg-gold px-6 py-2.5 text-sm font-bold text-ink-950 transition hover:bg-accent-deep"
+            className="btn-gradient inline-flex items-center gap-1.5 rounded-full px-6 py-2.5 text-sm font-bold"
           >
             Let&rsquo;s Work Together
             <ArrowUpRightIcon className="h-4 w-4" />
@@ -110,11 +117,21 @@ export default function Header() {
             ))}
             <li className="pt-1">
               <Link
+                href="/Rana-Zamin-CV.pdf"
+                download
+                onClick={() => setOpen(false)}
+                className="flex items-center justify-center gap-2 rounded-2xl border border-black/15 px-4 py-3 text-base font-bold text-mist-100 dark:border-white/15"
+              >
+                Resume
+              </Link>
+            </li>
+            <li className="pt-1">
+              <Link
                 href={SITE.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
-                className="flex items-center justify-center gap-2 rounded-2xl bg-gold px-4 py-3 text-base font-bold text-ink-950"
+                className="btn-gradient flex items-center justify-center gap-2 rounded-2xl px-4 py-3 text-base font-bold"
               >
                 Let&rsquo;s Work Together <ArrowUpRightIcon className="h-4 w-4" />
               </Link>

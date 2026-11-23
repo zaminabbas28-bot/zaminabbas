@@ -6,9 +6,9 @@ import { PauseIcon, PlayIcon, QuoteIcon, StarIcon } from "./icons";
 import Reveal from "./Reveal";
 
 const CARD_GRADIENTS = [
-  "from-gold/25 via-gold-deep/20 to-ink-900",
-  "from-gold-soft/20 via-gold/15 to-ink-900",
-  "from-[#FFEDD5]/20 via-gold-deep/25 to-ink-900",
+  "from-violet/25 via-violet/15 to-ink-900",
+  "from-violet/20 via-cyan/15 to-ink-900",
+  "from-cyan/20 via-violet/20 to-ink-900",
 ];
 
 export default function Testimonials() {

@@ -6,23 +6,25 @@ const ITEMS = [
   "Google Business Profile",
 ] as const;
 
-/** Infinite marquee strip — CSS animation only. */
+/** Infinite marquee strip (approved design) — CSS animation only. */
 export default function Ticker() {
-  const row = [...ITEMS, ...ITEMS];
   return (
     <div
       aria-hidden
-      className="overflow-hidden border-y border-gold-400/20 bg-ink-900/60 py-4"
+      className="overflow-hidden border-y border-black/10 bg-ink-900 py-[18px] dark:border-white/10"
     >
-      <div className="ticker-track flex w-max items-center gap-8 pr-8">
+      <div className="ticker-track flex w-max items-center">
         {[0, 1].map((half) => (
-          <div key={half} className="flex items-center gap-8">
-            {row.map((item, i) => (
-              <span key={`${half}-${i}`} className="flex items-center gap-8 whitespace-nowrap">
-                <span className="font-display text-sm font-bold tracking-[0.25em] text-gold-300 uppercase">
-                  {item}
-                </span>
-                <span className="h-2 w-2 rounded-full bg-gold-500/70" />
+          <div key={half} className="flex items-center">
+            {ITEMS.map((item, i) => (
+              <span
+                key={`${half}-${i}`}
+                className="flex items-center whitespace-nowrap px-[18px] font-display text-[1.35rem] font-bold tracking-[0.04em] text-mist-100"
+              >
+                {item}
+                <i className="grad-text pl-[18px] not-italic" aria-hidden>
+                  ✦
+                </i>
               </span>
             ))}
           </div>

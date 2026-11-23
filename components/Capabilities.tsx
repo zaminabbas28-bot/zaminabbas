@@ -13,7 +13,7 @@ const CAPABILITIES = [
     text: "Get your business into the Google Map 3-pack. Complete profile optimization, local citations, review strategy and map-pack ranking systems that bring calls from nearby customers.",
     tags: ["Google Maps", "3-Pack Ranking", "Reviews"],
     gradient: "from-accent via-accent-deep to-mist-100",
-    glow: "rgba(255,106,0,0.45)",
+    glow: "rgba(139,92,246,0.45)",
     slug: "local-seo",
   },
   {
@@ -23,7 +23,7 @@ const CAPABILITIES = [
     text: "Fast, SEO-ready WordPress websites — business sites, e-commerce stores and custom builds like restaurant management systems with online ordering, reservations and billing.",
     tags: ["Business Websites", "WooCommerce", "Speed"],
     gradient: "from-accent via-accent-deep to-mist-100",
-    glow: "rgba(255,106,0,0.45)",
+    glow: "rgba(139,92,246,0.45)",
     slug: "wordpress-development",
   },
   {
@@ -33,7 +33,7 @@ const CAPABILITIES = [
     text: "Fully optimized GBP: correct categories, services, products, posts, photos and Q&A — everything Google needs to show your business more often and build customer trust.",
     tags: ["Profile Setup", "Categories", "Posts"],
     gradient: "from-accent via-accent-deep to-mist-100",
-    glow: "rgba(255,106,0,0.4)",
+    glow: "rgba(139,92,246,0.4)",
     slug: "google-business-profile",
   },
   {
@@ -43,7 +43,7 @@ const CAPABILITIES = [
     text: "Content and campaigns that keep your brand visible where your customers spend time — profile optimization, monthly content and growth-focused posting.",
     tags: ["Content", "Profiles", "Growth"],
     gradient: "from-accent via-accent-deep to-mist-100",
-    glow: "rgba(255,106,0,0.45)",
+    glow: "rgba(139,92,246,0.45)",
     slug: "social-media-marketing",
   },
   {
@@ -53,7 +53,7 @@ const CAPABILITIES = [
     text: "High-intent search campaigns for local businesses — keyword targeting, ad copy and conversion tracking set up to turn ad spend into booked jobs and sales.",
     tags: ["Search Ads", "Targeting", "ROI"],
     gradient: "from-accent via-accent-deep to-mist-100",
-    glow: "rgba(255,106,0,0.45)",
+    glow: "rgba(139,92,246,0.45)",
     slug: "google-ads",
   },
 ];
@@ -108,7 +108,7 @@ export default function Capabilities() {
           {/* subtle warm wash behind the fan only, so the glass translucency reads on the flat white section */}
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 bg-[radial-gradient(50%_45%_at_50%_50%,rgba(255,106,0,0.09),rgba(255,106,0,0)_70%)]"
+            className="pointer-events-none absolute inset-0 bg-[radial-gradient(50%_45%_at_50%_50%,rgba(139,92,246,0.09),rgba(139,92,246,0)_70%)]"
           />
           <div
             className="relative h-[560px] w-full max-w-6xl"

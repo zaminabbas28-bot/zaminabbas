@@ -4,9 +4,9 @@ import Reveal from "./Reveal";
 
 const CARD_ICONS = [MapPinIcon, TrendingUpIcon, GearCodeIcon];
 const CARD_STYLES = [
-  { gradient: "from-gold-soft via-gold to-gold-deep", glow: "rgba(255,106,0,0.45)" },
-  { gradient: "from-gold via-gold-deep to-[#C2410C]", glow: "rgba(255,106,0,0.45)" },
-  { gradient: "from-[#FFEDD5] via-gold-soft to-gold", glow: "rgba(255,106,0,0.4)" },
+  { gradient: "from-violet/40 via-violet/20 to-cyan/20", glow: "rgba(139,92,246,0.45)" },
+  { gradient: "from-violet/30 via-cyan/25 to-violet/20", glow: "rgba(34,211,238,0.35)" },
+  { gradient: "from-cyan/25 via-violet/20 to-violet/30", glow: "rgba(139,92,246,0.4)" },
 ];
 
 export default function Insights() {
