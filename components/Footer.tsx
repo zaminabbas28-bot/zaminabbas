@@ -30,7 +30,7 @@ export default function Footer() {
         <Reveal>
           <div className="flex items-center gap-3">
             <Image
-              src="/images/za-logo.jpg"
+              src="/images/za-logo.svg"
               alt="Zamin Abbas logo"
               width={44}
               height={44}

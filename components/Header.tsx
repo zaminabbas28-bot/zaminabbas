@@ -37,7 +37,7 @@ export default function Header() {
           className="flex items-center gap-2.5"
         >
           <Image
-            src="/images/za-logo.jpg"
+            src="/images/za-logo.svg"
             alt="Zamin Abbas logo"
             width={40}
             height={40}
