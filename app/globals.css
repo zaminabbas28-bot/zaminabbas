@@ -501,16 +501,19 @@ body {
 .hero-video-solo video {
   display: block;
   height: 100%;
+  max-height: calc(100vh - 224px);
+  max-height: calc(100svh - 224px);
   width: auto;
   aspect-ratio: 9 / 16;
-  object-fit: cover;
+  object-fit: contain;
+  background: #000;
   border-radius: 1.5rem;
 }
 @media (min-width: 1024px) {
   .hero-video-solo {
     justify-content: center;
     min-height: 0;
-    padding: 20px 0 4px;
+    padding: 0;
   }
 }
 @media (max-width: 1023px) {
