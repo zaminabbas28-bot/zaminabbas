@@ -16,7 +16,7 @@ export default function Hero() {
         className="pointer-events-none absolute bottom-[-20%] left-[-10%] h-[420px] w-[420px] rounded-full bg-cyan/10 blur-[140px]"
       />
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-24 pt-32 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch lg:gap-14 lg:pb-20 lg:pt-32">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 pb-24 pt-32 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch lg:gap-14 lg:pb-20 lg:pt-40">
         {/* ---------- Left: copy ---------- */}
         <div>
           <Reveal>
