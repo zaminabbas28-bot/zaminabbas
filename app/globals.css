@@ -504,6 +504,13 @@ body {
   width: auto;
   aspect-ratio: 9 / 16;
   object-fit: cover;
+  /* melt the hard rectangle edge into the hero background — no visible frame */
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 94%, transparent),
+    linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to bottom, transparent, #000 6%, #000 94%, transparent),
+    linear-gradient(to right, transparent, #000 7%, #000 93%, transparent);
+  mask-composite: intersect;
 }
 @media (min-width: 1024px) {
   .hero-video-solo {
