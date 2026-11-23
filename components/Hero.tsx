@@ -105,7 +105,7 @@ export default function Hero() {
         </div>
 
         {/* ---------- Right: hero video only (Salman-style, no images) ---------- */}
-        <Reveal delay={180} className="relative h-full w-full">
+        <Reveal delay={180} className="hero-video-blend relative h-full w-full">
           <div className="hero-video-solo">
             <video
               src="/videos/hero-video-salman-walk.mp4"

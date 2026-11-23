@@ -519,6 +519,15 @@ body {
     padding: 20px 0 4px;
   }
 }
+/* Dark only: the video's black studio background becomes the hero navy.
+   lighten keeps the man untouched (his pixels are brighter than the navy)
+   and turns pure-black video pixels into the exact hero background.
+   Light theme is excluded on purpose — its near-white background would
+   wash the video out. Blend sits on the wrapper (not the video) because
+   the Reveal wrapper's will-change makes it a stacking context. */
+.dark .hero-video-blend {
+  mix-blend-mode: lighten;
+}
 @media (max-width: 1023px) {
   .hero-video-solo {
     height: 72vh;
