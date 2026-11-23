@@ -292,6 +292,16 @@ export const SERVICES: Service[] = [
           "Yes. My small business SEO packages are scoped to what a small business actually needs — Google Business Profile optimization, local keyword targeting, citations and review setup — starting from $30, quoted after a free audit. No long contracts, no hidden fees.",
       },
       {
+        question: "What is Google Maps SEO?",
+        answer:
+          "Google Maps SEO is the work of making your business show up in the map pack when someone searches on Google Maps — a complete Business Profile, the right categories, consistent citations, genuine reviews and locally optimized pages. That is exactly what my local SEO service in Multan does, month after month.",
+      },
+      {
+        question: "What should I look for in local SEO companies in Multan?",
+        answer:
+          "Three things: a full audit before any work starts, a profile and website you can inspect yourself, and monthly reporting in plain language — views, calls and rankings, not vanity metrics. That is the standard I work to, starting with a free audit so you can judge the work before you pay for anything.",
+      },
+      {
         question: "Who is the best local SEO expert in Multan?",
         answer:
           "There is no official ranking that names one winner, so judge by the work: a full local audit, a profile you can inspect, genuine reviews, and monthly reporting in plain language. That is the service I provide in Multan — starting with a free audit, so you can see the standard before you commit.",
@@ -531,7 +541,7 @@ export const SERVICES: Service[] = [
     short:
       "Get found on Google Maps with complete Google Business Profile (GMB) optimization and ongoing management — categories, services, photos, posts and reviews handled for you.",
     metaDescription:
-      "Google Business Profile optimization and management — setup, categories, services, photos, posts and review strategy that help you rank higher on Google Maps.",
+      "GMB optimization and Google Business Profile management — setup, categories, services, photos, posts and review strategy that help you rank higher on Google Maps.",
     priceLine:
       "GBP optimization is part of my Local SEO packages, which start from $30 — scoped and quoted after a free profile audit.",
     icon: "pin",
@@ -544,7 +554,7 @@ export const SERVICES: Service[] = [
       "Suspension guidance & monthly insights reporting",
     ],
     paragraphs: [
-      "For most local businesses, your Google Business Profile is your real storefront on Google. It is what appears in Google Maps and the map pack — usually before a customer ever reaches your website. As a GMB expert in Multan, I run a Google Business Profile optimization and management service that makes that storefront complete, accurate and active, so more nearby customers find you, call you and visit you.",
+      "For most local businesses, your Google Business Profile is your real storefront on Google. It is what appears in Google Maps and the map pack — usually before a customer ever reaches your website. As a GMB expert in Multan, I run a Google Business Profile optimization and management service that makes that storefront complete, accurate and active, so more nearby customers find you, call you and visit you. You may still see this work called Google Places SEO — that was the old name for the same Google Business Profile optimization.",
       "As a GMB optimization expert in Multan, I start with an audit of the whole profile: primary and secondary categories, services, attributes, business hours, photos, and name, address and phone consistency with your website and citations. I then write service descriptions around what customers actually search, add missing services and products, and set up a photo and post structure — part of my GMB optimization services in Multan — that keeps the profile looking alive, because Google rewards profiles that are maintained, not abandoned.",
       "Management is where the compounding happens. As a GMB SEO expert in Multan, I keep the weekly rhythm: fresh posts and photo updates, accurate answers to every customer question, and a professional reply to every review. Each month you receive a plain-language report of profile views, calls, direction requests and the searches that found you — the numbers that show whether more customers are reaching your business.",
       "I run this exact routine on my own Multan business profile every day, and as a Google Business Profile expert in Multan I apply the same system to client profiles in Pakistan and abroad. That is also why businesses searching for a GMB expert in Multan Pakistan use this service: a profile maintained week after week, not abandoned. If your profile is suspended, duplicated or simply invisible on Maps, I will tell you honestly what can be fixed, what it takes, and what Google — not any freelancer — ultimately decides.",
@@ -579,6 +589,16 @@ export const SERVICES: Service[] = [
         question: "Do you guarantee a number one ranking on Google Maps?",
         answer:
           "No — and no honest specialist can. Rankings depend on competition, the searcher's distance from your business, and factors only Google controls. What I do guarantee is the work: a completely optimized profile, consistent management, and transparent monthly reporting on views, calls and direction requests.",
+      },
+      {
+        question: "What is GMB SEO?",
+        answer:
+          "GMB SEO is the ongoing optimization of your Google Business Profile so it ranks higher on Google Maps — complete categories and services, accurate information, fresh posts and photos, and a steady flow of genuine reviews with professional replies. My GMB SEO work in Multan runs on a weekly rhythm, with a plain-language report every month.",
+      },
+      {
+        question: "What do your Google My Business optimization services include?",
+        answer:
+          "Setup and cleanup of the whole profile, category and service research that matches what customers search, photos and products, weekly Google Posts, review generation and replies, and a monthly insights report in plain language. It is the same foundation-then-management system described on this page — optimization first, then the weekly work that compounds it.",
       },
     ],
   },
