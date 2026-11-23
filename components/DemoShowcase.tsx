@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Reveal from "./Reveal";
-import { ArrowRightIcon, BadgeCheckIcon, MapPinIcon, SparkleIcon } from "./icons";
+import { ArrowRightIcon, BadgeCheckIcon, CheckIcon, GearCodeIcon, MapPinIcon, SparkleIcon, StarIcon, TrendingUpIcon } from "./icons";
 
 const DEMOS = [
   {
@@ -21,6 +21,30 @@ const DEMOS = [
     href: "/demos/clinic",
     Icon: BadgeCheckIcon,
   },
+  {
+    title: "Super Store Demo",
+    text: "Sample super store website: grocery categories, weekly offers and home delivery.",
+    href: "/demos/super-store",
+    Icon: TrendingUpIcon,
+  },
+  {
+    title: "Medical Store Demo",
+    text: "Sample medical store website: medicines, prescription orders and home delivery.",
+    href: "/demos/medical-store",
+    Icon: CheckIcon,
+  },
+  {
+    title: "Doctor Portfolio Demo",
+    text: "Sample doctor portfolio website: qualifications, services, reviews and appointment booking.",
+    href: "/demos/doctor",
+    Icon: StarIcon,
+  },
+  {
+    title: "Software Services Demo",
+    text: "Sample software services website: web apps, mobile apps, APIs and a get-a-quote form.",
+    href: "/demos/software",
+    Icon: GearCodeIcon,
+  },
 ];
 
 /** Salman-style project cards: image panel top, tag pill, title, desc, link. */
@@ -34,9 +58,12 @@ export default function DemoShowcase() {
             See your business <span className="text-gradient-accent">online before you decide.</span>
           </h2>
           <p className="salman-sub">
-            Three working sample websites — a restaurant website with online
-            ordering, a salon appointment booking website and a clinic
-            appointment booking website. Open any demo, try the forms, and see
+            Seven working sample websites — a restaurant website with online
+            ordering, a salon appointment booking website, a clinic
+            appointment booking website, a super store website with weekly
+            offers, a medical store website with home delivery, a doctor
+            portfolio website with appointment booking and a software services
+            website with a get-a-quote form. Open any demo, try the forms, and see
             how your business could look online. They are examples of website
             development in Multan for local service businesses.
           </p>
