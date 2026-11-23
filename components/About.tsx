@@ -22,22 +22,12 @@ function PhotoCarousel() {
 
   return (
     <div
-      className="about-photo-3d relative mx-auto max-w-md"
+      className="relative mx-auto max-w-md"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -inset-6 rounded-[2rem] bg-gradient-to-br from-gold/25 via-accent-pink/10 to-transparent blur-2xl"
-      />
-      <div
-        className="relative overflow-hidden rounded-[1.75rem] bg-gradient-to-br from-violet/60 via-violet/15 to-transparent p-[1px]"
-        style={{
-          boxShadow:
-            "0 40px 80px -30px rgba(139,92,246,0.35), 0 25px 60px -20px rgba(0,0,0,0.8)",
-        }}
-      >
-        <div className="relative overflow-hidden rounded-[calc(1.75rem-1px)] bg-ink-900">
+      <div className="relative overflow-hidden rounded-[1.25rem] border border-black/10 bg-ink-900 dark:border-white/15">
+        <div className="relative overflow-hidden bg-ink-900">
           {/* sliding track */}
           <div
             className="flex transition-transform duration-700 ease-in-out"
@@ -96,7 +86,7 @@ function PhotoCarousel() {
             <span aria-hidden>&rarr;</span>
           </button>
         </div>
-        <div className="flex items-center justify-between bg-ink-950/95 px-4 py-4">
+        <div className="flex items-center justify-between bg-ink-850 px-4 py-4">
           <div>
             <p className="font-medium text-mist-100">{SITE.fullName}</p>
             <p className="text-sm text-mist-500">
@@ -115,13 +105,18 @@ export default function About() {
     <section id="about" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
+          <Reveal delay={150}>
+            <PhotoCarousel />
+          </Reveal>
+
           <div>
             <Reveal>
-              <p className="label-caps">Know about me</p>
-              <h2 className="font-display mt-3 text-4xl leading-tight text-mist-100 sm:text-5xl">
+              <p className="salman-eyebrow">Know about me</p>
+              <h2 className="salman-h2 mt-3">
                 Local SEO specialist,
                 <br />
-                with a marketer&apos;s <em className="text-gradient-accent">instinct</em>
+                with a marketer&apos;s{" "}
+                <span className="text-gradient-accent">instinct</span>
               </h2>
             </Reveal>
             <Reveal delay={120}>
@@ -151,20 +146,16 @@ export default function About() {
               </div>
             </Reveal>
             <Reveal delay={200}>
-              <dl className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-4">
+              <dl className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
                 {STATS.map((stat) => (
-                  <div key={stat.label}>
-                    <dt className="label-caps">{stat.label}</dt>
-                    <dd className="font-display mt-2 text-3xl text-mist-100">{stat.value}</dd>
+                  <div key={stat.label} className="salman-stat">
+                    <dt>{stat.label}</dt>
+                    <dd>{stat.value}</dd>
                   </div>
                 ))}
               </dl>
             </Reveal>
           </div>
-
-          <Reveal delay={150}>
-            <PhotoCarousel />
-          </Reveal>
         </div>
       </div>
     </section>

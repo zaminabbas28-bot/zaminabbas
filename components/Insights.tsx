@@ -3,58 +3,51 @@ import { ArrowRightIcon, TrendingUpIcon, MapPinIcon, GearCodeIcon } from "./icon
 import Reveal from "./Reveal";
 
 const CARD_ICONS = [MapPinIcon, TrendingUpIcon, GearCodeIcon];
-const CARD_STYLES = [
-  { gradient: "from-violet/40 via-violet/20 to-cyan/20", glow: "rgba(139,92,246,0.45)" },
-  { gradient: "from-violet/30 via-cyan/25 to-violet/20", glow: "rgba(34,211,238,0.35)" },
-  { gradient: "from-cyan/25 via-violet/20 to-violet/30", glow: "rgba(139,92,246,0.4)" },
+const CARD_GRADIENTS = [
+  "from-violet/25 via-violet/10 to-cyan/20",
+  "from-violet/20 via-cyan/15 to-violet/10",
+  "from-cyan/20 via-violet/15 to-violet/10",
 ];
 
+/** Salman-style project cards: image panel top, title, excerpt, meta footer. */
 export default function Insights() {
   return (
     <section id="insights" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>
-          <p className="label-caps">From the desk</p>
-          <h2 className="font-display mt-3 text-4xl text-mist-100 sm:text-5xl">
-            Notes on <em className="text-gradient-accent">ranking</em>
+          <p className="salman-eyebrow">From the desk</p>
+          <h2 className="salman-h2 mt-4">
+            Notes on <span className="text-gradient-accent">ranking</span>
           </h2>
         </Reveal>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3" style={{ perspective: "1200px" }}>
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
           {INSIGHTS.map((post, i) => {
             const Icon = CARD_ICONS[i % CARD_ICONS.length];
-            const style = CARD_STYLES[i % CARD_STYLES.length];
             return (
               <Reveal key={post.title} delay={i * 100} className="h-full">
-                <article
-                  className={`insight-card group flex h-full flex-col overflow-hidden rounded-[1.5rem] bg-gradient-to-br ${style.gradient} p-[1px]${i % 2 === 1 ? " tilt-r" : ""}`}
-                  style={{
-                    boxShadow: `0 30px 60px -25px ${style.glow}, 0 20px 40px -20px rgba(0,0,0,0.7)`,
-                  }}
-                >
-                  <div className="flex h-full flex-col overflow-hidden rounded-[calc(1.5rem-1px)] bg-ink-950/90 backdrop-blur-sm">
-                    <div
-                      className="relative flex h-44 items-center justify-center bg-gradient-to-br from-gold/25 via-gold/10 to-transparent"
-                    >
-                      <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-gold/30 bg-ink-950/60 shadow-lg backdrop-blur-sm transition-transform duration-500 group-hover:scale-110">
-                        <Icon className="h-8 w-8 text-gold" />
-                      </div>
-                    </div>
-                    <div className="flex flex-1 flex-col p-6">
-                      <h3 className="text-lg font-semibold leading-snug text-mist-100">
-                        {post.title}
-                      </h3>
-                      <p className="mt-3 flex-1 text-sm leading-relaxed text-mist-500">
-                        {post.excerpt}
+                <article className="card-surface card-hover group flex h-full flex-col overflow-hidden">
+                  <div
+                    className={`relative flex h-44 items-center justify-center bg-gradient-to-br ${CARD_GRADIENTS[i % CARD_GRADIENTS.length]}`}
+                  >
+                    <span className="salman-glass-tile transition-transform duration-500 group-hover:scale-110">
+                      <Icon className="h-8 w-8" />
+                    </span>
+                  </div>
+                  <div className="flex flex-1 flex-col p-6">
+                    <h3 className="text-lg font-bold leading-snug text-mist-100">
+                      {post.title}
+                    </h3>
+                    <p className="mt-3 flex-1 text-sm leading-relaxed text-mist-500">
+                      {post.excerpt}
+                    </p>
+                    <div className="mt-6 flex items-center justify-between border-t border-black/10 pt-4 dark:border-white/15">
+                      <p className="font-mono text-[0.65rem] tracking-[0.18em] text-mist-500">
+                        {post.readTime} · {post.date}
                       </p>
-                      <div className="mt-6 flex items-center justify-between border-t border-black/10 dark:border-white/15 pt-4">
-                        <p className="label-caps">
-                          {post.readTime} · {post.date}
-                        </p>
-                        <span className="flex h-8 w-8 items-center justify-center rounded-full border border-black/15 dark:border-white/15 text-mist-300 transition-all duration-300 group-hover:border-gold group-hover:text-gold">
-                          <ArrowRightIcon className="h-4 w-4" />
-                        </span>
-                      </div>
+                      <span className="flex h-8 w-8 items-center justify-center rounded-full border border-black/15 text-mist-300 transition-all duration-300 group-hover:border-accent group-hover:text-accent dark:border-white/15">
+                        <ArrowRightIcon className="h-4 w-4" />
+                      </span>
                     </div>
                   </div>
                 </article>

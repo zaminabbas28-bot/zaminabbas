@@ -27,54 +27,48 @@ const STEPS = [
   },
 ];
 
+/**
+ * Salman-style service cards with big step numbers: the reference
+ * Experience timeline isn't clearly visible in the frames, so the four
+ * steps use the same card pattern as the Services grid, with the big
+ * gradient step number in place of the icon tile.
+ */
 export default function Process() {
   return (
     <section aria-label="How I work" className="relative bg-ink-950 py-24 sm:py-32">
-      <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-        {/* Left: mega heading */}
-        <div className="lg:sticky lg:top-28 lg:self-start">
-          <Reveal>
-            <p className="label-caps !text-gold">How I work</p>
-            <h2 className="display-mega mt-4 font-sans text-5xl text-mist-100 sm:text-7xl">
-              Precision
-              <br />
-              <span className="text-gradient-accent">applied.</span>
-            </h2>
-            <p className="mt-6 max-w-md leading-relaxed text-mist-500">
-              A clear process keeps the ambition high without losing
-              usability, performance or the real objective — more customers.
-            </p>
-          </Reveal>
-        </div>
+      <div className="mx-auto max-w-7xl px-5 sm:px-8">
+        <Reveal>
+          <p className="salman-eyebrow">How I work</p>
+          <h2 className="salman-h2 mt-4">
+            Precision
+            <br />
+            <span className="text-gradient-accent">applied.</span>
+          </h2>
+          <p className="salman-sub">
+            A clear process keeps the ambition high without losing
+            usability, performance or the real objective — more customers.
+          </p>
+        </Reveal>
 
-        {/* Right: steps */}
-        <div className="space-y-5">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((step, i) => (
-            <Reveal key={step.n} delay={i * 80}>
-              <article className="card-surface card-hover group relative overflow-hidden p-7 sm:p-8">
-                <div
+            <Reveal key={step.n} delay={i * 80} className="h-full">
+              <article className="card-surface card-hover flex h-full flex-col p-7 sm:p-8">
+                <span
                   aria-hidden
-                  className="pointer-events-none absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-gold-soft via-gold to-gold-deep opacity-70"
-                />
-                <div className="flex items-start justify-between gap-6">
-                  <div>
-                    <p className="font-mono text-[0.65rem] tracking-[0.25em] text-gold">
-                      {step.n} &mdash; {step.tag}
-                    </p>
-                    <h3 className="mt-2 font-sans text-2xl font-bold text-mist-100 sm:text-3xl">
-                      {step.title}
-                    </h3>
-                    <p className="mt-3 max-w-lg leading-relaxed text-mist-500">
-                      {step.text}
-                    </p>
-                  </div>
-                  <span
-                    aria-hidden
-                    className="hidden font-sans text-6xl font-extrabold text-gold/15 transition-colors group-hover:text-gold/30 sm:block"
-                  >
-                    {step.n}
-                  </span>
-                </div>
+                  className="grad-text font-sans text-5xl font-extrabold leading-none"
+                >
+                  {step.n}
+                </span>
+                <p className="mt-6 font-mono text-[0.65rem] tracking-[0.25em] text-cyan">
+                  {step.tag}
+                </p>
+                <h3 className="mt-3 text-xl font-bold leading-snug text-mist-100">
+                  {step.title}
+                </h3>
+                <p className="mt-3 flex-1 leading-relaxed text-mist-500">
+                  {step.text}
+                </p>
               </article>
             </Reveal>
           ))}

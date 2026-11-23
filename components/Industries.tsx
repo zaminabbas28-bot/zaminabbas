@@ -34,11 +34,11 @@ export default function Industries() {
     <section id="industries" className="relative py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
-          <p className="label-caps !text-gold">Industries We Serve</p>
-          <h2 className="display-mega mt-4 max-w-3xl font-sans text-4xl text-mist-100 sm:text-6xl">
+          <p className="salman-eyebrow">Industries We Serve</p>
+          <h2 className="salman-h2 mt-4 max-w-3xl">
             Websites built for <span className="text-gradient-accent">your kind of business.</span>
           </h2>
-          <p className="mt-5 max-w-xl leading-relaxed text-mist-500">
+          <p className="salman-sub">
             Industry-specific website design in Multan, paired with local SEO —
             built around how your customers actually find, judge and contact you.
           </p>
@@ -46,9 +46,12 @@ export default function Industries() {
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {INDUSTRIES.map((industry, i) => (
-            <Reveal key={industry.title} delay={i * 100}>
-              <article className="card-surface card-hover flex h-full flex-col p-6 sm:p-7">
-                <h3 className="text-xl font-bold leading-snug text-mist-100">
+            <Reveal key={industry.title} delay={i * 100} className="h-full">
+              <article className="card-surface card-hover flex h-full flex-col p-7 sm:p-8">
+                <span className="salman-icon-tile">
+                  <span className="text-lg font-extrabold">{industry.title[0]}</span>
+                </span>
+                <h3 className="mt-6 text-xl font-bold leading-snug text-mist-100">
                   {industry.title}
                 </h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-mist-500">
@@ -56,10 +59,7 @@ export default function Industries() {
                 </p>
                 <ul className="mt-5 flex flex-wrap gap-2">
                   {industry.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="rounded-full border border-black/10 dark:border-white/15 bg-black/5 dark:bg-white/10 px-3 py-1 text-xs font-medium text-mist-100"
-                    >
+                    <li key={feature} className="salman-tag">
                       {feature}
                     </li>
                   ))}

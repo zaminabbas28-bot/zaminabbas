@@ -5,12 +5,6 @@ import { REVIEWS } from "@/lib/site";
 import { PauseIcon, PlayIcon, QuoteIcon, StarIcon } from "./icons";
 import Reveal from "./Reveal";
 
-const CARD_GRADIENTS = [
-  "from-violet/25 via-violet/15 to-ink-900",
-  "from-violet/20 via-cyan/15 to-ink-900",
-  "from-cyan/20 via-violet/20 to-ink-900",
-];
-
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -35,9 +29,9 @@ export default function Testimonials() {
     <section id="reviews" className="relative overflow-hidden py-24 sm:py-32">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>
-          <p className="label-caps">Testimonials</p>
-          <h2 className="font-display mt-3 text-4xl text-mist-100 sm:text-5xl">
-            Word on the <em className="text-gradient-accent">street</em>
+          <p className="salman-eyebrow">Testimonials</p>
+          <h2 className="salman-h2 mt-4">
+            Word on the <span className="text-gradient-accent">street</span>
           </h2>
           <p className="mt-4 flex items-center gap-2 text-sm text-mist-500">
             <span className="flex text-accent">
@@ -57,16 +51,16 @@ export default function Testimonials() {
               {cards.map((review, k) => (
                 <figure
                   key={`${review.name}-${k}`}
-                  className={`card-surface relative flex min-h-[300px] flex-col justify-between overflow-hidden bg-gradient-to-br p-7 ${CARD_GRADIENTS[(index + k) % CARD_GRADIENTS.length]}`}
+                  className="card-surface card-hover relative flex min-h-[300px] flex-col justify-between p-7"
                 >
                   <div>
-                    <QuoteIcon className="h-7 w-7 text-gold/30" />
+                    <QuoteIcon className="h-7 w-7 text-cyan" />
                     <blockquote className="mt-4 text-[0.95rem] leading-relaxed text-mist-100">
                       “{review.quote}”
                     </blockquote>
                   </div>
                   <figcaption className="mt-6 flex items-center gap-3">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gold/20 font-display text-sm font-bold text-accent-deep backdrop-blur-sm">
+                    <span className="salman-avatar h-11 w-11 text-sm">
                       {review.initials}
                     </span>
                     <span>

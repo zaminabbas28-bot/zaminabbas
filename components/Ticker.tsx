@@ -6,23 +6,43 @@ const ITEMS = [
   "Google Business Profile",
 ] as const;
 
-/** Infinite marquee strip (approved design) — CSS animation only. */
+/**
+ * Salman-style giant marquee: two stacked rows — an outline-text row
+ * scrolling left and a gradient-text row scrolling right, ✦ separators.
+ * Same items/text as before, CSS animation only.
+ */
 export default function Ticker() {
   return (
-    <div
-      aria-hidden
-      className="overflow-hidden border-y border-black/10 bg-ink-900 py-[18px] dark:border-white/10"
-    >
-      <div className="ticker-track flex w-max items-center">
+    <div aria-hidden className="salman-marquee">
+      {/* Row 1: outline text, scrolls left */}
+      <div className="ticker-track salman-marquee-row">
         {[0, 1].map((half) => (
           <div key={half} className="flex items-center">
             {ITEMS.map((item, i) => (
               <span
                 key={`${half}-${i}`}
-                className="flex items-center whitespace-nowrap px-[18px] font-display text-[1.35rem] font-bold tracking-[0.04em] text-mist-100"
+                className="salman-marquee-text salman-marquee-outline"
               >
                 {item}
-                <i className="grad-text pl-[18px] not-italic" aria-hidden>
+                <i className="salman-marquee-sep not-italic" aria-hidden>
+                  ✦
+                </i>
+              </span>
+            ))}
+          </div>
+        ))}
+      </div>
+      {/* Row 2: gradient text, scrolls right */}
+      <div className="ticker-track-reverse salman-marquee-row mt-2">
+        {[0, 1].map((half) => (
+          <div key={half} className="flex items-center">
+            {ITEMS.map((item, i) => (
+              <span
+                key={`${half}-${i}`}
+                className="salman-marquee-text text-gradient-accent"
+              >
+                {item}
+                <i className="not-italic" aria-hidden>
                   ✦
                 </i>
               </span>
